@@ -104,12 +104,12 @@ pray for you = 背着梦的幸存者</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
         </ul>
       </div>
     </header>
@@ -153,13 +153,16 @@ pray for you = 背着梦的幸存者</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="React-从入门到入土（一）–-基础知识以及-jsx-语法"><a href="#React-从入门到入土（一）–-基础知识以及-jsx-语法" class="headerlink" title="React 从入门到入土（一）– 基础知识以及 jsx 语法"></a>React 从入门到入土（一）– 基础知识以及 jsx 语法</h1><p><img data-src="https://ljcimg.oss-cn-beijing.aliyuncs.com/img/%E5%9F%BA%E7%A1%801.png" alt="第一篇"></p>
+    <h1>React 从入门到入土（一）-- 基础知识以及 jsx 语法</h1>
+<p><img data-src="https://ljcimg.oss-cn-beijing.aliyuncs.com/img/%E5%9F%BA%E7%A1%801.png" alt="第一篇"></p>
 <blockquote>
 <p>📢 大家好 😪 ，我是 lineo，最近在学习 React，这是关于 React 的第一篇文章，内容如有错误，欢迎大家指正</p>
 <p>📢 <font color="#e84393">愿你生活明朗，万物可爱</font></p>
 </blockquote>
 <p>先附上<span class="exturl" data-url="aHR0cHM6Ly9yZWFjdC5kZXYv">React 官网</span> ，有很多问题都要通过查询官方文档来解决，要学会查文档~</p>
-<h2 id="一、React-简介"><a href="#一、React-简介" class="headerlink" title="一、React 简介"></a>一、React 简介</h2><h3 id="1-关于-React"><a href="#1-关于-React" class="headerlink" title="1. 关于 React"></a>1. 关于 React</h3><p>整几个面试题来认识一下~~</p>
+<h2 id="一、React-简介">一、React 简介</h2>
+<h3 id="1-关于-React">1. 关于 React</h3>
+<p>整几个面试题来认识一下~~</p>
 <blockquote>
 <p>什么是 React ？</p>
 </blockquote>
@@ -188,54 +191,62 @@ pray for you = 背着梦的幸存者</title>
 <li>由于使用 JSX，代码的可读性更好</li>
 <li>使用 React，编写 UI 测试用例变得非常容易</li>
 </ol>
-<h3 id="2-Hello-React"><a href="#2-Hello-React" class="headerlink" title="2. Hello React"></a>2. Hello React</h3><p>首先需要引入几个 react 包，我直接用的是老师下载好的</p>
+<h3 id="2-Hello-React">2. Hello React</h3>
+<p>首先需要引入几个 react 包，我直接用的是老师下载好的</p>
 <ul>
 <li>React 核心库、操作 DOM 的 react 扩展库、将 jsx 转为 js 的 babel 库</li>
 </ul>
 <p><img data-src="https://ljcimg.oss-cn-beijing.aliyuncs.com/img/react1.png" alt="react1"></p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable constant_">VDOM</span> = <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello,React<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>;</span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="variable constant_">VDOM</span>, <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.test&quot;</span>));</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-虚拟-DOM-和真实-DOM-的两种创建方法"><a href="#3-虚拟-DOM-和真实-DOM-的两种创建方法" class="headerlink" title="3. 虚拟 DOM 和真实 DOM 的两种创建方法"></a>3. 虚拟 DOM 和真实 DOM 的两种创建方法</h3><h4 id="3-1-JS-创建虚拟-DOM"><a href="#3-1-JS-创建虚拟-DOM" class="headerlink" title="3.1 JS 创建虚拟 DOM"></a>3.1 JS 创建虚拟 DOM</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.创建虚拟DOM,创建嵌套格式的dom</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">VDOM</span> = <span class="title class_">React</span>.<span class="title function_">createElement</span>(<span class="string">&quot;h1&quot;</span>, &#123; <span class="attr">id</span>: <span class="string">&quot;title&quot;</span> &#125;, <span class="title class_">React</span>.<span class="title function_">createElement</span>(<span class="string">&quot;span&quot;</span>, &#123;&#125;, <span class="string">&quot;hello,React&quot;</span>));</span><br><span class="line"><span class="comment">//2.渲染虚拟DOM到页面</span></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="variable constant_">VDOM</span>, <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.test&quot;</span>));</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-2-Jsx-创建虚拟-DOM"><a href="#3-2-Jsx-创建虚拟-DOM" class="headerlink" title="3.2 Jsx 创建虚拟 DOM"></a>3.2 Jsx 创建虚拟 DOM</h4><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.创建虚拟DOM</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">VDOM</span> = (</span><br><span class="line">    <span class="comment">/* 此处一定不要写引号，因为不是字符串 */</span></span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">id</span>=<span class="string">&quot;title&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>Hello,React<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line">);</span><br><span class="line"><span class="comment">//2.渲染虚拟DOM到页面</span></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="variable constant_">VDOM</span>, <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.test&quot;</span>));</span><br></pre></td></tr></table></figure>
-
+<h3 id="3-虚拟-DOM-和真实-DOM-的两种创建方法">3. 虚拟 DOM 和真实 DOM 的两种创建方法</h3>
+<h4 id="3-1-JS-创建虚拟-DOM">3.1 JS 创建虚拟 DOM</h4>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.创建虚拟DOM,创建嵌套格式的dom</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">VDOM</span> = <span class="title class_">React</span>.<span class="title function_">createElement</span>(<span class="string">&quot;h1&quot;</span>, &#123; <span class="attr">id</span>: <span class="string">&quot;title&quot;</span> &#125;, <span class="title class_">React</span>.<span class="title function_">createElement</span>(<span class="string">&quot;span&quot;</span>, &#123;&#125;, <span class="string">&quot;hello,React&quot;</span>));</span><br><span class="line"><span class="comment">//2.渲染虚拟DOM到页面</span></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="variable constant_">VDOM</span>, <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.test&quot;</span>));</span><br></pre></td></tr></table></figure>
+<h4 id="3-2-Jsx-创建虚拟-DOM">3.2 Jsx 创建虚拟 DOM</h4>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.创建虚拟DOM</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">VDOM</span> = (</span><br><span class="line">    <span class="comment">/* 此处一定不要写引号，因为不是字符串 */</span></span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">id</span>=<span class="string">&quot;title&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>Hello,React<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line">);</span><br><span class="line"><span class="comment">//2.渲染虚拟DOM到页面</span></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="variable constant_">VDOM</span>, <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.test&quot;</span>));</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>js 的写法并不是常用的，常用 jsx 来写，毕竟 JSX 更符合书写的习惯</p>
 </blockquote>
-<h2 id="二、jsx-语法"><a href="#二、jsx-语法" class="headerlink" title="二、jsx 语法"></a>二、jsx 语法</h2><ol>
-<li><p>定义虚拟 DOM，不能使用<code>“”</code></p>
+<h2 id="二、jsx-语法">二、jsx 语法</h2>
+<ol>
+<li>
+<p>定义虚拟 DOM，不能使用<code>“”</code></p>
 </li>
-<li><p>标签中混入 JS 表达式的时候使用<code>&#123;&#125;</code></p>
+<li>
+<p>标签中混入 JS 表达式的时候使用<code>&#123;&#125;</code></p>
 </li>
 </ol>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id = &#123;myId.<span class="title function_">toUpperCase</span>()&#125;</span><br></pre></td></tr></table></figure>
-
 <ol start="3">
-<li><p>样式的类名指定不能使用 class，使用<code>className</code></p>
+<li>
+<p>样式的类名指定不能使用 class，使用<code>className</code></p>
 </li>
-<li><p>内敛样式要使用<code>&#123;&#123;&#125;&#125;</code>包裹</p>
+<li>
+<p>内敛样式要使用<code>&#123;&#123;&#125;&#125;</code>包裹</p>
 </li>
 </ol>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">style=&#123;&#123;<span class="attr">color</span>:<span class="string">&#x27;skyblue&#x27;</span>,<span class="attr">fontSize</span>:<span class="string">&#x27;24px&#x27;</span>&#125;&#125;</span><br></pre></td></tr></table></figure>
-
 <ol start="5">
-<li><p>不能有多个根标签，只能有一个根标签</p>
+<li>
+<p>不能有多个根标签，只能有一个根标签</p>
 </li>
-<li><p>标签必须闭合，自闭合也行</p>
+<li>
+<p>标签必须闭合，自闭合也行</p>
 </li>
-<li><p>如果小写字母开头，就将标签转化为 html 同名元素，如果 html 中无该标签对应的元素，就报错；如果是大写字母开头，react 就去渲染对应的组件，如果没有就报错</p>
+<li>
+<p>如果小写字母开头，就将标签转化为 html 同名元素，如果 html 中无该标签对应的元素，就报错；如果是大写字母开头，react 就去渲染对应的组件，如果没有就报错</p>
 </li>
 </ol>
 <blockquote>
 <p>记几个</p>
 </blockquote>
-<h4 id="1-注释"><a href="#1-注释" class="headerlink" title="1. 注释"></a>1. 注释</h4><p>写在花括号里</p>
+<h4 id="1-注释">1. 注释</h4>
+<p>写在花括号里</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>小丞<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        &#123;/*注释...*/&#125;</span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>,</span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;example&quot;</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-数组"><a href="#2-数组" class="headerlink" title="2. 数组"></a>2. 数组</h4><p>JSX 允许在模板中插入数组，数组自动展开全部成员</p>
+<h4 id="2-数组">2. 数组</h4>
+<p>JSX 允许在模板中插入数组，数组自动展开全部成员</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>小丞<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>, <span class="language-xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>同学<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span>];</span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;arr&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>, <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;example&quot;</span>));</span><br></pre></td></tr></table></figure>
-
-<h3 id="tip-JSX-小练习"><a href="#tip-JSX-小练习" class="headerlink" title="tip: JSX 小练习"></a>tip: JSX 小练习</h3><p>根据动态数据生成 <code>li</code></p>
+<h3 id="tip-JSX-小练习">tip: JSX 小练习</h3>
+<p>根据动态数据生成 <code>li</code></p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> data = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">VDOM</span> = (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            &#123;data.map((item, index) =&gt; &#123;</span></span><br><span class="line"><span class="language-xml">                return <span class="tag">&lt;<span class="name">li</span> <span class="attr">key</span>=<span class="string">&#123;index&#125;</span>&gt;</span>&#123;item&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span>;</span></span><br><span class="line"><span class="language-xml">            &#125;)&#125;</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">);</span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="variable constant_">VDOM</span>, <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.test&quot;</span>));</span><br></pre></td></tr></table></figure>
 
       <div class="tags">
@@ -308,7 +319,7 @@ pray for you = 背着梦的幸存者</title>
     <div class="item right">
       
 
-  <a href="/2023/09/24/hello-world/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclx29mstj20zk0m8hdt.jpg" title="Hello World">
+  <a href="/2023/09/24/hello-world/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetlbztpj20zk0m84qp.jpg" title="Hello World">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Hello World</h3>
@@ -330,7 +341,7 @@ pray for you = 背着梦的幸存者</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#React-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9C%9F%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%93-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%BB%A5%E5%8F%8A-jsx-%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">React 从入门到入土（一）– 基础知识以及 jsx 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81React-%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text">一、React 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%85%B3%E4%BA%8E-React"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 关于 React</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Hello-React"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. Hello React</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%99%9A%E6%8B%9F-DOM-%E5%92%8C%E7%9C%9F%E5%AE%9E-DOM-%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%88%9B%E5%BB%BA%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. 虚拟 DOM 和真实 DOM 的两种创建方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-JS-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F-DOM"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">3.1 JS 创建虚拟 DOM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-Jsx-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F-DOM"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">3.2 Jsx 创建虚拟 DOM</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81jsx-%E8%AF%AD%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text">二、jsx 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%B3%A8%E9%87%8A"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">1. 注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%95%B0%E7%BB%84"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">2. 数组</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tip-JSX-%E5%B0%8F%E7%BB%83%E4%B9%A0"><span class="toc-number">1.2.1.</span> <span class="toc-text">tip: JSX 小练习</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">React 从入门到入土（一）-- 基础知识以及 jsx 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81React-%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text">一、React 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%85%B3%E4%BA%8E-React"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 关于 React</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Hello-React"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. Hello React</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%99%9A%E6%8B%9F-DOM-%E5%92%8C%E7%9C%9F%E5%AE%9E-DOM-%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%88%9B%E5%BB%BA%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. 虚拟 DOM 和真实 DOM 的两种创建方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-JS-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F-DOM"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">3.1 JS 创建虚拟 DOM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-Jsx-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F-DOM"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">3.2 Jsx 创建虚拟 DOM</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81jsx-%E8%AF%AD%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text">二、jsx 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%B3%A8%E9%87%8A"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">1. 注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%95%B0%E7%BB%84"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">2. 数组</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tip-JSX-%E5%B0%8F%E7%BB%83%E4%B9%A0"><span class="toc-number">1.2.1.</span> <span class="toc-text">tip: JSX 小练习</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
@@ -403,7 +414,7 @@ pray for you = 背着梦的幸存者</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/09/24/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2023/09/24/lineo1227/" title="React基础知识以及 jsx 语法">React基础知识以及 jsx 语法</a></span>
   </li>
 
       
@@ -412,7 +423,7 @@ pray for you = 背着梦的幸存者</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/09/24/lineo1227/" title="React基础知识以及 jsx 语法">React基础知识以及 jsx 语法</a></span>
+    <span><a href="/2023/09/24/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
   </ul>
