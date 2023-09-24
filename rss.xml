@@ -39,7 +39,7 @@
 &lt;p&gt;&lt;img data-src=&#34;https://ljcimg.oss-cn-beijing.aliyuncs.com/img/%E5%9F%BA%E7%A1%801.png&#34; alt=&#34;第一篇&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;📢 大家好 😪 ，我是 lineo，最近在学习 React，这是关于 React 的第一篇文章，内容如有错误，欢迎大家指正&lt;/p&gt;
-&lt;p&gt;📢 &lt;font color=#e84393&gt;愿你生活明朗，万物可爱&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;📢 &lt;font color=&#34;#e84393&#34;&gt;愿你生活明朗，万物可爱&lt;/font&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;先附上&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yZWFjdC5kZXYv&#34;&gt;React 官网&lt;/span&gt; ，有很多问题都要通过查询官方文档来解决，要学会查文档~&lt;/p&gt;
 &lt;h2 id=&#34;一、React-简介&#34;&gt;一、React 简介&lt;/h2&gt;
