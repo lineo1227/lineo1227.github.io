@@ -1,0 +1,812 @@
+
+    <!DOCTYPE html>
+    <html lang="en"
+            
+          
+    >
+    <head>
+    <meta charset="utf-8">
+    
+
+    
+
+    
+    <title>
+        React-生命周期 |
+        
+        背着梦的幸存者</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CUbuntu%20Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+    
+<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/v4-font-face.min.css">
+
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+    <meta name="description" content="04 【生命周期】1.简介组件从创建到死亡，会经过一些特定的阶段 React 组件中包含一系列钩子函数{生命周期回调函数}，会在特定的时刻调用 我们在定义组件的时候，会在特定的声明周期回调函数中，做特定的工作 在 React 中为我们提供了一些生命周期钩子函数，让我们能在 React 执行的重要阶段，在钩子函数中做一些事情。那么在 React 的生命周期中，有哪些钩子函数呢，我们来总结一下 rea">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React-生命周期">
+<meta property="og:url" content="http://example.com/2023/09/24/04.react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/index.html">
+<meta property="og:site_name" content="背着梦的幸存者">
+<meta property="og:description" content="04 【生命周期】1.简介组件从创建到死亡，会经过一些特定的阶段 React 组件中包含一系列钩子函数{生命周期回调函数}，会在特定的时刻调用 我们在定义组件的时候，会在特定的声明周期回调函数中，做特定的工作 在 React 中为我们提供了一些生命周期钩子函数，让我们能在 React 执行的重要阶段，在钩子函数中做一些事情。那么在 React 的生命周期中，有哪些钩子函数呢，我们来总结一下 rea">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i0.hdslb.com/bfs/album/eca620dfbbcdc3325be4a1f167f9a4ca2a0dfb7a.png">
+<meta property="og:image" content="https://i0.hdslb.com/bfs/album/1ad3acfd13159cfdc364a487dfc4335f7a9a1a06.png">
+<meta property="og:image" content="https://i0.hdslb.com/bfs/album/ea2d0052b360a8aed3ea84796b601d118ce5be13.png">
+<meta property="og:image" content="https://i0.hdslb.com/bfs/album/0ce6f820adb5b75e44b1df2332caa58bb8eaa257.gif">
+<meta property="article:published_time" content="2023-09-24T10:57:52.000Z">
+<meta property="article:modified_time" content="2023-09-25T11:58:14.664Z">
+<meta property="article:author" content="lineo">
+<meta property="article:tag" content="React">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i0.hdslb.com/bfs/album/eca620dfbbcdc3325be4a1f167f9a4ca2a0dfb7a.png">
+    
+        
+    
+    
+        <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/typeface-source-code-pro@1.1.13/index.css">
+
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+    
+    
+    
+    
+    
+<script src="https://unpkg.com/pace-js@1.2.4/pace.min.js"></script>
+
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/wowjs@1.1.3/css/libs/animate.css">
+
+        
+<script src="https://unpkg.com/wowjs@1.1.3/dist/wow.min.js"></script>
+
+        <script>
+          new WOW({
+            offset: 0,
+            mobile: true,
+            live: false
+          }).init();
+        </script>
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+    <body>
+    
+<div id='loader'>
+  <div class="loading-left-bg"></div>
+  <div class="loading-right-bg"></div>
+  <div class="spinner-box">
+    <div class="loading-taichi">
+      <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+      <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="#ff6e6b" />
+      <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z" fill="#fd0d00" />
+      <path d="M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95" fill="#fd0d00" />
+    </svg>
+    </div>
+    <div class="loading-word">少女祈祷中...</div>
+  </div>
+</div>
+</div>
+
+<script>
+  const endLoading = function() {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loader').classList.add("loading");
+  }
+  window.addEventListener('load', endLoading);
+  document.getElementById('loader').addEventListener('click', endLoading);
+</script>
+
+
+    <div id="container">
+        <div id="wrap">
+            <header id="header">
+    
+        <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-生命周期" class="lazyload">
+    
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <div id="logo-wrap">
+                
+                    
+                    
+                        <a href="/" id="logo"><h1>React-生命周期</h1></a>
+                    
+                
+            </div>
+            
+                
+                
+            
+        </div>
+        <div id="header-inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/">Home</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/archives">Archives</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/about">About</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/friend">Friend</a>
+                    </span>
+                
+            </nav>
+            <nav id="sub-nav">
+                
+                    <a id="nav-rss-link" class="nav-icon" href="/atom.xml"
+                       title="RSS Feed"></a>
+                
+                
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <div id="content" class="outer">
+                <section id="main"><article id="post-04.react生命周期" class="h-entry article article-type-post"
+         itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <div class="article-inner">
+        <div class="article-meta">
+            <div class="article-date wow slideInLeft">
+    <a href="/2023/09/24/04.react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" class="article-date-link">
+        <time datetime="2023-09-24T10:57:52.000Z"
+              itemprop="datePublished">2023-09-24</time>
+    </a>
+</div>
+
+            
+
+        </div>
+        <div class="hr-line"></div>
+        
+
+        <div class="e-content article-entry" itemprop="articleBody">
+            
+                <h1 id="04-【生命周期】"><a href="#04-【生命周期】" class="headerlink" title="04 【生命周期】"></a>04 【生命周期】</h1><h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>组件从创建到死亡，会经过一些特定的阶段</p>
+<p>React 组件中包含一系列钩子函数{生命周期回调函数}，会在特定的时刻调用</p>
+<p>我们在定义组件的时候，会在特定的声明周期回调函数中，做特定的工作</p>
+<p>在 React 中为我们提供了一些生命周期钩子函数，让我们能在 React 执行的重要阶段，在钩子函数中做一些事情。那么在 React 的生命周期中，有哪些钩子函数呢，我们来总结一下</p>
+<p><strong>react 生命周期(旧)</strong></p>
+<pre><code class="js">1. 初始化阶段: 由ReactDOM.render()触发---初次渲染
+                    1.	constructor()
+                    2.	componentWillMount()
+                    3.	render()
+                    4.	componentDidMount() =====&gt; 常用
+                        一般在这个钩子中做一些初始化的事，例如：开启定时器、发送网络请求、订阅消息
+2. 更新阶段: 由组件内部this.setSate()或父组件render触发
+                    1.	shouldComponentUpdate()
+                    2.	componentWillUpdate()
+                    3.	render() =====&gt; 必须使用的一个
+                    4.	componentDidUpdate()
+3. 卸载组件: 由ReactDOM.unmountComponentAtNode()触发
+                    1.	componentWillUnmount()  =====&gt; 常用
+                        一般在这个钩子中做一些收尾的事，例如：关闭定时器、取消订阅消息
+</code></pre>
+<p><img src="https://i0.hdslb.com/bfs/album/eca620dfbbcdc3325be4a1f167f9a4ca2a0dfb7a.png" alt="react生命周期(旧)"></p>
+<p>在最新的 react 版本中，有些生命周期钩子被抛弃了，具体函数如下：</p>
+<ul>
+<li><code>componentWillMount</code></li>
+<li><code>componentWillReceiveProps</code></li>
+<li><code>componentWillUpdate</code></li>
+</ul>
+<p>这些生命周期方法经常被误解和滥用；此外，我们预计，在异步渲染中，它们潜在的误用问题可能更大。我们将在即将发布的版本中为这些生命周期添加 “UNSAFE_” 前缀。（这里的 “unsafe” 不是指安全性，而是表示使用这些生命周期的代码在 React 的未来版本中更有可能出现 bug，尤其是在启用异步渲染之后。）</p>
+<p>由此可见，新版本中并不推荐持有这三个函数，取而代之的是带有 UNSAFE* 前缀的三个函数，比如: UNSAFE* componentWillMount。即便如此，其实 React 官方还是不推荐大家去使用，在以后版本中有可能会去除这几个函数。</p>
+<p><strong>react 生命周期(新)</strong></p>
+<pre><code class="js">1. 初始化阶段: 由ReactDOM.render()触发---初次渲染
+                1.	constructor()
+                2.	getDerivedStateFromProps
+                3.	render()
+                4.	componentDidMount() =====&gt; 常用
+                    一般在这个钩子中做一些初始化的事，例如：开启定时器、发送网络请求、订阅消息
+2. 更新阶段: 由组件内部this.setSate()或父组件重新render触发
+                1.	getDerivedStateFromProps
+                2.	shouldComponentUpdate()
+                3.	render()
+                4.	getSnapshotBeforeUpdate
+                5.	componentDidUpdate()
+3. 卸载组件: 由ReactDOM.unmountComponentAtNode()触发
+                1.	componentWillUnmount()  =====&gt; 常用
+                    一般在这个钩子中做一些收尾的事，例如：关闭定时器、取消订阅消息
+</code></pre>
+<p><img src="https://i0.hdslb.com/bfs/album/1ad3acfd13159cfdc364a487dfc4335f7a9a1a06.png" alt="image-20221023222949399"></p>
+<h2 id="2-初始化阶段"><a href="#2-初始化阶段" class="headerlink" title="2.初始化阶段"></a>2.初始化阶段</h2><p><strong>在组件实例被创建并插入到 dom 中时，生命周期调用顺序如下</strong></p>
+<p><strong>旧生命周期：</strong></p>
+<ol>
+<li>constructor（props）</li>
+<li>componentWillMount（）————-可以用但是不建议使用</li>
+<li>render（）</li>
+<li>componentDidMount（）</li>
+</ol>
+<p><strong>新生命周期：</strong></p>
+<ol>
+<li>constructor（props）</li>
+<li><code>static getDerivedStateFromProps（props，state）</code>–替代了<code>componentWillReceiveProps</code></li>
+<li>render（）</li>
+<li>componentDidMount（）</li>
+</ol>
+<h3 id="2-1-constructor"><a href="#2-1-constructor" class="headerlink" title="2.1 constructor"></a>2.1 constructor</h3><p><strong>数据的初始化。</strong></p>
+<p>接收 props 和 context，当想在函数内使用这两个参数需要在 super 传入参数，当使用 constructor 时必须使用 super，否则可能会有 this 的指向问题，如果不初始化 state 或者不进行方法绑定，则可以不为组件实现构造函数；</p>
+<p>避免将 props 的值复制给 state！这是一个常见的错误：</p>
+<pre><code class="js">constructor(props) &#123;
+ super(props);
+ // 不要这样做
+ this.state = &#123; color: props.color &#125;;
+&#125;
+</code></pre>
+<p>如此做毫无必要（可以直接使用 this.props.color），同时还产生了 bug（更新 prop 中的 color 时，并不会影响 state）。</p>
+<p>现在我们通常不会使用 <code>constructor</code> 属性，而是改用类加箭头函数的方法，来替代 <code>constructor</code></p>
+<p>例如，我们可以这样初始化 <code>state</code></p>
+<pre><code class="js">state = &#123;
+    count: 0,
+&#125;;
+</code></pre>
+<h3 id="2-2-componentWillMount（即将废弃）"><a href="#2-2-componentWillMount（即将废弃）" class="headerlink" title="2.2 componentWillMount（即将废弃）"></a>2.2 componentWillMount（即将废弃）</h3><p><strong>该方法只在挂载的时候调用一次，表示组件将要被挂载，并且在 <code>render</code> 方法之前调用。</strong></p>
+<blockquote>
+<p>如果存在 <code>getDerivedStateFromProps</code> 和 <code>getSnapshotBeforeUpdate</code> 就不会执行生命周期<code>componentWillMount</code>。</p>
+</blockquote>
+<p>​ 在服务端渲染唯一会调用的函数，代表已经初始化数据但是没有渲染 dom，因此在此方法中同步调用 <code>setState()</code> 不会触发额外渲染。</p>
+<p><strong>这个方法在 React 18 版本中将要被废弃，官方解释是在 React 异步机制下，如果滥用这个钩子可能会有 Bug</strong></p>
+<h3 id="2-3-static-getDerivedStateFromProps（新钩子）"><a href="#2-3-static-getDerivedStateFromProps（新钩子）" class="headerlink" title="2.3 static getDerivedStateFromProps（新钩子）"></a>2.3 static getDerivedStateFromProps（新钩子）</h3><p><strong>从 props 获取 state。</strong></p>
+<p>替代了<code>componentWillReceiveProps，</code>此方法适用于<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#when-to-use-derived-state">罕见的用例</a>，即 state 的值在任何时候都取决于 props。</p>
+<p>这个是 React 新版本中新增的 2 个钩子之一，据说很少用。</p>
+<ol>
+<li><p>首先，该函数会在调用 render 方法之前调用，并且在初始挂载及后续更新时都会被调用；</p>
+</li>
+<li><p>该函数必须是静态的；</p>
+</li>
+<li><p>给组件传递的数据（props）以及组件状态（state），会作为参数到这个函数中；</p>
+</li>
+<li><p>该函数也必须有返回值，返回一个 Null 或者 state 对象。因为初始化和后续更新都会执行这个方法，因此在这个方法返回 state 对象，就相当于将原来的 state 进行了覆盖，所以倒是修改状态不起作用。</p>
+</li>
+</ol>
+<blockquote>
+<p>注意：<code>state</code> 的值在任何时候都取决于传入的 <code>props</code> ，不会再改变</p>
+</blockquote>
+<p>如下</p>
+<pre><code class="js">static getDerivedStateFromProps(props, state) &#123;
+    return null
+&#125;
+ReactDOM.render(&lt;Count count=&quot;109&quot;/&gt;,document.querySelector(&#39;.test&#39;))
+</code></pre>
+<p><code>count</code> 的值不会改变，一直是 109</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/b331d0e4b398">React 的生命周期 - 简书</a></p>
+<p>老版本中的 componentWillReceiveProps()方法判断前后两个 props 是否相同，如果不同再将新的 props 更新到相应的 state 上去。这样做一来会破坏 state 数据的单一数据源，导致组件状态变得不可预测，另一方面也会增加组件的重绘次数。</p>
+<p>这两者最大的不同就是:<br>在 componentWillReceiveProps 中，我们一般会做以下两件事，一是根据 props 来更新 state，二是触发一些回调，如动画或页面跳转等。</p>
+<ol>
+<li>在老版本的 React 中，这两件事我们都需要在 componentWillReceiveProps 中去做。</li>
+<li>而在新版本中，官方将更新 state 与触发回调重新分配到了 getDerivedStateFromProps 与 componentDidUpdate 中，使得组件整体的更新逻辑更为清晰。而且在 getDerivedStateFromProps 中还禁止了组件去访问 this.props，强制让开发者去比较 nextProps 与 prevState 中的值，以确保当开发者用到 getDerivedStateFromProps 这个生命周期函数时，就是在根据当前的 props 来更新组件的 state，而不是去做其他一些让组件自身状态变得更加不可预测的事情。</li>
+</ol>
+</blockquote>
+<h3 id="2-4-render"><a href="#2-4-render" class="headerlink" title="2.4 render"></a>2.4 render</h3><p><strong>class 组件中唯一必须实现的方法。</strong></p>
+<blockquote>
+<p>render 函数会插入 jsx 生成的 dom 结构，react 会生成一份虚拟 dom 树，在每一次组件更新时，在此 react 会通过其 diff 算法比较更新前后的新旧 DOM 树，比较以后，找到最小的有差异的 DOM 节点，并重新渲染。</p>
+</blockquote>
+<blockquote>
+<p>注意：避免在 <code>render</code> 中使用 <code>setState</code> ，否则会死循环</p>
+</blockquote>
+<p>当 render 被调用时，他会检查 this.props.和 this.state 的变化并返回以下类型之一：</p>
+<ol>
+<li>通过 jsx 创建的 react 元素</li>
+<li>数组或者 fragments：使得 render 可以返回多个元素</li>
+<li>Portals:可以渲染子节点到不同的 dom 树上</li>
+<li>字符串或数值类型：他们在 dom 中会被渲染为文本节点</li>
+<li>布尔类型或者 null：什么都不渲染</li>
+</ol>
+<h3 id="2-5-componentDidMount"><a href="#2-5-componentDidMount" class="headerlink" title="2.5 componentDidMount"></a>2.5 componentDidMount</h3><p><strong>在组件挂在后（插入到 dom 树中）后立即调用</strong></p>
+<p><code>componentDidMount</code> 的执行意味着初始化挂载操作已经基本完成，它主要用于组件挂载完成后做某些操作</p>
+<p>这个挂载完成指的是：组件插入 DOM tree</p>
+<p>​ 可以在这里调用 Ajax 请求，返回的数据可以通过 setState 使组件重新渲染，或者添加订阅，但是要在 conponentWillUnmount 中取消订阅</p>
+<h3 id="2-6-初始化阶段总结"><a href="#2-6-初始化阶段总结" class="headerlink" title="2.6 初始化阶段总结"></a>2.6 初始化阶段总结</h3><p>执行顺序 <code>constructor</code> -&gt; <code>getDerivedStateFromProps</code> 或者 <code>componentWillMount</code> -&gt; <code>render</code> -&gt; <code>componentDidMount</code></p>
+<p><img src="https://i0.hdslb.com/bfs/album/ea2d0052b360a8aed3ea84796b601d118ce5be13.png" alt="image-20221023223048451"></p>
+<h2 id="3-更新阶段"><a href="#3-更新阶段" class="headerlink" title="3.更新阶段"></a>3.更新阶段</h2><p><strong>当组件的 props 或 state 发生变化时会触发更新。</strong></p>
+<p><strong>旧生命周期：</strong></p>
+<ol>
+<li><p>componentWillReceiveProps (nextProps)——————可以用但是不建议使用</p>
+</li>
+<li><p>shouldComponentUpdate（nextProps,nextState）</p>
+</li>
+<li><p>componetnWillUpdate（nextProps,nextState）—————-可以用但是不建议使用</p>
+</li>
+<li><p>render（）</p>
+</li>
+<li><p>componentDidUpdate（prevProps,precState,snapshot）</p>
+</li>
+</ol>
+<p><strong>新生命周期：</strong></p>
+<ol>
+<li>static getDerivedStateFromProps（nextProps, prevState）</li>
+<li>shouldComponentUpdate（nextProps,nextState）</li>
+<li>render（）</li>
+<li>getSnapshotBeforeUpdate（prevProps,prevState）</li>
+<li>componentDidUpdate（prevProps,precState,snapshot）</li>
+</ol>
+<h3 id="3-1-componentWillReceiveProps-即将废弃"><a href="#3-1-componentWillReceiveProps-即将废弃" class="headerlink" title="3.1 componentWillReceiveProps (即将废弃)"></a>3.1 componentWillReceiveProps (即将废弃)</h3><p><strong>在已挂载的组件接收新的 props 之前调用。</strong></p>
+<p>通过对比 nextProps 和 this.props，将 nextProps 的 state 为当前组件的 state，从而重新渲染组件，可以在此方法中使用 this.setState 改变 state。</p>
+<pre><code class="js">componentWillReceiveProps (nextProps) &#123;
+    nextProps.openNotice !== this.props.openNotice&amp;&amp;this.setState(&#123;
+        openNotice:nextProps.openNotice
+    &#125;，() =&gt; &#123;
+      console.log(this.state.openNotice:nextProps)
+      //将state更新为nextProps,在setState的第二个参数（回调）可以打         印出新的state
+    &#125;)
+&#125;
+</code></pre>
+<blockquote>
+<p>请注意，如果父组件导致组件重新渲染，即使 props 没有更改，也会调用此方法。如果只想处理更改，请确保进行当前值与变更值的比较。</p>
+<p>React 不会针对初始 props 调用 UNSAFE_componentWillReceiveProps()。组件只会在组件的 props 更新时调用此方法。调用 this.setState() 通常不会触发该生命周期。</p>
+</blockquote>
+<h3 id="3-2-shouldComponentUpdate"><a href="#3-2-shouldComponentUpdate" class="headerlink" title="3.2 shouldComponentUpdate"></a>3.2 shouldComponentUpdate</h3><p>在渲染之前被调用，默认返回为 true。</p>
+<p>​ 返回值是判断组件的输出是否受当前 state 或 props 更改的影响，默认每次 state 发生变化都重新渲染，首次渲染或使用 forceUpdate(使用<code>this.forceUpdate()</code>)时不被调用。</p>
+<blockquote>
+<p>他主要用于性能优化，会对 props 和 state 进行浅层比较，并减少了跳过必要更新的可能性。不建议深层比较，会影响性能。如果返回 false，则不会调用 componentWillUpdate、render 和 componentDidUpdate</p>
+</blockquote>
+<ul>
+<li>唯一用于控制组件重新渲染的生命周期，由于在 react 中，setState 以后，state 发生变化，组件会进入重新渲染的流程，在这里 return false 可以阻止组件的更新，但是不建议，建议使用 PureComponent</li>
+<li>因为 react 父组件的重新渲染会导致其所有子组件的重新渲染，这个时候其实我们是不需要所有子组件都跟着重新渲染的，因此需要在子组件的该生命周期中做判断</li>
+</ul>
+<h3 id="3-3-componentWillUpdate-即将废弃"><a href="#3-3-componentWillUpdate-即将废弃" class="headerlink" title="3.3 componentWillUpdate (即将废弃)"></a>3.3 componentWillUpdate (即将废弃)</h3><p><strong>当组件接收到新的 props 和 state 会在渲染前调用，初始渲染不会调用该方法。</strong></p>
+<p>​ shouldComponentUpdate 返回 true 以后，组件进入重新渲染的流程，进入 componentWillUpdate，不能在这使用 setState，在函数返回之前不能执行任何其他更新组件的操作</p>
+<blockquote>
+<p>此方法可以替换为 <code>componentDidUpdate()</code>。如果你在此方法中读取 DOM 信息（例如，为了保存滚动位置），则可以将此逻辑移至 <code>getSnapshotBeforeUpdate()</code> 中。</p>
+</blockquote>
+<h3 id="3-4-getSnapshotBeforeUpdate（新钩子）"><a href="#3-4-getSnapshotBeforeUpdate（新钩子）" class="headerlink" title="3.4 getSnapshotBeforeUpdate（新钩子）"></a>3.4 getSnapshotBeforeUpdate（新钩子）</h3><p><strong>在最近一次的渲染输出之前被提交之前调用，也就是即将挂载时调用，替换 componetnWillUpdate。</strong></p>
+<p>相当于淘宝购物的快照，会保留下单前的商品内容，在 React 中就相当于是 即将更新前的状态</p>
+<p>它可以使组件在 DOM 真正更新之前捕获一些信息（例如滚动位置），此生命周期返回的任何值都会作为参数传递给 <code>componentDidUpdate()</code>。如不需要传递任何值，那么请返回 null</p>
+<blockquote>
+<p>和 componentWillUpdate 的区别</p>
+<ul>
+<li>在 React 开启异步渲染模式后，在 render 阶段读取到的 DOM 元素状态并不总是和 commit 阶段相同，这就导致在 componentDidUpdate 中使用 componentWillUpdate 中读取到的 DOM 元素状态是不安全的，因为这时的值很有可能已经失效了。</li>
+<li>getSnapshotBeforeUpdate 会在最终的 render 之前被调用，也就是说 getSnapshotBeforeUpdate 中读取到的 DOM 元素状态是可以保证与 componentDidUpdate 中一致的。</li>
+</ul>
+</blockquote>
+<h3 id="3-5-componentDidUpdate"><a href="#3-5-componentDidUpdate" class="headerlink" title="3.5 componentDidUpdate"></a>3.5 componentDidUpdate</h3><p><strong>组件在更新完毕后会立即被调用，首次渲染不会调用</strong></p>
+<p>可以在该方法调用 setState，但是要包含在条件语句中，否则一直更新会造成死循环。</p>
+<p>当组件更新后，可以在此处对 DOM 进行操作。如果对更新前后的 props 进行了比较，可以进行网络请求。（当 props 未发生变化时，则不会执行网络请求）。</p>
+<pre><code class="javascript">componentDidUpdate(prevProps,prevState,snapshotValue) &#123;
+  // 典型用法（不要忘记比较 props）：
+  if (this.props.userID !== prevProps.userID) &#123;
+    this.fetchData(this.props.userID);
+  &#125;
+&#125;
+</code></pre>
+<blockquote>
+<p>如果组件实现了 <code>getSnapshotBeforeUpdate()</code> 生命周期（不常用），则它的返回值将作为 <code>componentDidUpdate()</code> 的第三个参数 “snapshotValue” 参数传递。否则此参数将为 undefined。如果返回 false 就不会调用这个函数。</p>
+</blockquote>
+<h3 id="3-6-getSnapshotBeforeUpdate-使用场景"><a href="#3-6-getSnapshotBeforeUpdate-使用场景" class="headerlink" title="3.6 getSnapshotBeforeUpdate 使用场景"></a>3.6 getSnapshotBeforeUpdate 使用场景</h3><p>在一个区域内，定时的输出以行话，如果内容大小超过了区域大小，就出现滚动条，但是内容不进行移动</p>
+<p><img src="https://i0.hdslb.com/bfs/album/0ce6f820adb5b75e44b1df2332caa58bb8eaa257.gif" alt="BeforeGender"></p>
+<p>如上面的动图：区域内部的内容展现没有变化，但是可以看见滚动条在变化，也就是说上面依旧有内容在输出，只不过不在这个区域内部展现。</p>
+<p>1.首先我们先实现定时输出内容</p>
+<p>我们可以使用 state 状态，改变新闻后面的值，但是为了同时显示这些内容，我们应该为 state 的属性定义一个数组。并在创建组件之后开启一个定时器，不断的进行更新 state。更新渲染组件</p>
+<pre><code class="js">class New extends React.Component &#123;
+    state = &#123; num: [] &#125;;
+
+    //在组件创建之后,开启一个定时任务
+    componentDidMount() &#123;
+        setInterval(() =&gt; &#123;
+            let &#123; num &#125; = this.state;
+            const news = num.length + 1;
+            this.setState(&#123; num: [news, ...num] &#125;);
+        &#125;, 2000);
+    &#125;
+
+    render() &#123;
+        return (
+            &lt;div ref=&quot;list&quot; className=&quot;list&quot;&gt;
+                &#123;this.state.num.map((n, index) =&gt; &#123;
+                    return (
+                        &lt;div className=&quot;news&quot; key=&#123;index&#125;&gt;
+                            新闻&#123;n&#125;
+                        &lt;/div&gt;
+                    );
+                &#125;)&#125;
+            &lt;/div&gt;
+        );
+    &#125;
+&#125;
+ReactDOM.render(&lt;New /&gt;, document.getElementById(&quot;div&quot;));
+</code></pre>
+<p>2.接下来就是控制滚动条了</p>
+<p>我们在组件渲染到 DOM 之前获取组件的高度，然后用组件渲染之后的高度减去之前的高度就是一条新的内容的高度，这样在不断的累加到滚动条位置上。</p>
+<pre><code class="js">getSnapshotBeforeUpdate()&#123;
+    return this.refs.list.scrollHeight;
+&#125;
+
+componentDidUpdate(preProps,preState,height)&#123;
+    this.refs.list.scrollTop += (this.refs.list.scrollHeight - height);
+&#125;
+</code></pre>
+<p>这样就实现了这个功能。</p>
+<h2 id="4-卸载组件"><a href="#4-卸载组件" class="headerlink" title="4.卸载组件"></a>4.卸载组件</h2><p><strong>当组件从 DOM 中移除时会调用如下方法</strong></p>
+<h3 id="4-1-componentWillUnmount"><a href="#4-1-componentWillUnmount" class="headerlink" title="4.1 componentWillUnmount"></a>4.1 componentWillUnmount</h3><p><strong>在组件卸载和销毁之前调用</strong></p>
+<blockquote>
+<p>使用这样的方式去卸载<code>ReactDOM.unmountComponentAtNode(document.getElementById(&#39;test&#39;))</code></p>
+</blockquote>
+<p>​ 在这执行必要的清理操作，例如，清除 timer（setTimeout,setInterval），取消网络请求，或者取消在 componentDidMount 的订阅，移除所有监听</p>
+<p>有时候我们会碰到这个 warning:</p>
+<pre><code class="js">Can only update a mounted or mounting component. This usually means you called setState() on an unmounted component. This is a   no-op. Please check the code for the undefined component.
+</code></pre>
+<p>原因：因为你在组件中的 ajax 请求返回 setState,而你组件销毁的时候，请求还未完成，因此会报 warning</p>
+<p>解决方法：</p>
+<pre><code class="javascript">componentDidMount() &#123;
+    this.isMount === true
+    axios.post().then((res) =&gt; &#123;
+    this.isMount &amp;&amp; this.setState(&#123;   // 增加条件ismount为true时
+      aaa:res
+    &#125;)
+&#125;)
+&#125;
+componentWillUnmount() &#123;
+    this.isMount === false
+&#125;
+</code></pre>
+<p><code>componentWillUnmount()</code> 中不应调用 <code>setState()</code>，因为该组件将永远不会重新渲染。组件实例卸载后，将永远不会再挂载它。</p>
+
+            
+        </div>
+        <footer class="article-footer">
+            <a data-url="http://example.com/2023/09/24/04.react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" data-id="clmyv1k0p00010gg0bck72zo5" data-title="React-生命周期"
+               class="article-share-link">Share</a>
+            
+            
+            
+            
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/" rel="tag">React</a></li></ul>
+
+
+        </footer>
+    </div>
+    
+        
+    <nav id="article-nav" class="wow fadeInUp">
+        
+            <div class="article-nav-link-wrap article-nav-link-left">
+                
+                    
+                    
+                        <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-入门"
+                             class="lazyload">
+                    
+                
+                <a href="/2023/09/24/01.react%E5%85%A5%E9%97%A8/"></a>
+                <div class="article-nav-caption">Newer</div>
+                <h3 class="article-nav-title">
+                    
+                        React-入门
+                    
+                </h3>
+            </div>
+        
+        
+            <div class="article-nav-link-wrap article-nav-link-right">
+                
+                    
+                    
+                        <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-事件处理"
+                             class="lazyload">
+                    
+                
+                <a href="/2023/09/24/03.react%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/"></a>
+                <div class="article-nav-caption">Older</div>
+                <h3 class="article-nav-title">
+                    
+                        React-事件处理
+                    
+                </h3>
+            </div>
+        
+    </nav>
+
+
+    
+</article>
+
+
+
+
+
+
+
+
+
+
+
+</section>
+                
+                    <aside id="sidebar">
+    <div class="sidebar-wrap wow fadeInRight">
+        <div class="sidebar-author">
+            <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="lineo" class="lazyload">
+            <div class="sidebar-author-name">lineo</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-state">
+            <div class="sidebar-state-article">
+                <div>Posts</div>
+                <div class="sidebar-state-number">4</div>
+            </div>
+            <div class="sidebar-state-category">
+                <div>Categories</div>
+                <div class="sidebar-state-number">0</div>
+            </div>
+            <div class="sidebar-state-tag">
+                <div>Tags</div>
+                <div class="sidebar-state-number">1</div>
+            </div>
+        </div>
+        <div class="sidebar-social">
+            
+                <div class=icon-github>
+                    <a href=https://github.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+                <div class=icon-google>
+                    <a href=https://plus.google.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+                <div class=icon-twitter>
+                    <a href=https://twitter.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+                <div class=icon-facebook>
+                    <a href=https://www.facebook.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+        </div>
+        <div class="sidebar-menu">
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">Home</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/archives"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">Archives</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/about"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">About</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/friend"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">Friend</div>
+                </div>
+            
+        </div>
+    </div>
+    
+        
+
+    
+        
+    <div class="widget-wrap wow fadeInRight">
+        <h3 class="widget-title">Tag Cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/React/" style="font-size: 10px;">React</a>
+        </div>
+    </div>
+
+
+    
+        
+    <div class="widget-wrap wow fadeInRight">
+        <h3 class="widget-title">Archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
+        </div>
+    </div>
+
+
+    
+</aside>
+
+                
+            </div>
+            <footer id="footer" class="wow fadeInUp">
+    <div style="width: 100%; overflow: hidden"><div class="footer-line"></div></div>
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            
+            <div>
+                <span class="icon-copyright"></span>
+                2020-2023
+                <span class="footer-info-sep"></span>
+                lineo
+            </div>
+            
+                <div>
+                    Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;
+                    Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" target="_blank">Reimu</a>
+                </div>
+            
+            
+                <div>
+                    <span class="icon-brush"></span>
+                    18.5k
+                    &nbsp;|&nbsp;
+                    <span class="icon-coffee"></span>
+                    01:15
+                </div>
+            
+            
+                <div>
+                    <span class="icon-eye"></span>
+                    <span id="busuanzi_container_site_pv">Number of visits&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                    &nbsp;|&nbsp;
+                    <span class="icon-user"></span>
+                    <span id="busuanzi_container_site_uv">Number of visitors&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+                </div>
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <nav id="mobile-nav">
+    <div class="sidebar-wrap">
+        <div class="sidebar-author">
+            <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="lineo" class="lazyload">
+            <div class="sidebar-author-name">lineo</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-state">
+            <div class="sidebar-state-article">
+                <div>Posts</div>
+                <div class="sidebar-state-number">4</div>
+            </div>
+            <div class="sidebar-state-category">
+                <div>Categories</div>
+                <div class="sidebar-state-number">0</div>
+            </div>
+            <div class="sidebar-state-tag">
+                <div>Tags</div>
+                <div class="sidebar-state-number">1</div>
+            </div>
+        </div>
+        <div class="sidebar-social">
+            
+                <div class=icon-github>
+                    <a href=https://github.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+                <div class=icon-google>
+                    <a href=https://plus.google.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+                <div class=icon-twitter>
+                    <a href=https://twitter.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+                <div class=icon-facebook>
+                    <a href=https://www.facebook.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+        </div>
+        <div class="sidebar-menu">
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">Home</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/archives"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">Archives</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/about"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">About</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/friend"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">Friend</div>
+                </div>
+            
+        </div>
+    </div>
+</nav>
+
+        
+<script src="https://unpkg.com/jquery@3.7.0/dist/jquery.min.js"></script>
+
+
+<script src="https://unpkg.com/lazysizes@5.3.2/lazysizes.min.js"></script>
+
+
+<script src="https://unpkg.com/clipboard@2.0.11/dist/clipboard.min.js"></script>
+
+
+
+    
+<script src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+    
+<script src="https://unpkg.com/busuanzi@2.3.0/bsz.pure.mini.js"></script>
+
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="site-search">
+        <div class="algolia-popup popup">
+            <div class="algolia-search">
+                <span class="algolia-search-input-icon"></span>
+                <div class="algolia-search-input" id="algolia-search-input"></div>
+            </div>
+
+            <div class="algolia-results">
+                <div id="algolia-stats"></div>
+                <div id="algolia-hits"></div>
+                <div id="algolia-pagination" class="algolia-pagination"></div>
+            </div>
+
+            <span class="popup-btn-close"></span>
+        </div>
+    </div>
+    <!-- hexo injector body_end start -->
+<script src="/js/insertHighlight.js"></script>
+<!-- hexo injector body_end end --></body>
+    </html>
+

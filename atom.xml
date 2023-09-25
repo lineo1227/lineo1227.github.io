@@ -3,46 +3,13 @@
     <id>http://example.com</id>
     <title>背着梦的幸存者</title>
     <link href="http://example.com" />
-    <updated>2023-09-24T12:25:31.839Z</updated>
+    <updated>2023-09-24T10:57:52.000Z</updated>
     <category term="React" />
     <entry>
-        <id>http://example.com/2023/09/24/hello-world/</id>
-        <title>Hello World</title>
-        <link rel="alternate" href="http://example.com/2023/09/24/hello-world/"/>
-        <content type="html">&lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;Quick-Start&#34;&gt;Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;Create-a-new-post&#34;&gt;Create a new post&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Run-server&#34;&gt;Run server&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Generate-static-files&#34;&gt;Generate static files&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;Deploy to remote sites&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
-</content>
-        <updated>2023-09-24T12:25:31.839Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2023/09/24/lineo1227/</id>
-        <title>React基础知识以及 jsx 语法</title>
-        <link rel="alternate" href="http://example.com/2023/09/24/lineo1227/"/>
-        <content type="html">&lt;h1&gt;React 从入门到入土（一）-- 基础知识以及 jsx 语法&lt;/h1&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://ljcimg.oss-cn-beijing.aliyuncs.com/img/%E5%9F%BA%E7%A1%801.png&#34; alt=&#34;第一篇&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;📢 大家好 😪 ，我是 lineo，最近在学习 React，这是关于 React 的第一篇文章，内容如有错误，欢迎大家指正&lt;/p&gt;
-&lt;p&gt;📢 &lt;font color=&#34;#e84393&#34;&gt;愿你生活明朗，万物可爱&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;先附上&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yZWFjdC5kZXYv&#34;&gt;React 官网&lt;/span&gt; ，有很多问题都要通过查询官方文档来解决，要学会查文档~&lt;/p&gt;
-&lt;h2 id=&#34;一、React-简介&#34;&gt;一、React 简介&lt;/h2&gt;
-&lt;h3 id=&#34;1-关于-React&#34;&gt;1. 关于 React&lt;/h3&gt;
-&lt;p&gt;整几个面试题来认识一下~~&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;什么是 React ？&lt;/p&gt;
-&lt;/blockquote&gt;
+        <id>http://example.com/2023/09/24/01.react%E5%85%A5%E9%97%A8/</id>
+        <title>React-入门</title>
+        <link rel="alternate" href="http://example.com/2023/09/24/01.react%E5%85%A5%E9%97%A8/"/>
+        <content type="html">&lt;h1 id=&#34;01-【React-入门】&#34;&gt;&lt;a href=&#34;#01-【React-入门】&#34; class=&#34;headerlink&#34; title=&#34;01 【React 入门】&#34;&gt;&lt;/a&gt;01 【React 入门】&lt;/h1&gt;&lt;h2 id=&#34;1-React-简介&#34;&gt;&lt;a href=&#34;#1-React-简介&#34; class=&#34;headerlink&#34; title=&#34;1.React 简介&#34;&gt;&lt;/a&gt;1.React 简介&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;react 是什么？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;React&lt;/strong&gt; 是一个用于构建用户界面的 JavaScript 库。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;是一个将数据渲染为 HTML 视图的开源 JS 库&lt;/li&gt;
@@ -68,63 +35,1809 @@
 &lt;li&gt;由于使用 JSX，代码的可读性更好&lt;/li&gt;
 &lt;li&gt;使用 React，编写 UI 测试用例变得非常容易&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;2-Hello-React&#34;&gt;2. Hello React&lt;/h3&gt;
-&lt;p&gt;首先需要引入几个 react 包，我直接用的是老师下载好的&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为什么学？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1.原生 JS 操作 DOM 繁琐，效率低&lt;/p&gt;
+&lt;p&gt;2.使用 JS 直接操作 DOM,浏览器会进行大量的重绘重排&lt;/p&gt;
+&lt;p&gt;3.原生 JS 没有组件化编码方案，代码复用低&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在学习之前最好看一下关于 npm 的知识：下面是我在网上看见的一个写的还不错的 npm 的文章&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/qq_25502269/article/details/79346545&#34;&gt;npm&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;2-React-基础案例&#34;&gt;&lt;a href=&#34;#2-React-基础案例&#34; class=&#34;headerlink&#34; title=&#34;2.React 基础案例&#34;&gt;&lt;/a&gt;2.React 基础案例&lt;/h2&gt;&lt;p&gt;首先需要引入几个 react 包&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;React 核心库、操作 DOM 的 react 扩展库、将 jsx 转为 js 的 babel 库&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://ljcimg.oss-cn-beijing.aliyuncs.com/img/react1.png&#34; alt=&#34;react1&#34;&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight jsx&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;variable constant_&#34;&gt;VDOM&lt;/span&gt; = &lt;span class=&#34;language-xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;Hello,React&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;title class_&#34;&gt;ReactDOM&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;render&lt;/span&gt;(&lt;span class=&#34;variable constant_&#34;&gt;VDOM&lt;/span&gt;, &lt;span class=&#34;variable language_&#34;&gt;document&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;querySelector&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;.test&amp;quot;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;3-虚拟-DOM-和真实-DOM-的两种创建方法&#34;&gt;3. 虚拟 DOM 和真实 DOM 的两种创建方法&lt;/h3&gt;
-&lt;h4 id=&#34;3-1-JS-创建虚拟-DOM&#34;&gt;3.1 JS 创建虚拟 DOM&lt;/h4&gt;
-&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//1.创建虚拟DOM,创建嵌套格式的dom&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;variable constant_&#34;&gt;VDOM&lt;/span&gt; = &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;createElement&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;h1&amp;quot;&lt;/span&gt;, &amp;#123; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;title&amp;quot;&lt;/span&gt; &amp;#125;, &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;createElement&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;span&amp;quot;&lt;/span&gt;, &amp;#123;&amp;#125;, &lt;span class=&#34;string&#34;&gt;&amp;quot;hello,React&amp;quot;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//2.渲染虚拟DOM到页面&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;title class_&#34;&gt;ReactDOM&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;render&lt;/span&gt;(&lt;span class=&#34;variable constant_&#34;&gt;VDOM&lt;/span&gt;, &lt;span class=&#34;variable language_&#34;&gt;document&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;querySelector&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;.test&amp;quot;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;3-2-Jsx-创建虚拟-DOM&#34;&gt;3.2 Jsx 创建虚拟 DOM&lt;/h4&gt;
-&lt;figure class=&#34;highlight jsx&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//1.创建虚拟DOM&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;variable constant_&#34;&gt;VDOM&lt;/span&gt; = (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/* 此处一定不要写引号，因为不是字符串 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;language-xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Hello,React&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//2.渲染虚拟DOM到页面&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;title class_&#34;&gt;ReactDOM&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;render&lt;/span&gt;(&lt;span class=&#34;variable constant_&#34;&gt;VDOM&lt;/span&gt;, &lt;span class=&#34;variable language_&#34;&gt;document&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;querySelector&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;.test&amp;quot;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;【先引入 react.development.js，后引入 react-dom.development.js】&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;js 的写法并不是常用的，常用 jsx 来写，毕竟 JSX 更符合书写的习惯&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;react.development.js&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;react 是 react 核心库，只要使用 react 就必须要引入&lt;/li&gt;
+&lt;li&gt;下载地址：&lt;a href=&#34;https://unpkg.com/react@18.0.0/umd/react.development.js&#34;&gt;https://unpkg.com/react@18.0.0/umd/react.development.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;react-dom.development.js&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;react-dom 是 react 的 dom 包，使用 react 开发 web 应用时必须引入&lt;/li&gt;
+&lt;li&gt;下载地址：&lt;a href=&#34;https://unpkg.com/react-dom@18.0.0/umd/react-dom.development.js&#34;&gt;https://unpkg.com/react-dom@18.0.0/umd/react-dom.development.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;babel.min.js &lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;由于 JSX 最终需要转换为 JS 代码执行，所以浏览器并不能正常识别 JSX，所以当我们在浏览器中直接使用 JSX 时，还必须引入 babel 来完成对代码的编译。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;babel 下载地址：&lt;a href=&#34;https://unpkg.com/babel-standalone@6/babel.min.js&#34;&gt;https://unpkg.com/babel-standalone@6/babel.min.js&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;二、jsx-语法&#34;&gt;二、jsx 语法&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.hdslb.com/bfs/album/514c5df0f5f8e7242ca17e1c939b4822b716315f.png&#34; alt=&#34;image-20221022171647360&#34;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;react.development.js
+react-dom.development.js
+babel.min.js
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2.创建一个容器&lt;/p&gt;
+&lt;p&gt;3.创建虚拟 DOM，渲染到容器中&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt;
+    &amp;lt;title&amp;gt;hello_react&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;!-- 准备好一个“容器” --&amp;gt;
+    &amp;lt;div id=&amp;quot;test&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+    &amp;lt;!-- 引入react核心库 --&amp;gt;
+    &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;../js/react.development.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;!-- 引入react-dom，用于支持react操作DOM --&amp;gt;
+    &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;../js/react-dom.development.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;!-- 引入babel，用于将jsx转为js --&amp;gt;
+    &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;../js/babel.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+    &amp;lt;script type=&amp;quot;text/babel&amp;quot;&amp;gt;
+      /* 此处一定要写babel */
+      //1.创建虚拟DOM
+      const VDOM = &amp;lt;h1&amp;gt;Hello&amp;lt;/h1&amp;gt; /* 此处一定不要写引号，因为不是字符串 */
+      //2.渲染虚拟DOM到页面
+    const root = ReactDOM.createRoot(document.querySelector(&amp;#39;#test&amp;#39;));
+      root.render(VDOM);
+    &amp;lt;/script&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;后面很多地方没有用&lt;code&gt;createRoot&lt;/code&gt;这种方式是因为一开始学的课程是 2020 年的，这是现在新的创建方式。&lt;/p&gt;
+&lt;p&gt;这里我就只把第一个案例改成新方式了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这样，就会在页面中的这个 div 容器上添加这个 h1.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.hdslb.com/bfs/album/7c5713f248cc28bcb531d2eda325e56789df4286.png&#34; alt=&#34;image-20221022171539523&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;React.createElement()&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;React.createElement(type, [props], [...children])&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;用来创建 React 元素&lt;/li&gt;
+&lt;li&gt;React 元素无法修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ReactDOM.createRoot()&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;createRoot(container[, options])&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;用来创建 React 的根容器，容器用来放置 React 元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ReactDOM.render()&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;root.render(element)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;用来将 React 元素渲染到根元素中&lt;/li&gt;
+&lt;li&gt;根元素中所有的内容都会被删除，被 React 元素所替换&lt;/li&gt;
+&lt;li&gt;当重复调用 render()时，React 会将两次的渲染结果进行比较，&lt;/li&gt;
+&lt;li&gt;它会确保只修改那些发生变化的元素，对 DOM 做最少的修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;3-jsx-语法&#34;&gt;&lt;a href=&#34;#3-jsx-语法&#34; class=&#34;headerlink&#34; title=&#34;3.jsx 语法&#34;&gt;&lt;/a&gt;3.jsx 语法&lt;/h2&gt;&lt;p&gt;JSX 是 JavaScript 的语法扩展，JSX 使得我们可以以类似于 HTML 的形式去使用 JS。JSX 便是 React 中声明式编程的体现方式。声明式编程，简单理解就是以结果为导向的编程。使用 JSX 将我们所期望的网页结构编写出来，然后 React 再根据 JSX 自动生成 JS 代码。所以我们所编写的 JSX 代码，最终都会转换为以调用&lt;code&gt;React.createElement()&lt;/code&gt;创建元素的代码。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;定义虚拟 DOM，不能使用&lt;code&gt;“”&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;标签中混入 JS 表达式的时候使用&lt;code&gt;&amp;#123;&amp;#125;&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;定义虚拟 DOM，JSX 不是字符串，不要加引号&lt;/li&gt;
+&lt;li&gt;标签中混入 JS 表达式的时候使用&lt;code&gt;&amp;#123;&amp;#125;&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight jsx&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;id = &amp;#123;myId.&lt;span class=&#34;title function_&#34;&gt;toUpperCase&lt;/span&gt;()&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;id = &amp;#123;myId.toUpperCase()&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;样式的类名指定不能使用 class，使用&lt;code&gt;className&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;样式的类名指定不能使用 class，使用&lt;code&gt;className&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;内敛样式要使用&lt;code&gt;&amp;#123;&amp;#123;&amp;#125;&amp;#125;&lt;/code&gt;包裹&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;内敛样式要使用&lt;code&gt;&amp;#123;&amp;#123;&amp;#125;&amp;#125;&lt;/code&gt;包裹&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight jsx&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;style=&amp;#123;&amp;#123;&lt;span class=&#34;attr&#34;&gt;color&lt;/span&gt;:&lt;span class=&#34;string&#34;&gt;&amp;#x27;skyblue&amp;#x27;&lt;/span&gt;,&lt;span class=&#34;attr&#34;&gt;fontSize&lt;/span&gt;:&lt;span class=&#34;string&#34;&gt;&amp;#x27;24px&amp;#x27;&lt;/span&gt;&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;style=&amp;#123;&amp;#123;color:&#39;skyblue&#39;,fontSize:&#39;24px&#39;&amp;#125;&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;不能有多个根标签，只能有一个根标签&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;不能有多个根标签，只能有一个根标签&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;标签必须闭合，自闭合也行&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;JSX 的标签必须正确结束（自结束标签必须写&amp;#x2F;）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果小写字母开头，就将标签转化为 html 同名元素，如果 html 中无该标签对应的元素，就报错；如果是大写字母开头，react 就去渲染对应的组件，如果没有就报错&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;JSX 中 html 标签应该小写，React 组件应该大写开头。如果小写字母开头，就将标签转化为 html 同名元素，如果 html 中无该标签对应的元素，就报错；如果是大写字母开头，react 就去渲染对应的组件，如果没有就报错&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果表达式是空值、布尔值、undefined，将不会显示&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;记几个&lt;/p&gt;
+&lt;p&gt;关于 JS 表达式和 JS 语句：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;JS 表达式：返回一个值，可以放在任何一个需要值的地方 a a+b demo(a) arr.map() function text(){}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;JS 语句：if(){} for(){} while(){} swith(){} 不会返回一个值&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;1-注释&#34;&gt;1. 注释&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;其它&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;注释&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;写在花括号里&lt;/p&gt;
-&lt;figure class=&#34;highlight jsx&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;title class_&#34;&gt;ReactDOM&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;render&lt;/span&gt;(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;language-xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;小丞&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;        &amp;#123;/*注释...*/&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;variable language_&#34;&gt;document&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;getElementById&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;example&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;2-数组&#34;&gt;2. 数组&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;ReactDOM.render(
+    &amp;lt;div&amp;gt;
+        &amp;lt;h1&amp;gt;小丞&amp;lt;/h1&amp;gt;
+        &amp;#123;/*注释...*/&amp;#125;
+    &amp;lt;/div&amp;gt;,
+    document.getElementById(&amp;quot;example&amp;quot;)
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;需要使用&lt;code&gt;className&lt;/code&gt;代替&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;style&lt;/code&gt;中必须使用对象设置&lt;code&gt; style=&amp;#123;&amp;#123;background:&#39;red&#39;&amp;#125;&amp;#125;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;style&amp;gt;
+    .title&amp;#123;
+        background-color: orange;
+        width: 200px;
+    &amp;#125;
+&amp;lt;/style&amp;gt;
+
+&amp;lt;!-- 准备好一个“容器” --&amp;gt;
+&amp;lt;div id=&amp;quot;test&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;script type=&amp;quot;text/babel&amp;quot; &amp;gt;
+    const myId = &amp;#39;aTgUiGu&amp;#39;
+    const myData = &amp;#39;HeLlo,rEaCt&amp;#39;
+
+    //1.创建虚拟DOM
+    const VDOM = (
+        &amp;lt;div&amp;gt;
+            &amp;lt;h2 className=&amp;quot;title&amp;quot; id=&amp;#123;myId.toLowerCase()&amp;#125;&amp;gt;
+                &amp;lt;span style=&amp;#123;&amp;#123;color:&#39;white&#39;,fontSize:&#39;29px&#39;&amp;#125;&amp;#125;&amp;gt;&amp;#123;myData.toLowerCase()&amp;#125;&amp;lt;/span&amp;gt;
+            &amp;lt;/h2&amp;gt;
+            &amp;lt;h2 className=&amp;quot;title&amp;quot; id=&amp;#123;myId.toLowerCase()&amp;#125;&amp;gt;
+                &amp;lt;span style=&amp;#123;&amp;#123;color:&#39;white&#39;,fontSize:&#39;29px&#39;&amp;#125;&amp;#125;&amp;gt;&amp;#123;myData.toUpperCase()&amp;#125;&amp;lt;/span&amp;gt;
+            &amp;lt;/h2&amp;gt;
+            &amp;lt;input type=&amp;quot;text&amp;quot;/&amp;gt;
+        &amp;lt;/div&amp;gt;
+    )
+    //2.渲染虚拟DOM到页面
+    ReactDOM.render(VDOM,document.getElementById(&amp;#39;test&amp;#39;))
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.hdslb.com/bfs/album/9d4bafde75cb82f79b17a91491c46eb8576b784a.png&#34; alt=&#34;image-20221022204158589&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;数组&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;JSX 允许在模板中插入数组，数组自动展开全部成员&lt;/p&gt;
-&lt;figure class=&#34;highlight jsx&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;language-xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;小丞&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&#34;language-xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h2&lt;/span&gt;&amp;gt;&lt;/span&gt;同学&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h2&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;title class_&#34;&gt;ReactDOM&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;render&lt;/span&gt;(&lt;span class=&#34;language-xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&amp;#123;arr&amp;#125;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&#34;variable language_&#34;&gt;document&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;getElementById&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;example&amp;quot;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;tip-JSX-小练习&#34;&gt;tip: JSX 小练习&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;{} 只能用来放 js 表达式，而不能放语句（if for）&lt;br&gt;在语句中是可以去操作 JSX&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;var arr = [&amp;lt;h1&amp;gt;小丞&amp;lt;/h1&amp;gt;, &amp;lt;h2&amp;gt;同学&amp;lt;/h2&amp;gt;];
+ReactDOM.render(&amp;lt;div&amp;gt;&amp;#123;arr&amp;#125;&amp;lt;/div&amp;gt;, document.getElementById(&amp;quot;example&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;tip: JSX 小练习&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;根据动态数据生成 &lt;code&gt;li&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight jsx&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; data = [&lt;span class=&#34;string&#34;&gt;&amp;quot;A&amp;quot;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;quot;B&amp;quot;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;quot;C&amp;quot;&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;variable constant_&#34;&gt;VDOM&lt;/span&gt; = (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;language-xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;            &amp;#123;data.map((item, index) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;                return &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;key&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;#123;index&amp;#125;&lt;/span&gt;&amp;gt;&lt;/span&gt;&amp;#123;item&amp;#125;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;            &amp;#125;)&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;title class_&#34;&gt;ReactDOM&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;render&lt;/span&gt;(&lt;span class=&#34;variable constant_&#34;&gt;VDOM&lt;/span&gt;, &lt;span class=&#34;variable language_&#34;&gt;document&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;querySelector&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;.test&amp;quot;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;const data = [&amp;quot;A&amp;quot;, &amp;quot;B&amp;quot;, &amp;quot;C&amp;quot;];
+const VDOM = (
+    &amp;lt;div&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;#123;data.map((item, index) =&amp;gt; &amp;#123;
+                return &amp;lt;li key=&amp;#123;index&amp;#125;&amp;gt;&amp;#123;item&amp;#125;&amp;lt;/li&amp;gt;;
+            &amp;#125;)&amp;#125;
+        &amp;lt;/ul&amp;gt;
+    &amp;lt;/div&amp;gt;
+);
+ReactDOM.render(VDOM, document.querySelector(&amp;quot;.test&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://i0.hdslb.com/bfs/album/09241923178d7fdca14d087e6f1a9627dc3b7081.png&#34; alt=&#34;image-20221022204645014&#34;&gt;
+
+&lt;h2 id=&#34;4-两种创建虚拟-DOM-的方式&#34;&gt;&lt;a href=&#34;#4-两种创建虚拟-DOM-的方式&#34; class=&#34;headerlink&#34; title=&#34;4.两种创建虚拟 DOM 的方式&#34;&gt;&lt;/a&gt;4.两种创建虚拟 DOM 的方式&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;使用 JSX 创建虚拟 DOM&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;//1.创建虚拟DOM
+const VDOM = (
+    /* 此处一定不要写引号，因为不是字符串 */
+    &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;
+        &amp;lt;span&amp;gt;Hello,React&amp;lt;/span&amp;gt;
+    &amp;lt;/h1&amp;gt;
+);
+//2.渲染虚拟DOM到页面
+ReactDOM.render(VDOM, document.querySelector(&amp;quot;.test&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这个在上面的案例中已经演示过了 ，下面看看另外一种创建虚拟 DOM 的方式&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.使用 JS 创建虚拟 DOM&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;/*
+ * React.createElement()
+ *   - 用来创建一个React元素
+ *   - 参数：
+ *        1.元素的名称（html标签必须小写）
+ *        2.标签中的属性
+ *           - class属性需要使用className来设置
+ *           - 在设置事件时，属性名需要修改为驼峰命名法
+ *       3.元素的内容（子元素）
+ *   - 注意点：
+ *       React元素最终会通过虚拟DOM转换为真实的DOM元素
+ *       React元素一旦创建就无法修改，只能通过新创建的元素进行替换
+ * */
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;//1.创建虚拟DOM,创建嵌套格式的dom
+const VDOM = React.createElement(&amp;quot;h1&amp;quot;, &amp;#123; id: &amp;quot;title&amp;quot; &amp;#125;, React.createElement(&amp;quot;span&amp;quot;, &amp;#123;&amp;#125;, &amp;quot;hello,React&amp;quot;));
+//2.渲染虚拟DOM到页面
+ReactDOM.render(VDOM, document.querySelector(&amp;quot;.test&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;使用 JS 和 JSX 都可以创建虚拟 DOM，但是可以看出 JS 创建虚拟 DOM 比较繁琐，尤其是标签如果很多的情况下，所以还是比较推荐使用 JSX 来创建。&lt;/p&gt;
+&lt;h2 id=&#34;5-两种-DOM-的区别&#34;&gt;&lt;a href=&#34;#5-两种-DOM-的区别&#34; class=&#34;headerlink&#34; title=&#34;5.两种 DOM 的区别&#34;&gt;&lt;/a&gt;5.两种 DOM 的区别&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;    &amp;lt;!-- 准备好一个“容器” --&amp;gt;
+    &amp;lt;div id=&amp;quot;test&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+    &amp;lt;script type=&amp;quot;text/babel&amp;quot;&amp;gt;
+      /* 此处一定要写babel */
+      //1.创建虚拟DOM
+      const VDOM = &amp;lt;h1&amp;gt;Hello,React&amp;lt;/h1&amp;gt; /* 此处一定不要写引号，因为不是字符串 */
+      //2.渲染虚拟DOM到页面
+      ReactDOM.render(VDOM, document.getElementById(&amp;#39;test&amp;#39;))
+      const TDOM = document.querySelector(&amp;#39;#test&amp;#39;)
+      console.log(&amp;#39;虚拟DOM&amp;#39;, VDOM)
+      console.dir(&amp;#39;真实DOM&amp;#39;)
+      console.dir(TDOM)
+      //   debugger
+      console.log(typeof VDOM)
+      console.log(VDOM instanceof Object)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.hdslb.com/bfs/album/3c9c35333c0883a1057bd4c82be8bfbf9b69f04b.png&#34; alt=&#34;image-20221022194600803&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关于虚拟 DOM：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​ 1. 本质是 Object 类型的对象（一般对象）&lt;/p&gt;
+&lt;p&gt;​ 2. 虚拟 DOM 比较“轻”，真实 DOM 比较“重”，因为虚拟 DOM 是 React 内部在用，无需真实 DOM 上那么多的属性。&lt;/p&gt;
+&lt;p&gt;​ 3. 虚拟 DOM 最终会被 React 转化为真实 DOM，呈现在页面上。&lt;/p&gt;
+</content>
+        <category term="React" />
+        <updated>2023-09-24T10:57:52.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/09/24/04.react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</id>
+        <title>React-生命周期</title>
+        <link rel="alternate" href="http://example.com/2023/09/24/04.react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+        <content type="html">&lt;h1 id=&#34;04-【生命周期】&#34;&gt;&lt;a href=&#34;#04-【生命周期】&#34; class=&#34;headerlink&#34; title=&#34;04 【生命周期】&#34;&gt;&lt;/a&gt;04 【生命周期】&lt;/h1&gt;&lt;h2 id=&#34;1-简介&#34;&gt;&lt;a href=&#34;#1-简介&#34; class=&#34;headerlink&#34; title=&#34;1.简介&#34;&gt;&lt;/a&gt;1.简介&lt;/h2&gt;&lt;p&gt;组件从创建到死亡，会经过一些特定的阶段&lt;/p&gt;
+&lt;p&gt;React 组件中包含一系列钩子函数{生命周期回调函数}，会在特定的时刻调用&lt;/p&gt;
+&lt;p&gt;我们在定义组件的时候，会在特定的声明周期回调函数中，做特定的工作&lt;/p&gt;
+&lt;p&gt;在 React 中为我们提供了一些生命周期钩子函数，让我们能在 React 执行的重要阶段，在钩子函数中做一些事情。那么在 React 的生命周期中，有哪些钩子函数呢，我们来总结一下&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;react 生命周期(旧)&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;1. 初始化阶段: 由ReactDOM.render()触发---初次渲染
+                    1.	constructor()
+                    2.	componentWillMount()
+                    3.	render()
+                    4.	componentDidMount() =====&amp;gt; 常用
+                        一般在这个钩子中做一些初始化的事，例如：开启定时器、发送网络请求、订阅消息
+2. 更新阶段: 由组件内部this.setSate()或父组件render触发
+                    1.	shouldComponentUpdate()
+                    2.	componentWillUpdate()
+                    3.	render() =====&amp;gt; 必须使用的一个
+                    4.	componentDidUpdate()
+3. 卸载组件: 由ReactDOM.unmountComponentAtNode()触发
+                    1.	componentWillUnmount()  =====&amp;gt; 常用
+                        一般在这个钩子中做一些收尾的事，例如：关闭定时器、取消订阅消息
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.hdslb.com/bfs/album/eca620dfbbcdc3325be4a1f167f9a4ca2a0dfb7a.png&#34; alt=&#34;react生命周期(旧)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在最新的 react 版本中，有些生命周期钩子被抛弃了，具体函数如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;componentWillMount&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;componentWillReceiveProps&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;componentWillUpdate&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些生命周期方法经常被误解和滥用；此外，我们预计，在异步渲染中，它们潜在的误用问题可能更大。我们将在即将发布的版本中为这些生命周期添加 “UNSAFE_” 前缀。（这里的 “unsafe” 不是指安全性，而是表示使用这些生命周期的代码在 React 的未来版本中更有可能出现 bug，尤其是在启用异步渲染之后。）&lt;/p&gt;
+&lt;p&gt;由此可见，新版本中并不推荐持有这三个函数，取而代之的是带有 UNSAFE* 前缀的三个函数，比如: UNSAFE* componentWillMount。即便如此，其实 React 官方还是不推荐大家去使用，在以后版本中有可能会去除这几个函数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;react 生命周期(新)&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;1. 初始化阶段: 由ReactDOM.render()触发---初次渲染
+                1.	constructor()
+                2.	getDerivedStateFromProps
+                3.	render()
+                4.	componentDidMount() =====&amp;gt; 常用
+                    一般在这个钩子中做一些初始化的事，例如：开启定时器、发送网络请求、订阅消息
+2. 更新阶段: 由组件内部this.setSate()或父组件重新render触发
+                1.	getDerivedStateFromProps
+                2.	shouldComponentUpdate()
+                3.	render()
+                4.	getSnapshotBeforeUpdate
+                5.	componentDidUpdate()
+3. 卸载组件: 由ReactDOM.unmountComponentAtNode()触发
+                1.	componentWillUnmount()  =====&amp;gt; 常用
+                    一般在这个钩子中做一些收尾的事，例如：关闭定时器、取消订阅消息
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.hdslb.com/bfs/album/1ad3acfd13159cfdc364a487dfc4335f7a9a1a06.png&#34; alt=&#34;image-20221023222949399&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-初始化阶段&#34;&gt;&lt;a href=&#34;#2-初始化阶段&#34; class=&#34;headerlink&#34; title=&#34;2.初始化阶段&#34;&gt;&lt;/a&gt;2.初始化阶段&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;在组件实例被创建并插入到 dom 中时，生命周期调用顺序如下&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;旧生命周期：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;constructor（props）&lt;/li&gt;
+&lt;li&gt;componentWillMount（）————-可以用但是不建议使用&lt;/li&gt;
+&lt;li&gt;render（）&lt;/li&gt;
+&lt;li&gt;componentDidMount（）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;新生命周期：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;constructor（props）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;static getDerivedStateFromProps（props，state）&lt;/code&gt;–替代了&lt;code&gt;componentWillReceiveProps&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;render（）&lt;/li&gt;
+&lt;li&gt;componentDidMount（）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-1-constructor&#34;&gt;&lt;a href=&#34;#2-1-constructor&#34; class=&#34;headerlink&#34; title=&#34;2.1 constructor&#34;&gt;&lt;/a&gt;2.1 constructor&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;数据的初始化。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;接收 props 和 context，当想在函数内使用这两个参数需要在 super 传入参数，当使用 constructor 时必须使用 super，否则可能会有 this 的指向问题，如果不初始化 state 或者不进行方法绑定，则可以不为组件实现构造函数；&lt;/p&gt;
+&lt;p&gt;避免将 props 的值复制给 state！这是一个常见的错误：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;constructor(props) &amp;#123;
+ super(props);
+ // 不要这样做
+ this.state = &amp;#123; color: props.color &amp;#125;;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如此做毫无必要（可以直接使用 this.props.color），同时还产生了 bug（更新 prop 中的 color 时，并不会影响 state）。&lt;/p&gt;
+&lt;p&gt;现在我们通常不会使用 &lt;code&gt;constructor&lt;/code&gt; 属性，而是改用类加箭头函数的方法，来替代 &lt;code&gt;constructor&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;例如，我们可以这样初始化 &lt;code&gt;state&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;state = &amp;#123;
+    count: 0,
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;2-2-componentWillMount（即将废弃）&#34;&gt;&lt;a href=&#34;#2-2-componentWillMount（即将废弃）&#34; class=&#34;headerlink&#34; title=&#34;2.2 componentWillMount（即将废弃）&#34;&gt;&lt;/a&gt;2.2 componentWillMount（即将废弃）&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;该方法只在挂载的时候调用一次，表示组件将要被挂载，并且在 &lt;code&gt;render&lt;/code&gt; 方法之前调用。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果存在 &lt;code&gt;getDerivedStateFromProps&lt;/code&gt; 和 &lt;code&gt;getSnapshotBeforeUpdate&lt;/code&gt; 就不会执行生命周期&lt;code&gt;componentWillMount&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​ 在服务端渲染唯一会调用的函数，代表已经初始化数据但是没有渲染 dom，因此在此方法中同步调用 &lt;code&gt;setState()&lt;/code&gt; 不会触发额外渲染。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这个方法在 React 18 版本中将要被废弃，官方解释是在 React 异步机制下，如果滥用这个钩子可能会有 Bug&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-3-static-getDerivedStateFromProps（新钩子）&#34;&gt;&lt;a href=&#34;#2-3-static-getDerivedStateFromProps（新钩子）&#34; class=&#34;headerlink&#34; title=&#34;2.3 static getDerivedStateFromProps（新钩子）&#34;&gt;&lt;/a&gt;2.3 static getDerivedStateFromProps（新钩子）&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;从 props 获取 state。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;替代了&lt;code&gt;componentWillReceiveProps，&lt;/code&gt;此方法适用于&lt;a href=&#34;https://zh-hans.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#when-to-use-derived-state&#34;&gt;罕见的用例&lt;/a&gt;，即 state 的值在任何时候都取决于 props。&lt;/p&gt;
+&lt;p&gt;这个是 React 新版本中新增的 2 个钩子之一，据说很少用。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;首先，该函数会在调用 render 方法之前调用，并且在初始挂载及后续更新时都会被调用；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;该函数必须是静态的；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;给组件传递的数据（props）以及组件状态（state），会作为参数到这个函数中；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;该函数也必须有返回值，返回一个 Null 或者 state 对象。因为初始化和后续更新都会执行这个方法，因此在这个方法返回 state 对象，就相当于将原来的 state 进行了覆盖，所以倒是修改状态不起作用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：&lt;code&gt;state&lt;/code&gt; 的值在任何时候都取决于传入的 &lt;code&gt;props&lt;/code&gt; ，不会再改变&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如下&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;static getDerivedStateFromProps(props, state) &amp;#123;
+    return null
+&amp;#125;
+ReactDOM.render(&amp;lt;Count count=&amp;quot;109&amp;quot;/&amp;gt;,document.querySelector(&amp;#39;.test&amp;#39;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;count&lt;/code&gt; 的值不会改变，一直是 109&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jianshu.com/p/b331d0e4b398&#34;&gt;React 的生命周期 - 简书&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;老版本中的 componentWillReceiveProps()方法判断前后两个 props 是否相同，如果不同再将新的 props 更新到相应的 state 上去。这样做一来会破坏 state 数据的单一数据源，导致组件状态变得不可预测，另一方面也会增加组件的重绘次数。&lt;/p&gt;
+&lt;p&gt;这两者最大的不同就是:&lt;br&gt;在 componentWillReceiveProps 中，我们一般会做以下两件事，一是根据 props 来更新 state，二是触发一些回调，如动画或页面跳转等。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在老版本的 React 中，这两件事我们都需要在 componentWillReceiveProps 中去做。&lt;/li&gt;
+&lt;li&gt;而在新版本中，官方将更新 state 与触发回调重新分配到了 getDerivedStateFromProps 与 componentDidUpdate 中，使得组件整体的更新逻辑更为清晰。而且在 getDerivedStateFromProps 中还禁止了组件去访问 this.props，强制让开发者去比较 nextProps 与 prevState 中的值，以确保当开发者用到 getDerivedStateFromProps 这个生命周期函数时，就是在根据当前的 props 来更新组件的 state，而不是去做其他一些让组件自身状态变得更加不可预测的事情。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;2-4-render&#34;&gt;&lt;a href=&#34;#2-4-render&#34; class=&#34;headerlink&#34; title=&#34;2.4 render&#34;&gt;&lt;/a&gt;2.4 render&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;class 组件中唯一必须实现的方法。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;render 函数会插入 jsx 生成的 dom 结构，react 会生成一份虚拟 dom 树，在每一次组件更新时，在此 react 会通过其 diff 算法比较更新前后的新旧 DOM 树，比较以后，找到最小的有差异的 DOM 节点，并重新渲染。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：避免在 &lt;code&gt;render&lt;/code&gt; 中使用 &lt;code&gt;setState&lt;/code&gt; ，否则会死循环&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;当 render 被调用时，他会检查 this.props.和 this.state 的变化并返回以下类型之一：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;通过 jsx 创建的 react 元素&lt;/li&gt;
+&lt;li&gt;数组或者 fragments：使得 render 可以返回多个元素&lt;/li&gt;
+&lt;li&gt;Portals:可以渲染子节点到不同的 dom 树上&lt;/li&gt;
+&lt;li&gt;字符串或数值类型：他们在 dom 中会被渲染为文本节点&lt;/li&gt;
+&lt;li&gt;布尔类型或者 null：什么都不渲染&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-5-componentDidMount&#34;&gt;&lt;a href=&#34;#2-5-componentDidMount&#34; class=&#34;headerlink&#34; title=&#34;2.5 componentDidMount&#34;&gt;&lt;/a&gt;2.5 componentDidMount&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;在组件挂在后（插入到 dom 树中）后立即调用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;componentDidMount&lt;/code&gt; 的执行意味着初始化挂载操作已经基本完成，它主要用于组件挂载完成后做某些操作&lt;/p&gt;
+&lt;p&gt;这个挂载完成指的是：组件插入 DOM tree&lt;/p&gt;
+&lt;p&gt;​ 可以在这里调用 Ajax 请求，返回的数据可以通过 setState 使组件重新渲染，或者添加订阅，但是要在 conponentWillUnmount 中取消订阅&lt;/p&gt;
+&lt;h3 id=&#34;2-6-初始化阶段总结&#34;&gt;&lt;a href=&#34;#2-6-初始化阶段总结&#34; class=&#34;headerlink&#34; title=&#34;2.6 初始化阶段总结&#34;&gt;&lt;/a&gt;2.6 初始化阶段总结&lt;/h3&gt;&lt;p&gt;执行顺序 &lt;code&gt;constructor&lt;/code&gt; -&amp;gt; &lt;code&gt;getDerivedStateFromProps&lt;/code&gt; 或者 &lt;code&gt;componentWillMount&lt;/code&gt; -&amp;gt; &lt;code&gt;render&lt;/code&gt; -&amp;gt; &lt;code&gt;componentDidMount&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.hdslb.com/bfs/album/ea2d0052b360a8aed3ea84796b601d118ce5be13.png&#34; alt=&#34;image-20221023223048451&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-更新阶段&#34;&gt;&lt;a href=&#34;#3-更新阶段&#34; class=&#34;headerlink&#34; title=&#34;3.更新阶段&#34;&gt;&lt;/a&gt;3.更新阶段&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;当组件的 props 或 state 发生变化时会触发更新。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;旧生命周期：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;componentWillReceiveProps (nextProps)——————可以用但是不建议使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;shouldComponentUpdate（nextProps,nextState）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;componetnWillUpdate（nextProps,nextState）—————-可以用但是不建议使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;render（）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;componentDidUpdate（prevProps,precState,snapshot）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;新生命周期：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;static getDerivedStateFromProps（nextProps, prevState）&lt;/li&gt;
+&lt;li&gt;shouldComponentUpdate（nextProps,nextState）&lt;/li&gt;
+&lt;li&gt;render（）&lt;/li&gt;
+&lt;li&gt;getSnapshotBeforeUpdate（prevProps,prevState）&lt;/li&gt;
+&lt;li&gt;componentDidUpdate（prevProps,precState,snapshot）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3-1-componentWillReceiveProps-即将废弃&#34;&gt;&lt;a href=&#34;#3-1-componentWillReceiveProps-即将废弃&#34; class=&#34;headerlink&#34; title=&#34;3.1 componentWillReceiveProps (即将废弃)&#34;&gt;&lt;/a&gt;3.1 componentWillReceiveProps (即将废弃)&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;在已挂载的组件接收新的 props 之前调用。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通过对比 nextProps 和 this.props，将 nextProps 的 state 为当前组件的 state，从而重新渲染组件，可以在此方法中使用 this.setState 改变 state。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;componentWillReceiveProps (nextProps) &amp;#123;
+    nextProps.openNotice !== this.props.openNotice&amp;amp;&amp;amp;this.setState(&amp;#123;
+        openNotice:nextProps.openNotice
+    &amp;#125;，() =&amp;gt; &amp;#123;
+      console.log(this.state.openNotice:nextProps)
+      //将state更新为nextProps,在setState的第二个参数（回调）可以打         印出新的state
+    &amp;#125;)
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;请注意，如果父组件导致组件重新渲染，即使 props 没有更改，也会调用此方法。如果只想处理更改，请确保进行当前值与变更值的比较。&lt;/p&gt;
+&lt;p&gt;React 不会针对初始 props 调用 UNSAFE_componentWillReceiveProps()。组件只会在组件的 props 更新时调用此方法。调用 this.setState() 通常不会触发该生命周期。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;3-2-shouldComponentUpdate&#34;&gt;&lt;a href=&#34;#3-2-shouldComponentUpdate&#34; class=&#34;headerlink&#34; title=&#34;3.2 shouldComponentUpdate&#34;&gt;&lt;/a&gt;3.2 shouldComponentUpdate&lt;/h3&gt;&lt;p&gt;在渲染之前被调用，默认返回为 true。&lt;/p&gt;
+&lt;p&gt;​ 返回值是判断组件的输出是否受当前 state 或 props 更改的影响，默认每次 state 发生变化都重新渲染，首次渲染或使用 forceUpdate(使用&lt;code&gt;this.forceUpdate()&lt;/code&gt;)时不被调用。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;他主要用于性能优化，会对 props 和 state 进行浅层比较，并减少了跳过必要更新的可能性。不建议深层比较，会影响性能。如果返回 false，则不会调用 componentWillUpdate、render 和 componentDidUpdate&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;唯一用于控制组件重新渲染的生命周期，由于在 react 中，setState 以后，state 发生变化，组件会进入重新渲染的流程，在这里 return false 可以阻止组件的更新，但是不建议，建议使用 PureComponent&lt;/li&gt;
+&lt;li&gt;因为 react 父组件的重新渲染会导致其所有子组件的重新渲染，这个时候其实我们是不需要所有子组件都跟着重新渲染的，因此需要在子组件的该生命周期中做判断&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-3-componentWillUpdate-即将废弃&#34;&gt;&lt;a href=&#34;#3-3-componentWillUpdate-即将废弃&#34; class=&#34;headerlink&#34; title=&#34;3.3 componentWillUpdate (即将废弃)&#34;&gt;&lt;/a&gt;3.3 componentWillUpdate (即将废弃)&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;当组件接收到新的 props 和 state 会在渲染前调用，初始渲染不会调用该方法。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​ shouldComponentUpdate 返回 true 以后，组件进入重新渲染的流程，进入 componentWillUpdate，不能在这使用 setState，在函数返回之前不能执行任何其他更新组件的操作&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;此方法可以替换为 &lt;code&gt;componentDidUpdate()&lt;/code&gt;。如果你在此方法中读取 DOM 信息（例如，为了保存滚动位置），则可以将此逻辑移至 &lt;code&gt;getSnapshotBeforeUpdate()&lt;/code&gt; 中。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;3-4-getSnapshotBeforeUpdate（新钩子）&#34;&gt;&lt;a href=&#34;#3-4-getSnapshotBeforeUpdate（新钩子）&#34; class=&#34;headerlink&#34; title=&#34;3.4 getSnapshotBeforeUpdate（新钩子）&#34;&gt;&lt;/a&gt;3.4 getSnapshotBeforeUpdate（新钩子）&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;在最近一次的渲染输出之前被提交之前调用，也就是即将挂载时调用，替换 componetnWillUpdate。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;相当于淘宝购物的快照，会保留下单前的商品内容，在 React 中就相当于是 即将更新前的状态&lt;/p&gt;
+&lt;p&gt;它可以使组件在 DOM 真正更新之前捕获一些信息（例如滚动位置），此生命周期返回的任何值都会作为参数传递给 &lt;code&gt;componentDidUpdate()&lt;/code&gt;。如不需要传递任何值，那么请返回 null&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;和 componentWillUpdate 的区别&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 React 开启异步渲染模式后，在 render 阶段读取到的 DOM 元素状态并不总是和 commit 阶段相同，这就导致在 componentDidUpdate 中使用 componentWillUpdate 中读取到的 DOM 元素状态是不安全的，因为这时的值很有可能已经失效了。&lt;/li&gt;
+&lt;li&gt;getSnapshotBeforeUpdate 会在最终的 render 之前被调用，也就是说 getSnapshotBeforeUpdate 中读取到的 DOM 元素状态是可以保证与 componentDidUpdate 中一致的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;3-5-componentDidUpdate&#34;&gt;&lt;a href=&#34;#3-5-componentDidUpdate&#34; class=&#34;headerlink&#34; title=&#34;3.5 componentDidUpdate&#34;&gt;&lt;/a&gt;3.5 componentDidUpdate&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;组件在更新完毕后会立即被调用，首次渲染不会调用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;可以在该方法调用 setState，但是要包含在条件语句中，否则一直更新会造成死循环。&lt;/p&gt;
+&lt;p&gt;当组件更新后，可以在此处对 DOM 进行操作。如果对更新前后的 props 进行了比较，可以进行网络请求。（当 props 未发生变化时，则不会执行网络请求）。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;javascript&#34;&gt;componentDidUpdate(prevProps,prevState,snapshotValue) &amp;#123;
+  // 典型用法（不要忘记比较 props）：
+  if (this.props.userID !== prevProps.userID) &amp;#123;
+    this.fetchData(this.props.userID);
+  &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果组件实现了 &lt;code&gt;getSnapshotBeforeUpdate()&lt;/code&gt; 生命周期（不常用），则它的返回值将作为 &lt;code&gt;componentDidUpdate()&lt;/code&gt; 的第三个参数 “snapshotValue” 参数传递。否则此参数将为 undefined。如果返回 false 就不会调用这个函数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;3-6-getSnapshotBeforeUpdate-使用场景&#34;&gt;&lt;a href=&#34;#3-6-getSnapshotBeforeUpdate-使用场景&#34; class=&#34;headerlink&#34; title=&#34;3.6 getSnapshotBeforeUpdate 使用场景&#34;&gt;&lt;/a&gt;3.6 getSnapshotBeforeUpdate 使用场景&lt;/h3&gt;&lt;p&gt;在一个区域内，定时的输出以行话，如果内容大小超过了区域大小，就出现滚动条，但是内容不进行移动&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.hdslb.com/bfs/album/0ce6f820adb5b75e44b1df2332caa58bb8eaa257.gif&#34; alt=&#34;BeforeGender&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如上面的动图：区域内部的内容展现没有变化，但是可以看见滚动条在变化，也就是说上面依旧有内容在输出，只不过不在这个区域内部展现。&lt;/p&gt;
+&lt;p&gt;1.首先我们先实现定时输出内容&lt;/p&gt;
+&lt;p&gt;我们可以使用 state 状态，改变新闻后面的值，但是为了同时显示这些内容，我们应该为 state 的属性定义一个数组。并在创建组件之后开启一个定时器，不断的进行更新 state。更新渲染组件&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class New extends React.Component &amp;#123;
+    state = &amp;#123; num: [] &amp;#125;;
+
+    //在组件创建之后,开启一个定时任务
+    componentDidMount() &amp;#123;
+        setInterval(() =&amp;gt; &amp;#123;
+            let &amp;#123; num &amp;#125; = this.state;
+            const news = num.length + 1;
+            this.setState(&amp;#123; num: [news, ...num] &amp;#125;);
+        &amp;#125;, 2000);
+    &amp;#125;
+
+    render() &amp;#123;
+        return (
+            &amp;lt;div ref=&amp;quot;list&amp;quot; className=&amp;quot;list&amp;quot;&amp;gt;
+                &amp;#123;this.state.num.map((n, index) =&amp;gt; &amp;#123;
+                    return (
+                        &amp;lt;div className=&amp;quot;news&amp;quot; key=&amp;#123;index&amp;#125;&amp;gt;
+                            新闻&amp;#123;n&amp;#125;
+                        &amp;lt;/div&amp;gt;
+                    );
+                &amp;#125;)&amp;#125;
+            &amp;lt;/div&amp;gt;
+        );
+    &amp;#125;
+&amp;#125;
+ReactDOM.render(&amp;lt;New /&amp;gt;, document.getElementById(&amp;quot;div&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2.接下来就是控制滚动条了&lt;/p&gt;
+&lt;p&gt;我们在组件渲染到 DOM 之前获取组件的高度，然后用组件渲染之后的高度减去之前的高度就是一条新的内容的高度，这样在不断的累加到滚动条位置上。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;getSnapshotBeforeUpdate()&amp;#123;
+    return this.refs.list.scrollHeight;
+&amp;#125;
+
+componentDidUpdate(preProps,preState,height)&amp;#123;
+    this.refs.list.scrollTop += (this.refs.list.scrollHeight - height);
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这样就实现了这个功能。&lt;/p&gt;
+&lt;h2 id=&#34;4-卸载组件&#34;&gt;&lt;a href=&#34;#4-卸载组件&#34; class=&#34;headerlink&#34; title=&#34;4.卸载组件&#34;&gt;&lt;/a&gt;4.卸载组件&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;当组件从 DOM 中移除时会调用如下方法&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4-1-componentWillUnmount&#34;&gt;&lt;a href=&#34;#4-1-componentWillUnmount&#34; class=&#34;headerlink&#34; title=&#34;4.1 componentWillUnmount&#34;&gt;&lt;/a&gt;4.1 componentWillUnmount&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;在组件卸载和销毁之前调用&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用这样的方式去卸载&lt;code&gt;ReactDOM.unmountComponentAtNode(document.getElementById(&amp;#39;test&amp;#39;))&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​ 在这执行必要的清理操作，例如，清除 timer（setTimeout,setInterval），取消网络请求，或者取消在 componentDidMount 的订阅，移除所有监听&lt;/p&gt;
+&lt;p&gt;有时候我们会碰到这个 warning:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;Can only update a mounted or mounting component. This usually means you called setState() on an unmounted component. This is a   no-op. Please check the code for the undefined component.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;原因：因为你在组件中的 ajax 请求返回 setState,而你组件销毁的时候，请求还未完成，因此会报 warning&lt;/p&gt;
+&lt;p&gt;解决方法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;javascript&#34;&gt;componentDidMount() &amp;#123;
+    this.isMount === true
+    axios.post().then((res) =&amp;gt; &amp;#123;
+    this.isMount &amp;amp;&amp;amp; this.setState(&amp;#123;   // 增加条件ismount为true时
+      aaa:res
+    &amp;#125;)
+&amp;#125;)
+&amp;#125;
+componentWillUnmount() &amp;#123;
+    this.isMount === false
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;componentWillUnmount()&lt;/code&gt; 中不应调用 &lt;code&gt;setState()&lt;/code&gt;，因为该组件将永远不会重新渲染。组件实例卸载后，将永远不会再挂载它。&lt;/p&gt;
+</content>
+        <category term="React" />
+        <updated>2023-09-24T10:57:52.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/09/24/03.react%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/</id>
+        <title>React-事件处理</title>
+        <link rel="alternate" href="http://example.com/2023/09/24/03.react%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/"/>
+        <content type="html">&lt;h1 id=&#34;03-【事件处理】&#34;&gt;&lt;a href=&#34;#03-【事件处理】&#34; class=&#34;headerlink&#34; title=&#34;03 【事件处理】&#34;&gt;&lt;/a&gt;03 【事件处理】&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;React 的事件是通过 onXxx 属性指定事件处理函数&lt;/p&gt;
+&lt;p&gt;React 使用的是自定义事件，而不是原生的 DOM 事件&lt;/p&gt;
+&lt;p&gt;React 的事件是通过事件委托方式处理的（为了更加的高效）&lt;/p&gt;
+&lt;p&gt;可以通过事件的 &lt;code&gt;event.target&lt;/code&gt;获取发生的 DOM 元素对象，可以尽量减少 &lt;code&gt;refs&lt;/code&gt;的使用&lt;/p&gt;
+&lt;p&gt;事件中必须返回的是函数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;1-React-事件&#34;&gt;&lt;a href=&#34;#1-React-事件&#34; class=&#34;headerlink&#34; title=&#34;1.React 事件&#34;&gt;&lt;/a&gt;1.React 事件&lt;/h2&gt;&lt;p&gt;React 元素的事件处理和 DOM 元素的很相似，但是有一点语法上的不同：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;React 事件的命名采用小驼峰式（camelCase），而不是纯小写。&lt;/li&gt;
+&lt;li&gt;使用 JSX 语法时你需要传入一个函数作为事件处理函数，而不是一个字符串。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如，传统的 HTML：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;button onclick=&amp;quot;activateLasers()&amp;quot;&amp;gt;Activate Lasers&amp;lt;/button&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在 React 中略微不同：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;button onClick=&amp;quot;&amp;#123;activateLasers&amp;#125;&amp;quot;&amp;gt;Activate Lasers&amp;lt;/button&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在 React 中另一个不同点是你不能通过返回 &lt;code&gt;false&lt;/code&gt; 的方式阻止默认行为。你必须显式地使用 &lt;code&gt;preventDefault&lt;/code&gt;。例如，传统的 HTML 中阻止表单的默认提交行为，你可以这样写：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;form onsubmit=&amp;quot;console.log(&amp;#39;You clicked submit.&amp;#39;); return false&amp;quot;&amp;gt;
+    &amp;lt;button type=&amp;quot;submit&amp;quot;&amp;gt;Submit&amp;lt;/button&amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在 React 中，可能是这样的：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function Form() &amp;#123;
+    function handleSubmit(e) &amp;#123;
+        e.preventDefault();
+        console.log(&amp;quot;You clicked submit.&amp;quot;);
+    &amp;#125;
+
+    return (
+        &amp;lt;form onSubmit=&amp;#123;handleSubmit&amp;#125;&amp;gt;
+            &amp;lt;button type=&amp;quot;submit&amp;quot;&amp;gt;Submit&amp;lt;/button&amp;gt;
+        &amp;lt;/form&amp;gt;
+    );
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在这里，&lt;code&gt;e&lt;/code&gt; 是一个合成事件。React 根据 &lt;a href=&#34;https://www.w3.org/TR/DOM-Level-3-Events/&#34;&gt;W3C 规范&lt;/a&gt;来定义这些合成事件，所以你不需要担心跨浏览器的兼容性问题。React 事件与原生事件不完全相同。如果想了解更多，请查看 &lt;a href=&#34;https://zh-hans.reactjs.org/docs/events.html&#34;&gt;&lt;code&gt;SyntheticEvent&lt;/code&gt;&lt;/a&gt; 参考指南。&lt;/p&gt;
+&lt;p&gt;使用 React 时，你一般不需要使用 &lt;code&gt;addEventListener&lt;/code&gt; 为已创建的 DOM 元素添加监听器。事实上，你只需要在该元素初始渲染的时候添加监听器即可。&lt;/p&gt;
+&lt;h2 id=&#34;2-类式组件绑定事件&#34;&gt;&lt;a href=&#34;#2-类式组件绑定事件&#34; class=&#34;headerlink&#34; title=&#34;2.类式组件绑定事件&#34;&gt;&lt;/a&gt;2.类式组件绑定事件&lt;/h2&gt;&lt;p&gt;当你使用 &lt;a href=&#34;https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes&#34;&gt;ES6 class&lt;/a&gt; 语法定义一个组件的时候，通常的做法是将事件处理函数声明为 class 中的方法。例如，下面的 &lt;code&gt;Toggle&lt;/code&gt; 组件会渲染一个让用户切换开关状态的按钮：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class Toggle extends React.Component &amp;#123;
+  constructor(props) &amp;#123;
+    super(props);
+    this.state = &amp;#123;isToggleOn: true&amp;#125;;
+    // 为了在回调中使用 `this`，这个绑定是必不可少的    	this.handleClick = this.handleClick.bind(this);  &amp;#125;
+
+  handleClick() &amp;#123;
+    this.setState(prevState =&amp;gt; (&amp;#123;
+      isToggleOn: !prevState.isToggleOn
+    &amp;#125;));
+  &amp;#125;
+
+  render() &amp;#123;
+    return (
+      &amp;lt;button onClick=&amp;#123;this.handleClick&amp;#125;&amp;gt;
+        &amp;#123;this.state.isToggleOn ? &amp;#39;ON&amp;#39; : &amp;#39;OFF&amp;#39;&amp;#125;
+      &amp;lt;/button&amp;gt;
+    );
+  &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://codepen.io/gaearon/pen/xEmzGg?editors=0010&#34;&gt;&lt;strong&gt;在 CodePen 上尝试&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;你必须谨慎对待 JSX 回调函数中的 &lt;code&gt;this&lt;/code&gt;，在 JavaScript 中，class 的方法默认不会&lt;a href=&#34;https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind&#34;&gt;绑定&lt;/a&gt; &lt;code&gt;this&lt;/code&gt;。如果你忘记绑定 &lt;code&gt;this.handleClick&lt;/code&gt; 并把它传入了 &lt;code&gt;onClick&lt;/code&gt;，当你调用这个函数的时候 &lt;code&gt;this&lt;/code&gt; 的值为 &lt;code&gt;undefined&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;这并不是 React 特有的行为；这其实与 &lt;a href=&#34;https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/&#34;&gt;JavaScript 函数工作原理&lt;/a&gt;有关。通常情况下，如果你没有在方法后面添加 &lt;code&gt;()&lt;/code&gt;，例如 &lt;code&gt;onClick=&amp;#123;this.handleClick&amp;#125;&lt;/code&gt;，你应该为这个方法绑定 &lt;code&gt;this&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;如果觉得使用 &lt;code&gt;bind&lt;/code&gt; 很麻烦，这里有两种方式可以解决。你可以使用 &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields#public_instance_fields&#34;&gt;public class fields 语法&lt;/a&gt; to correctly bind callbacks:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class LoggingButton extends React.Component &amp;#123;
+    // This syntax ensures `this` is bound within handleClick.
+    handleClick = () =&amp;gt; &amp;#123;
+        console.log(&amp;quot;this is:&amp;quot;, this);
+    &amp;#125;;
+    render() &amp;#123;
+        return &amp;lt;button onClick=&amp;#123;this.handleClick&amp;#125;&amp;gt;Click me&amp;lt;/button&amp;gt;;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/facebookincubator/create-react-app&#34;&gt;Create React App&lt;/a&gt; 默认启用此语法。&lt;/p&gt;
+&lt;p&gt;如果你没有使用 class fields 语法，你可以在回调中使用&lt;a href=&#34;https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions&#34;&gt;箭头函数&lt;/a&gt;：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class LoggingButton extends React.Component &amp;#123;
+    handleClick() &amp;#123;
+        console.log(&amp;quot;this is:&amp;quot;, this);
+    &amp;#125;
+
+    render() &amp;#123;
+        // 此语法确保 `handleClick` 内的 `this` 已被绑定。
+        return &amp;lt;button onClick=&amp;#123;() =&amp;gt; this.handleClick()&amp;#125;&amp;gt;Click me&amp;lt;/button&amp;gt;;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;此语法问题在于每次渲染 &lt;code&gt;LoggingButton&lt;/code&gt; 时都会创建不同的回调函数。在大多数情况下，这没什么问题，但如果该回调函数作为 prop 传入子组件时，这些组件可能会进行额外的重新渲染。我们通常建议在构造器中绑定或使用 class fields 语法来避免这类性能问题。&lt;/p&gt;
+&lt;h2 id=&#34;3-向事件处理程序传递参数&#34;&gt;&lt;a href=&#34;#3-向事件处理程序传递参数&#34; class=&#34;headerlink&#34; title=&#34;3.向事件处理程序传递参数&#34;&gt;&lt;/a&gt;3.向事件处理程序传递参数&lt;/h2&gt;&lt;p&gt;在循环中，通常我们会为事件处理函数传递额外的参数。例如，若 &lt;code&gt;id&lt;/code&gt; 是你要删除那一行的 ID，以下两种方式都可以向事件处理函数传递参数：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;button onClick=&amp;#123;(e) =&amp;gt; this.deleteRow(id, e)&amp;#125;&amp;gt;Delete Row&amp;lt;/button&amp;gt;
+&amp;lt;button onClick=&amp;#123;this.deleteRow.bind(this, id)&amp;#125;&amp;gt;Delete Row&amp;lt;/button&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上述两种方式是等价的，分别通过&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions&#34;&gt;箭头函数&lt;/a&gt;和 &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind&#34;&gt;&lt;code&gt;Function.prototype.bind&lt;/code&gt;&lt;/a&gt; 来实现。&lt;/p&gt;
+&lt;p&gt;在这两种情况下，React 的事件对象 &lt;code&gt;e&lt;/code&gt; 会被作为第二个参数传递。如果通过箭头函数的方式，事件对象必须显式的进行传递，而通过 &lt;code&gt;bind&lt;/code&gt; 的方式，事件对象以及更多的参数将会被隐式的进行传递。&lt;/p&gt;
+&lt;h2 id=&#34;4-收集表单数据&#34;&gt;&lt;a href=&#34;#4-收集表单数据&#34; class=&#34;headerlink&#34; title=&#34;4.收集表单数据&#34;&gt;&lt;/a&gt;4.收集表单数据&lt;/h2&gt;&lt;p&gt;首先我们先来创建一个简单的表单组件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;jsx&#34;&gt;import React from &amp;quot;react&amp;quot;;
+
+const MyForm = () =&amp;gt; &amp;#123;
+    return (
+        &amp;lt;form&amp;gt;
+            &amp;lt;div&amp;gt;
+                用户名 &amp;lt;input type=&amp;quot;text&amp;quot; /&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;div&amp;gt;
+                密码 &amp;lt;input type=&amp;quot;password&amp;quot; /&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;div&amp;gt;
+                电子邮件 &amp;lt;input type=&amp;quot;email&amp;quot; /&amp;gt;
+            &amp;lt;/div&amp;gt;
+
+            &amp;lt;div&amp;gt;
+                &amp;lt;button&amp;gt;提交&amp;lt;/button&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/form&amp;gt;
+    );
+&amp;#125;;
+
+export default MyForm;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;首先使用 React 定义表单和之前传统网页中的表单有一些区别，传统网页中 form 需要指定 action 和 method 两个属性，而表单项也必须要指定 name 属性，这些属性都是提交表单所必须的。但是在 React 中定义表单时，这些属性通通都可以不指定，因为 React 中的表单所有的功能都需要通过代码来控制，包括获取表单值和提交表单，所以这些东西都可以在函数中指定并通过 AJAX 发送请求，无需直接在表单中设置。&lt;/p&gt;
+&lt;p&gt;首先我们来研究一下如何获取表单中的用户所填写的内容，要获取用户所填写的内容我们必须要监听表单 onChange 事件，在表单项发生变化时获取其中的内容，在响应函数中通过事件对象的 target.value 来获取用户填写的内容。事件响应函数大概是这个样子：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;jsx&#34;&gt;const nameChangeHandler = (e) =&amp;gt; &amp;#123;
+    //e.target.value 表示当前用户输入的值
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后我们再将该函数设置为 input 元素的 onChange 事件的响应函数：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;jsx&#34;&gt;&amp;lt;div&amp;gt;
+    用户名 &amp;lt;input type=&amp;quot;text&amp;quot; onChange=&amp;#123;nameChangeHandler&amp;#125; /&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这样一来当用户输入内容时，nameChangeHandler 就会被触发，从而通过 e.target.value 来获取用户输入的值。通常我们还会为表单项创建一个 state 用来存储值：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;jsx&#34;&gt;const [inputName, setInputName] = useState(&amp;quot;&amp;quot;);
+const nameChangeHandler = (e) =&amp;gt; &amp;#123;
+    //e.target.value 表示当前用户输入的值
+    setInputName(e.target.value);
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上例中用户名存储到了变量 inputName 中，inputName 也会设置为对应表单项的 value 属性值，这样一来当 inputName 发生变化时，表单项中的内容也会随之改变：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;jsx&#34;&gt;&amp;lt;div&amp;gt;
+    用户名 &amp;lt;input type=&amp;quot;text&amp;quot; onChange=&amp;#123;nameChangeHandler&amp;#125; value=&amp;#123;inputName&amp;#125; /&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如此设置后，当用户输入内容后会触发 onChange 事件从而调用 nameChangeHandler 函数，在函数内部调用了 setInputName 设置了用户输入的用户名。换句话说用户在表单中输入内容会影响到 state 的值，同时当我们修改 state 的值时，由于表单项的 value 属性值指向了 state，表单也会随 state 值一起改变。这种绑定方式我们称为双向绑定，即表单会改变 state，state 也可以改变表单，在开发中使用双向绑定的表单项是最佳实践。&lt;/p&gt;
+&lt;h2 id=&#34;5-受控和非受控组件&#34;&gt;&lt;a href=&#34;#5-受控和非受控组件&#34; class=&#34;headerlink&#34; title=&#34;5.受控和非受控组件&#34;&gt;&lt;/a&gt;5.受控和非受控组件&lt;/h2&gt;&lt;p&gt;先来说说受控组件：&lt;/p&gt;
+&lt;p&gt;使 React 的 state 成为“唯一数据源”。渲染表单的 React 组件还控制着用户输入过程中表单发生的操作。被 React 以这种方式控制取值的表单输入元素就叫做“受控组件”。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;saveName = (event) =&amp;gt;&amp;#123;
+    this.setState(&amp;#123;name:event.target.value&amp;#125;);
+&amp;#125;
+
+savePwd = (event) =&amp;gt; &amp;#123;
+    this.setState(&amp;#123;pwd:event.target.value&amp;#125;);
+&amp;#125;
+
+render() &amp;#123;
+    return (
+        &amp;lt;form action=&amp;quot;http://www.baidu.com&amp;quot; onSubmit=&amp;#123;this.login&amp;#125;&amp;gt;
+            用户名：&amp;lt;input value=&amp;#123;this.state.name&amp;#125; onChange=&amp;#123;this.saveName&amp;#125; type = &amp;quot;text&amp;quot; /&amp;gt;
+            密码&amp;lt;input value=&amp;#123;this.state.pwd&amp;#125; onChange=&amp;#123;this.savePwd&amp;#125; type = &amp;quot;password&amp;quot;/&amp;gt;
+            &amp;lt;button&amp;gt;登录&amp;lt;/button&amp;gt;
+        &amp;lt;/form&amp;gt;
+    )
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;由于在表单元素上设置了 &lt;code&gt;value&lt;/code&gt; 属性，因此显示的值将始终为 &lt;code&gt;this.state.value&lt;/code&gt;，这使得 React 的 state 成为唯一数据源。由于 &lt;code&gt;onchange&lt;/code&gt; 在每次按键时都会执行并更新 React 的 state，因此显示的值将随着用户输入而更新。&lt;/p&gt;
+&lt;p&gt;对于受控组件来说，输入的值始终由 React 的 state 驱动。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;非受控组件：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;非受控组件其实就是表单元素的值不会更新 state。输入数据都是现用现取的。&lt;/p&gt;
+&lt;p&gt;如下：下面并没有使用 state 来控制属性，使用的是事件来控制表单的属性值。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;表单提交同样需要通过事件来处理，提交表单的事件通过 form 标签的 onSubmit 事件来绑定，处理表单的方式因情况而已，但是一定要注意，必须要取消默认行为，否则会触发表单的默认提交行为：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class Login extends React.Component &amp;#123;
+    login = (event) =&amp;gt; &amp;#123;
+        event.preventDefault(); //阻止表单默认事件
+        console.log(this.name.value);
+        console.log(this.pwd.value);
+    &amp;#125;;
+    render() &amp;#123;
+        return (
+            &amp;lt;form action=&amp;quot;http://www.baidu.com&amp;quot; onSubmit=&amp;#123;this.login&amp;#125;&amp;gt;
+                用户名：
+                &amp;lt;input ref=&amp;#123;(e) =&amp;gt; (this.name = e)&amp;#125; type=&amp;quot;text&amp;quot; name=&amp;quot;username&amp;quot; /&amp;gt;
+                密码： &amp;lt;input ref=&amp;#123;(e) =&amp;gt; (this.pwd = e)&amp;#125; type=&amp;quot;password&amp;quot; name=&amp;quot;password&amp;quot; /&amp;gt;
+                &amp;lt;button&amp;gt;登录&amp;lt;/button&amp;gt;
+            &amp;lt;/form&amp;gt;
+        );
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;5-函数的柯里化&#34;&gt;&lt;a href=&#34;#5-函数的柯里化&#34; class=&#34;headerlink&#34; title=&#34;5.函数的柯里化&#34;&gt;&lt;/a&gt;5.函数的柯里化&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;高级函数&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;如果函数的参数是函数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果函数返回一个函数&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;通过函数调用继续返回函数的方式，实现多次接收参数最后统一处理的函数编码形式&lt;/p&gt;
+&lt;p&gt;如下，我们将上面的案例简化，创建高级函数：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class Login extends React.Component &amp;#123;
+    state = &amp;#123; name: &amp;quot;&amp;quot;, pwd: &amp;quot;&amp;quot; &amp;#125;;
+
+    //返回一个函数
+    saveType = (type) =&amp;gt; &amp;#123;
+        return (event) =&amp;gt; &amp;#123;
+            this.setState(&amp;#123; [type]: event.target.value &amp;#125;);
+        &amp;#125;;
+    &amp;#125;;
+
+    //因为事件中必须是一个函数，所以返回的也是一个函数，这样就符合规范了
+    render() &amp;#123;
+        return (
+            &amp;lt;form&amp;gt;
+                &amp;lt;input onChange=&amp;#123;this.saveType(&amp;quot;name&amp;quot;)&amp;#125; type=&amp;quot;text&amp;quot; /&amp;gt;
+                &amp;lt;button&amp;gt;登录&amp;lt;/button&amp;gt;
+            &amp;lt;/form&amp;gt;
+        );
+    &amp;#125;
+&amp;#125;
+
+ReactDOM.render(&amp;lt;Login /&amp;gt;, document.getElementById(&amp;quot;div&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;不使用函数柯里化&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class Login extends React.Component &amp;#123;
+    state = &amp;#123; name: &amp;quot;&amp;quot;, pwd: &amp;quot;&amp;quot; &amp;#125;;
+
+    //返回一个函数
+    saveType = (type, event) =&amp;gt; &amp;#123;
+        this.setState(&amp;#123; [type]: event.target.value &amp;#125;);
+    &amp;#125;;
+
+    //因为事件中必须是一个函数，所以返回的也是一个函数，这样就符合规范了
+    render() &amp;#123;
+        return (
+            &amp;lt;form&amp;gt;
+                &amp;lt;input onChange=&amp;#123;(event) =&amp;gt; this.saveType(&amp;quot;name&amp;quot;, event)&amp;#125; type=&amp;quot;text&amp;quot; /&amp;gt;
+                &amp;lt;button&amp;gt;登录&amp;lt;/button&amp;gt;
+            &amp;lt;/form&amp;gt;
+        );
+    &amp;#125;
+&amp;#125;
+
+ReactDOM.render(&amp;lt;Login /&amp;gt;, document.getElementById(&amp;quot;div&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="React" />
+        <updated>2023-09-24T10:57:52.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/09/24/02.react%E9%9D%A2%E5%90%91%E7%BB%84%E4%BB%B6%E7%BC%96%E7%A8%8B/</id>
+        <title>React-面向组件编程</title>
+        <link rel="alternate" href="http://example.com/2023/09/24/02.react%E9%9D%A2%E5%90%91%E7%BB%84%E4%BB%B6%E7%BC%96%E7%A8%8B/"/>
+        <content type="html">&lt;h1 id=&#34;02-【面向组件编程】&#34;&gt;&lt;a href=&#34;#02-【面向组件编程】&#34; class=&#34;headerlink&#34; title=&#34;02 【面向组件编程】&#34;&gt;&lt;/a&gt;02 【面向组件编程】&lt;/h1&gt;&lt;h2 id=&#34;1-组件的使用&#34;&gt;&lt;a href=&#34;#1-组件的使用&#34; class=&#34;headerlink&#34; title=&#34;1.组件的使用&#34;&gt;&lt;/a&gt;1.组件的使用&lt;/h2&gt;&lt;p&gt;当应用是以多组件的方式实现，这个应用就是一个组件化的应用&lt;/p&gt;
+&lt;p&gt;只有两种方式的组件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;函数组件&lt;/li&gt;
+&lt;li&gt;类式组件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;组件名必须是首字母大写（React 会将以小写字母开头的组件视为原生 DOM 标签。例如，&amp;lt; div &amp;#x2F;&amp;gt;&lt;code&gt;代表 HTML 的 div 标签，而&lt;/code&gt;&amp;lt; Weclome &amp;#x2F;&amp;gt; 则代表一个组件，并且需在作用域内使用 &lt;code&gt;Welcome&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;虚拟 DOM 元素只能有一个根元素&lt;/li&gt;
+&lt;li&gt;虚拟 DOM 元素必须有结束标签 &lt;code&gt;&amp;lt; /&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;渲染类组件标签的基本流程&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;React 内部会创建组件实例对象&lt;/li&gt;
+&lt;li&gt;调用&lt;code&gt;render()&lt;/code&gt;得到虚拟 DOM ,并解析为真实 DOM&lt;/li&gt;
+&lt;li&gt;插入到指定的页面元素内部&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;1-1-函数式组件&#34;&gt;&lt;a href=&#34;#1-1-函数式组件&#34; class=&#34;headerlink&#34; title=&#34;1.1 函数式组件&#34;&gt;&lt;/a&gt;1.1 函数式组件&lt;/h3&gt;&lt;p&gt;定义组件最简单的方式就是编写 JavaScript 函数：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;//1.创建函数式组件
+function MyComponent(props) &amp;#123;
+    console.log(this); //此处的this是undefined，因为babel编译后开启了严格模式
+    return &amp;lt;h2&amp;gt;我是用函数定义的组件(适用于【简单组件】的定义)&amp;lt;/h2&amp;gt;;
+&amp;#125;
+
+//2.渲染组件到页面
+ReactDOM.render(&amp;lt;MyComponent /&amp;gt;, document.getElementById(&amp;quot;test&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;该函数是一个有效的 React 组件，因为它接收唯一带有数据的 “props”（代表属性）对象与并返回一个 React 元素。这类组件被称为“函数组件”，因为它本质上就是 JavaScript 函数。&lt;/p&gt;
+&lt;p&gt;让我们来回顾一下这个例子中发生了什么：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;React 解析组件标签，找到了 MyComponent 组件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;发现组件是使用函数定义的，随后调用该函数，将返回的虚拟 DOM 转为真实 DOM，随后呈现在页面中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt; &lt;strong&gt;组件名称必须以大写字母开头。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;React 会将以小写字母开头的组件视为原生 DOM 标签。例如，&lt;code&gt;&amp;lt;div /&amp;gt;&lt;/code&gt; 代表 HTML 的 div 标签，而 &lt;code&gt;&amp;lt;Welcome /&amp;gt;&lt;/code&gt; 则代表一个组件，并且需在作用域内使用 &lt;code&gt;Welcome&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;你可以在&lt;a href=&#34;https://zh-hans.reactjs.org/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized&#34;&gt;深入 JSX&lt;/a&gt; 中了解更多关于此规范的原因。&lt;/p&gt;
+&lt;h3 id=&#34;1-2-类式组件&#34;&gt;&lt;a href=&#34;#1-2-类式组件&#34; class=&#34;headerlink&#34; title=&#34;1.2 类式组件&#34;&gt;&lt;/a&gt;1.2 类式组件&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;将函数组件转换成 class 组件&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通过以下五步将 &lt;code&gt;Clock&lt;/code&gt; 的函数组件转成 class 组件：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;创建一个同名的 &lt;a href=&#34;https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes&#34;&gt;ES6 class&lt;/a&gt;，并且继承于 &lt;code&gt;React.Component&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;添加一个空的 &lt;code&gt;render()&lt;/code&gt; 方法。&lt;/li&gt;
+&lt;li&gt;将函数体移动到 &lt;code&gt;render()&lt;/code&gt; 方法之中。&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;render()&lt;/code&gt; 方法中使用 &lt;code&gt;this.props&lt;/code&gt; 替换 &lt;code&gt;props&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;删除剩余的空函数声明。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class MyComponent extends React.Component &amp;#123;
+    render() &amp;#123;
+        console.log(&amp;quot;render中的this:&amp;quot;, this);
+        return &amp;lt;h2&amp;gt;我是用类定义的组件(适用于【复杂组件】的定义)&amp;lt;/h2&amp;gt;;
+    &amp;#125;
+&amp;#125;
+
+ReactDOM.render(&amp;lt;MyComponent /&amp;gt;, document.getElementById(&amp;quot;test&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;每次组件更新时 &lt;code&gt;render&lt;/code&gt; 方法都会被调用，但只要在相同的 DOM 节点中渲染 &lt;code&gt;&amp;lt;MyComponent/&amp;gt;&lt;/code&gt; ，就仅有一个 &lt;code&gt;MyComponent&lt;/code&gt; 组件的 class 实例被创建使用。这就使得我们可以使用如 state 或生命周期方法等很多其他特性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;执行过程：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;React 解析组件标签，找到相应的组件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;发现组件是类定义的，随后 new 出来的类的实例，并通过该实例调用到原型上的 render 方法&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;将 render 返回的虚拟 DOM 转化为真实的 DOM,随后呈现在页面中&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;1-3-组合组件&#34;&gt;&lt;a href=&#34;#1-3-组合组件&#34; class=&#34;headerlink&#34; title=&#34;1.3 组合组件&#34;&gt;&lt;/a&gt;1.3 组合组件&lt;/h3&gt;&lt;p&gt;组件可以在其输出中引用其他组件。这就可以让我们用同一组件来抽象出任意层次的细节。按钮，表单，对话框，甚至整个屏幕的内容：在 React 应用程序中，这些通常都会以组件的形式表示。&lt;/p&gt;
+&lt;p&gt;例如，我们可以创建一个可以多次渲染 &lt;code&gt;Welcome&lt;/code&gt; 组件的 &lt;code&gt;App&lt;/code&gt; 组件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function Welcome(props) &amp;#123;
+    return &amp;lt;h1&amp;gt;Hello, &amp;#123;props.name&amp;#125;&amp;lt;/h1&amp;gt;;
+&amp;#125;
+
+function App() &amp;#123;
+    return (
+        &amp;lt;div&amp;gt;
+            &amp;lt;Welcome name=&amp;quot;Sara&amp;quot; /&amp;gt;
+            &amp;lt;Welcome name=&amp;quot;Cahal&amp;quot; /&amp;gt;
+            &amp;lt;Welcome name=&amp;quot;Edite&amp;quot; /&amp;gt;
+        &amp;lt;/div&amp;gt;
+    );
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.hdslb.com/bfs/album/61b62685a57a9ebd6162b9d13448aa8d6a74be99.png&#34; alt=&#34;image-20221023135154884&#34;&gt;&lt;/p&gt;
+&lt;p&gt;通常来说，每个新的 React 应用程序的顶层组件都是 &lt;code&gt;App&lt;/code&gt; 组件。但是，如果你将 React 集成到现有的应用程序中，你可能需要使用像 &lt;code&gt;Button&lt;/code&gt; 这样的小组件，并自下而上地将这类组件逐步应用到视图层的每一处。&lt;/p&gt;
+&lt;h3 id=&#34;1-4-提取组件&#34;&gt;&lt;a href=&#34;#1-4-提取组件&#34; class=&#34;headerlink&#34; title=&#34;1.4 提取组件&#34;&gt;&lt;/a&gt;1.4 提取组件&lt;/h3&gt;&lt;p&gt;将组件拆分为更小的组件。&lt;/p&gt;
+&lt;p&gt;例如，参考如下 &lt;code&gt;Comment&lt;/code&gt; 组件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function formatDate(date) &amp;#123;
+    return date.toLocaleDateString();
+&amp;#125;
+
+function Comment(props) &amp;#123;
+    return (
+        &amp;lt;div className=&amp;quot;Comment&amp;quot;&amp;gt;
+            &amp;lt;div className=&amp;quot;UserInfo&amp;quot;&amp;gt;
+                &amp;lt;img className=&amp;quot;Avatar&amp;quot; src=&amp;#123;props.author.avatarUrl&amp;#125; alt=&amp;#123;props.author.name&amp;#125; /&amp;gt;
+                &amp;lt;div className=&amp;quot;UserInfo-name&amp;quot;&amp;gt;&amp;#123;props.author.name&amp;#125;&amp;lt;/div&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;div className=&amp;quot;Comment-text&amp;quot;&amp;gt;&amp;#123;props.text&amp;#125;&amp;lt;/div&amp;gt;
+            &amp;lt;div className=&amp;quot;Comment-date&amp;quot;&amp;gt;&amp;#123;formatDate(props.date)&amp;#125;&amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    );
+&amp;#125;
+
+const comment = &amp;#123;
+    date: new Date(),
+    text: &amp;quot;I hope you enjoy learning React!&amp;quot;,
+    author: &amp;#123;
+        name: &amp;quot;Hello Kitty&amp;quot;,
+        avatarUrl: &amp;quot;http://placekitten.com/g/64/64&amp;quot;,
+    &amp;#125;,
+&amp;#125;;
+
+ReactDOM.render(&amp;lt;Comment date=&amp;#123;comment.date&amp;#125; text=&amp;#123;comment.text&amp;#125; author=&amp;#123;comment.author&amp;#125; /&amp;gt;, document.getElementById(&amp;quot;test&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://codepen.io/gaearon/pen/VKQwEo?editors=1010&#34;&gt;在 CodePen 上试试&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该组件用于描述一个社交媒体网站上的评论功能，它接收 &lt;code&gt;author&lt;/code&gt;（对象），&lt;code&gt;text&lt;/code&gt; （字符串）以及 &lt;code&gt;date&lt;/code&gt;（日期）作为 props。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.hdslb.com/bfs/album/09cf8c18c6f756985e0fc0e4436b075fe02b8027.png&#34; alt=&#34;image-20221023135735919&#34;&gt;&lt;/p&gt;
+&lt;p&gt;该组件由于嵌套的关系，变得难以维护，且很难复用它的各个部分。因此，让我们从中提取一些组件出来。&lt;/p&gt;
+&lt;p&gt;首先，我们将提取 &lt;code&gt;Avatar&lt;/code&gt; 组件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function Avatar(props) &amp;#123;
+    return &amp;lt;img className=&amp;quot;Avatar&amp;quot; src=&amp;#123;props.user.avatarUrl&amp;#125; alt=&amp;#123;props.user.name&amp;#125; /&amp;gt;;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Avatar&lt;/code&gt; 不需知道它在 &lt;code&gt;Comment&lt;/code&gt; 组件内部是如何渲染的。因此，我们给它的 props 起了一个更通用的名字：&lt;code&gt;user&lt;/code&gt;，而不是 &lt;code&gt;author&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;我们建议从组件自身的角度命名 props，而不是依赖于调用组件的上下文命名。&lt;/p&gt;
+&lt;p&gt;我们现在针对 &lt;code&gt;Comment&lt;/code&gt; 做些微小调整：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function Avatar(props) &amp;#123;
+    return &amp;lt;img className=&amp;quot;Avatar&amp;quot; src=&amp;#123;props.user.avatarUrl&amp;#125; alt=&amp;#123;props.user.name&amp;#125; /&amp;gt;;
+&amp;#125;
+
+function Comment(props) &amp;#123;
+    return (
+        &amp;lt;div className=&amp;quot;Comment&amp;quot;&amp;gt;
+            &amp;lt;div className=&amp;quot;UserInfo&amp;quot;&amp;gt;
+                &amp;lt;Avatar user=&amp;#123;props.author&amp;#125; /&amp;gt;
+                &amp;lt;div className=&amp;quot;UserInfo-name&amp;quot;&amp;gt;&amp;#123;props.author.name&amp;#125;&amp;lt;/div&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;div className=&amp;quot;Comment-text&amp;quot;&amp;gt;&amp;#123;props.text&amp;#125;&amp;lt;/div&amp;gt;
+            &amp;lt;div className=&amp;quot;Comment-date&amp;quot;&amp;gt;&amp;#123;formatDate(props.date)&amp;#125;&amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    );
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;接下来，我们将提取 &lt;code&gt;UserInfo&lt;/code&gt; 组件，该组件在用户名旁渲染 &lt;code&gt;Avatar&lt;/code&gt; 组件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function UserInfo(props) &amp;#123;
+    return (
+        &amp;lt;div className=&amp;quot;UserInfo&amp;quot;&amp;gt;
+            &amp;lt;Avatar user=&amp;#123;props.user&amp;#125; /&amp;gt;
+            &amp;lt;div className=&amp;quot;UserInfo-name&amp;quot;&amp;gt;&amp;#123;props.user.name&amp;#125;&amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    );
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;进一步简化 &lt;code&gt;Comment&lt;/code&gt; 组件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function Avatar(props) &amp;#123;
+    return &amp;lt;img className=&amp;quot;Avatar&amp;quot; src=&amp;#123;props.user.avatarUrl&amp;#125; alt=&amp;#123;props.user.name&amp;#125; /&amp;gt;;
+&amp;#125;
+
+function UserInfo(props) &amp;#123;
+    return (
+        &amp;lt;div className=&amp;quot;UserInfo&amp;quot;&amp;gt;
+            &amp;lt;Avatar user=&amp;#123;props.user&amp;#125; /&amp;gt;
+            &amp;lt;div className=&amp;quot;UserInfo-name&amp;quot;&amp;gt;&amp;#123;props.user.name&amp;#125;&amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    );
+&amp;#125;
+
+function Comment(props) &amp;#123;
+    return (
+        &amp;lt;div className=&amp;quot;Comment&amp;quot;&amp;gt;
+            &amp;lt;UserInfo user=&amp;#123;props.author&amp;#125; /&amp;gt;
+            &amp;lt;div className=&amp;quot;Comment-text&amp;quot;&amp;gt;&amp;#123;props.text&amp;#125;&amp;lt;/div&amp;gt;
+            &amp;lt;div className=&amp;quot;Comment-date&amp;quot;&amp;gt;&amp;#123;formatDate(props.date)&amp;#125;&amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    );
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://codepen.io/gaearon/pen/rrJNJY?editors=1010&#34;&gt;在 CodePen 上试试&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;最初看上去，提取组件可能是一件繁重的工作，但是，在大型应用中，构建可复用组件库是完全值得的。根据经验来看，如果 UI 中有一部分被多次使用（&lt;code&gt;Button&lt;/code&gt;，&lt;code&gt;Panel&lt;/code&gt;，&lt;code&gt;Avatar&lt;/code&gt;），或者组件本身就足够复杂（&lt;code&gt;App&lt;/code&gt;，&lt;code&gt;FeedStory&lt;/code&gt;，&lt;code&gt;Comment&lt;/code&gt;），那么它就是一个可提取出独立组件的候选项。&lt;/p&gt;
+&lt;h2 id=&#34;组件实例的三大属性-state-props-refs&#34;&gt;&lt;a href=&#34;#组件实例的三大属性-state-props-refs&#34; class=&#34;headerlink&#34; title=&#34;组件实例的三大属性 state props refs&#34;&gt;&lt;/a&gt;组件实例的三大属性 state props refs&lt;/h2&gt;&lt;h2 id=&#34;2-state&#34;&gt;&lt;a href=&#34;#2-state&#34; class=&#34;headerlink&#34; title=&#34;2.state&#34;&gt;&lt;/a&gt;2.state&lt;/h2&gt;&lt;h3 id=&#34;2-1-基本使用&#34;&gt;&lt;a href=&#34;#2-1-基本使用&#34; class=&#34;headerlink&#34; title=&#34;2.1 基本使用&#34;&gt;&lt;/a&gt;2.1 基本使用&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;我们都说 React 是一个状态机，体现是什么地方呢，就是体现在 state 上，通过与用户的交互，实现不同的状态，然后去渲染 UI,这样就让用户的数据和界面保持一致了。state 是组件的私有属性。&lt;/p&gt;
+&lt;p&gt;在 React 中，更新组件的 state，结果就会重新渲染用户界面(不需要操作 DOM),一句话就是说，用户的界面会随着状态的改变而改变。&lt;/p&gt;
+&lt;p&gt;state 是组件对象最重要的属性，值是对象（可以包含多个 key-value 的组合）&lt;/p&gt;
+&lt;p&gt;简单的说就是组件的状态，也就是该组件所存储的数据&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;案例&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;需求：页面显示【今天天气很炎热】，鼠标点击文字的时候，页面更改为【今天天气很凉爽】&lt;/p&gt;
+&lt;p&gt;核心代码如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;body&amp;gt;
+    &amp;lt;!-- 准备好容器 --&amp;gt;
+    &amp;lt;div id=&amp;quot;test&amp;quot;&amp;gt;
+
+    &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;!--这里使用了js来创建虚拟DOM--&amp;gt;
+&amp;lt;script type=&amp;quot;text/babel&amp;quot;&amp;gt;
+        //1.创建组件
+        class St extends React.Component&amp;#123;
+            constructor(props)&amp;#123;
+                super(props);
+                //先给state赋值
+                this.state = &amp;#123;isHot:true,win:&amp;quot;ss&amp;quot;&amp;#125;;
+                //找到原型的dem，根据dem函数创建了一个dem1的函数，并且将实例对象的this赋值过去
+                this.dem1 = this.dem.bind(this);
+            &amp;#125;
+            //render会调用1+n次【1就是初始化的时候调用的，n就是每一次修改state的时候调用的】
+            render()&amp;#123; //这个This也是实例对象
+                //如果加dem()，就是将函数的回调值放入这个地方
+                //this.dem这里面加入this，并不是调用，只不过是找到了dem这个函数，在调用的时候相当于直接调用，并不是实例对象的调用
+                return &amp;lt;h1 onClick = &amp;#123;this.dem1&amp;#125;&amp;gt;今天天气很&amp;#123;this.state.isHot?&amp;quot;炎热&amp;quot;:&amp;quot;凉爽&amp;quot;&amp;#125;&amp;lt;/h1&amp;gt;
+            &amp;#125;
+            //通过state的实例调用dem的时候，this就是实例对象
+            dem()&amp;#123;
+                const state =  this.state.isHot;
+                 //状态中的属性不能直接进行更改，需要借助API
+                // this.state.isHot = !isHot; 错误
+                //必须使用setState对其进行修改，并且这是一个合并
+                this.setState(&amp;#123;isHot:!state&amp;#125;);
+            &amp;#125;
+        &amp;#125;
+        // 2.渲染，如果有多个渲染同一个容器，后面的会将前面的覆盖掉
+        ReactDOM.render(&amp;lt;St/&amp;gt;,document.getElementById(&amp;quot;test&amp;quot;));
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在&lt;strong&gt;类式组件&lt;/strong&gt;的函数中，直接修改&lt;code&gt;state&lt;/code&gt;值&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;this.state.isHot = false;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;页面的渲染靠的是&lt;code&gt;render&lt;/code&gt;函数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这时候会发现页面内容不会改变，原因是 React 中不建议 &lt;code&gt;state&lt;/code&gt;不允许直接修改，而是通过类的原型对象上的方法 &lt;code&gt;setState()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;组件的构造函数，必须要传递一个 props 参数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;特别关注 this【重点】，类中所有的方法局部都开启了严格模式，如果直接进行调用，this 就是 undefined&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;想要改变 state,需要使用 setState 进行修改，如果只是修改 state 的部分属性，则不会影响其他的属性，这个只是合并并不是覆盖。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;在优化过程中遇到的问题&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;组件中的 render 方法中的 this 为组件实例对象&lt;/li&gt;
+&lt;li&gt;组件自定义方法中由于开启了严格模式，this 指向&lt;code&gt;undefined&lt;/code&gt;如何解决&lt;ol&gt;
+&lt;li&gt;通过 bind 改变 this 指向&lt;/li&gt;
+&lt;li&gt;推荐采用箭头函数，箭头函数的 &lt;code&gt;this&lt;/code&gt; 指向&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;state 数据不能直接修改或者更新&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-2-setState&#34;&gt;&lt;a href=&#34;#2-2-setState&#34; class=&#34;headerlink&#34; title=&#34;2.2 setState()&#34;&gt;&lt;/a&gt;2.2 setState()&lt;/h3&gt;&lt;p&gt;this.setState()，该方法接收两种参数：对象或函数。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;this.setState(partialState, [callback]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;partialState&lt;/code&gt;: 需要更新的状态的部分对象&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;callback&lt;/code&gt;: 更新完状态后的回调函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;有两种写法:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;对象：即想要修改的 state&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;this.setState(&amp;#123;
+    isHot: false,
+&amp;#125;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;函数：接收两个函数，第一个函数接受两个参数，第一个是当前 state，第二个是当前 props，该函数返回一个对象，和直接传递对象参数是一样的，就是要修改的 state；第二个函数参数是 state 改变后触发的回调&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;this.setState(state =&amp;gt; (&amp;#123;count: state.count+1&amp;#125;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;在执行 &lt;code&gt;setState&lt;/code&gt;操作后，React 会自动调用一次 &lt;code&gt;render()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;render()&lt;/code&gt; 的执行次数是 1+n (1 为初始化时的自动调用，n 为状态更新的次数)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-3-简化版本&#34;&gt;&lt;a href=&#34;#2-3-简化版本&#34; class=&#34;headerlink&#34; title=&#34;2.3 简化版本&#34;&gt;&lt;/a&gt;2.3 简化版本&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;state 的赋值可以不再构造函数中进行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用了箭头函数，将 this 进行了改变&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;body&amp;gt;
+    &amp;lt;!-- 准备好容器 --&amp;gt;
+    &amp;lt;div id=&amp;quot;test&amp;quot;&amp;gt;
+
+    &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;script type=&amp;quot;text/babel&amp;quot;&amp;gt;
+        class St extends React.Component&amp;#123;
+            //可以直接对其进行赋值
+            state = &amp;#123;isHot:true&amp;#125;;
+            render()&amp;#123; //这个This也是实例对象
+                return &amp;lt;h1 onClick = &amp;#123;this.dem&amp;#125;&amp;gt;今天天气很&amp;#123;this.state.isHot?&amp;quot;炎热&amp;quot;:&amp;quot;凉爽&amp;quot;&amp;#125;&amp;lt;/h1&amp;gt;
+                //或者使用&amp;#123;()=&amp;gt;this.dem()也是可以的&amp;#125;
+            &amp;#125;
+            //箭头函数 [自定义方法---&amp;gt;要用赋值语句的形式+箭头函数]
+            dem = () =&amp;gt;&amp;#123;
+                console.log(this);
+                const state =  this.state.isHot;
+                this.setState(&amp;#123;isHot:!state&amp;#125;);
+            &amp;#125;
+        &amp;#125;
+        ReactDOM.render(&amp;lt;St /&amp;gt;,document.getElementById(&amp;quot;test&amp;quot;));
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果想要在调用方法的时候传递参数，有两个方法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;button onClick=&amp;#123;(e) =&amp;gt; this.deleteRow(id, e)&amp;#125;&amp;gt;Delete Row&amp;lt;/button&amp;gt;
+&amp;lt;button onClick=&amp;#123;this.deleteRow.bind(this, id)&amp;#125;&amp;gt;Delete Row&amp;lt;/button&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上述两种方式是等价的，分别通过&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions&#34;&gt;箭头函数&lt;/a&gt;和 &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind&#34;&gt;&lt;code&gt;Function.prototype.bind&lt;/code&gt;&lt;/a&gt; 来实现。&lt;/p&gt;
+&lt;p&gt;在这两种情况下，React 的事件对象 &lt;code&gt;e&lt;/code&gt; 会被作为第二个参数传递。如果通过箭头函数的方式，事件对象必须显式的进行传递，而通过 &lt;code&gt;bind&lt;/code&gt; 的方式，事件对象以及更多的参数将会被隐式的进行传递。&lt;/p&gt;
+&lt;h3 id=&#34;2-4-State-的更新可能是异步的&#34;&gt;&lt;a href=&#34;#2-4-State-的更新可能是异步的&#34; class=&#34;headerlink&#34; title=&#34;2.4 State 的更新可能是异步的&#34;&gt;&lt;/a&gt;2.4 State 的更新可能是异步的&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;React 控制之外的事件中调用 setState 是同步更新的。比如原生 js 绑定的事件，setTimeout&amp;#x2F;setInterval 等&lt;/strong&gt;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;18 版本中测试 setTimeout 回调函数中也是异步更新的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;大部分开发中用到的都是 React 封装的事件，比如 onChange、onClick、onTouchMove 等，这些事件处理程序中的 setState 都是异步处理的。&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;//1.创建组件
+class St extends React.Component &amp;#123;
+    //可以直接对其进行赋值
+    state = &amp;#123; isHot: 10 &amp;#125;;
+    render() &amp;#123;
+        //这个This也是实例对象
+        return &amp;lt;h1 onClick=&amp;#123;this.dem&amp;#125;&amp;gt;点击事件&amp;lt;/h1&amp;gt;;
+    &amp;#125;
+    //箭头函数 [自定义方法---&amp;gt;要用赋值语句的形式+箭头函数]
+    dem = () =&amp;gt; &amp;#123;
+        //修改isHot
+        this.setState(&amp;#123; isHot: this.state.isHot + 1 &amp;#125;);
+        console.log(this.state.isHot);
+    &amp;#125;;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上面的案例中预期 setState 使得 isHot 变成了 11，输出也应该是 11。然而在控制台打印的却是 10，也就是并没有对其进行更新。这是因为异步的进行了处理，在输出的时候还没有对其进行处理。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;document.getElementById(&amp;quot;test&amp;quot;).addEventListener(&amp;quot;click&amp;quot;,()=&amp;gt;&amp;#123;
+        this.setState(&amp;#123;isHot: this.state.isHot + 1&amp;#125;);
+        console.log(this.state.isHot);
+    &amp;#125;)
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;但是通过这个原生 JS 的，可以发现，控制台打印的就是 11，也就是已经对其进行了处理。也就是进行了同步的更新。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;React 怎么调用同步或者异步的呢？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 React 的 setState 函数实现中，会根据一个变量 isBatchingUpdates 判断是直接更新 this.state 还是放到队列中延时更新，而 isBatchingUpdates 默认是 false，表示 setState 会同步更新 this.state；但是，有一个函数 batchedUpdates，该函数会把 isBatchingUpdates 修改为 true，而当 React 在调用事件处理函数之前就会先调用这个 batchedUpdates 将 isBatchingUpdates 修改为 true，这样由 React 控制的事件处理过程 setState 不会同步更新 this.state。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果是同步更新，每一个 setState 对调用一个 render，并且如果多次调用 setState 会以最后调用的为准，前面的将会作废；如果是异步更新，多个 setSate 会统一调用一次 render&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;dem = () =&amp;gt; &amp;#123;
+    this.setState(&amp;#123;
+        isHot: 1,
+        cont: 444,
+    &amp;#125;);
+    this.setState(&amp;#123;
+        isHot: this.state.isHot + 1,
+    &amp;#125;);
+    this.setState(&amp;#123;
+        isHot: 888,
+        cont: 888,
+    &amp;#125;);
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上面的最后会输出：isHot 是 888，cont 是 888&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;dem = () =&amp;gt; &amp;#123;
+    this.setState(&amp;#123;
+        isHot: this.state.isHot + 1,
+    &amp;#125;);
+    this.setState(&amp;#123;
+        isHot: this.state.isHot + 1,
+    &amp;#125;);
+    this.setState(&amp;#123;
+        isHot: this.state.isHot + 888,
+    &amp;#125;);
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;初始 isHot 为 10，最后 isHot 输出为 898，也就是前面两个都没有执行。&lt;/p&gt;
+&lt;p&gt;**注意！！这是异步更新才有的，如果同步更新，每一次都会调用 render，这样每一次更新都会 **&lt;/p&gt;
+&lt;h3 id=&#34;2-5-异步更新解决方案&#34;&gt;&lt;a href=&#34;#2-5-异步更新解决方案&#34; class=&#34;headerlink&#34; title=&#34;2.5 异步更新解决方案&#34;&gt;&lt;/a&gt;2.5 异步更新解决方案&lt;/h3&gt;&lt;p&gt;出于性能考虑，React 可能会把多个 &lt;code&gt;setState()&lt;/code&gt; 调用合并成一个调用。&lt;/p&gt;
+&lt;p&gt;因为 &lt;code&gt;this.props&lt;/code&gt; 和 &lt;code&gt;this.state&lt;/code&gt; 可能会异步更新，所以你不要依赖他们的值来更新下一个状态。&lt;/p&gt;
+&lt;p&gt;例如，此代码可能会无法更新计数器：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;// Wrong
+this.setState(&amp;#123;
+    counter: this.state.counter + this.props.increment,
+&amp;#125;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;要解决这个问题，可以让 &lt;code&gt;setState()&lt;/code&gt; 接收一个函数而不是一个对象。这个函数用上一个 state 作为第一个参数，将此次更新被应用时的 props 做为第二个参数：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;// Correct
+this.setState((state, props) =&amp;gt; (&amp;#123;
+    counter: state.counter + props.increment,
+&amp;#125;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上面使用了&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions&#34;&gt;箭头函数&lt;/a&gt;，不过使用普通的函数也同样可以：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;// Correct
+this.setState(function (state, props) &amp;#123;
+    return &amp;#123;
+        counter: state.counter + props.increment,
+    &amp;#125;;
+&amp;#125;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;2-6-数据是向下流动的&#34;&gt;&lt;a href=&#34;#2-6-数据是向下流动的&#34; class=&#34;headerlink&#34; title=&#34;2.6 数据是向下流动的&#34;&gt;&lt;/a&gt;2.6 数据是向下流动的&lt;/h3&gt;&lt;p&gt;不管是父组件或是子组件都无法知道某个组件是有状态的还是无状态的，并且它们也并不关心它是函数组件还是 class 组件。&lt;/p&gt;
+&lt;p&gt;这就是为什么称 state 为局部的或是封装的的原因。除了拥有并设置了它的组件，其他组件都无法访问。&lt;/p&gt;
+&lt;p&gt;组件可以选择把它的 state 作为 props 向下传递到它的子组件中：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;FormattedDate date=&amp;#123;this.state.date&amp;#125; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;FormattedDate&lt;/code&gt; 组件会在其 props 中接收参数 &lt;code&gt;date&lt;/code&gt;，但是组件本身无法知道它是来自于 &lt;code&gt;Clock&lt;/code&gt; 的 state，或是 &lt;code&gt;Clock&lt;/code&gt; 的 props，还是手动输入的：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function FormattedDate(props) &amp;#123;
+    return &amp;lt;h2&amp;gt;It is &amp;#123;props.date.toLocaleTimeString()&amp;#125;.&amp;lt;/h2&amp;gt;;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://codepen.io/gaearon/pen/zKRqNB?editors=0010&#34;&gt;&lt;strong&gt;在 CodePen 上尝试&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这通常会被叫做“自上而下”或是“单向”的数据流。任何的 state 总是所属于特定的组件，而且从该 state 派生的任何数据或 UI 只能影响树中“低于”它们的组件。&lt;/p&gt;
+&lt;p&gt;如果你把一个以组件构成的树想象成一个 props 的数据瀑布的话，那么每一个组件的 state 就像是在任意一点上给瀑布增加额外的水源，但是它只能向下流动。&lt;/p&gt;
+&lt;p&gt;为了证明每个组件都是真正独立的，我们可以创建一个渲染三个 &lt;code&gt;Clock&lt;/code&gt; 的 &lt;code&gt;App&lt;/code&gt; 组件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function App() &amp;#123;
+    return (
+        &amp;lt;div&amp;gt;
+            &amp;lt;Clock /&amp;gt;
+            &amp;lt;Clock /&amp;gt;
+            &amp;lt;Clock /&amp;gt;
+        &amp;lt;/div&amp;gt;
+    );
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://codepen.io/gaearon/pen/vXdGmd?editors=0010&#34;&gt;&lt;strong&gt;在 CodePen 上尝试&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;每个 &lt;code&gt;Clock&lt;/code&gt; 组件都会单独设置它自己的计时器并且更新它。&lt;/p&gt;
+&lt;p&gt;在 React 应用中，组件是有状态组件还是无状态组件属于组件实现的细节，它可能会随着时间的推移而改变。你可以在有状态的组件中使用无状态的组件，反之亦然。&lt;/p&gt;
+&lt;h2 id=&#34;3-props&#34;&gt;&lt;a href=&#34;#3-props&#34; class=&#34;headerlink&#34; title=&#34;3.props&#34;&gt;&lt;/a&gt;3.props&lt;/h2&gt;&lt;h3 id=&#34;3-1-基本使用&#34;&gt;&lt;a href=&#34;#3-1-基本使用&#34; class=&#34;headerlink&#34; title=&#34;3.1 基本使用&#34;&gt;&lt;/a&gt;3.1 基本使用&lt;/h3&gt;&lt;p&gt;与&lt;code&gt;state&lt;/code&gt;不同，&lt;code&gt;state&lt;/code&gt;是组件自身的状态，而&lt;code&gt;props&lt;/code&gt;则是外部传入的数据&lt;/p&gt;
+&lt;p&gt;基本使用：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;body&amp;gt;
+    &amp;lt;div id = &amp;quot;div&amp;quot;&amp;gt;
+
+    &amp;lt;/div&amp;gt;
+
+&amp;lt;/body&amp;gt;
+&amp;lt;script type=&amp;quot;text/babel&amp;quot;&amp;gt;
+    class Person extends React.Component&amp;#123;
+        render()&amp;#123;
+          const &amp;#123; name, age, sex &amp;#125; = this.props
+            return (
+                &amp;lt;ul&amp;gt;
+                  &amp;lt;li&amp;gt;姓名：&amp;#123;name&amp;#125;&amp;lt;/li&amp;gt;
+                  &amp;lt;li&amp;gt;性别：&amp;#123;sex&amp;#125;&amp;lt;/li&amp;gt;
+                  &amp;lt;li&amp;gt;年龄：&amp;#123;age + 1&amp;#125;&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+          )
+        &amp;#125;
+    &amp;#125;
+    //传递数据
+    ReactDOM.render(&amp;lt;Person name=&amp;quot;tom&amp;quot; age = &amp;#123;41&amp;#125; sex=&amp;quot;男&amp;quot;/&amp;gt;,document.getElementById(&amp;quot;div&amp;quot;));
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果传递的数据是一个对象，可以更加简便的使用&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;script type=&amp;quot;text/babel&amp;quot;&amp;gt;
+    class Person extends React.Component&amp;#123;
+        render()&amp;#123;
+            return (
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;&amp;#123;this.props.name&amp;#125;&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;&amp;#123;this.props.age&amp;#125;&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;&amp;#123;this.props.sex&amp;#125;&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            )
+        &amp;#125;
+    &amp;#125;
+    const p = &amp;#123;name:&amp;quot;张三&amp;quot;,age:&amp;quot;18&amp;quot;,sex:&amp;quot;女&amp;quot;&amp;#125;
+   ReactDOM.render(&amp;lt;Person &amp;#123;...p&amp;#125;/&amp;gt;,document.getElementById(&amp;quot;div&amp;quot;));
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;… 这个符号恐怕都不陌生，这个是一个展开运算符，主要用来展开数组，如下面这个例子：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;arr = [1, 2, 3];
+arr1 = [4, 5, 6];
+arr2 = [...arr, ...arr1]; //arr2 = [1,2,3,4,5,6]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;但是他还有其他的用法：&lt;/p&gt;
+&lt;p&gt;1.复制一个对象给另一个对象{…对象名}。此时这两个对象并没有什么联系了&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;const p1 = &amp;#123; name: &amp;quot;张三&amp;quot;, age: &amp;quot;18&amp;quot;, sex: &amp;quot;女&amp;quot; &amp;#125;;
+const p2 = &amp;#123; ...p1 &amp;#125;;
+p1.name = &amp;quot;sss&amp;quot;;
+console.log(p2); //&amp;#123;name:&amp;quot;张三&amp;quot;,age:&amp;quot;18&amp;quot;,sex:&amp;quot;女&amp;quot;&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2.在复制的时候，合并其中的属性&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;const p1 = &amp;#123; name: &amp;quot;张三&amp;quot;, age: &amp;quot;18&amp;quot;, sex: &amp;quot;女&amp;quot; &amp;#125;;
+const p2 = &amp;#123; ...p1, name: &amp;quot;111&amp;quot;, hua: &amp;quot;ss&amp;quot; &amp;#125;;
+p1.name = &amp;quot;sss&amp;quot;;
+console.log(p2); //&amp;#123;name: &amp;quot;111&amp;quot;, age: &amp;quot;18&amp;quot;, sex: &amp;quot;女&amp;quot;,hua:&amp;quot;ss&amp;quot;&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;注意！！&lt;/strong&gt; &lt;strong&gt;{…P}并不能展开一个对象&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;props 传递一个对象，是因为 babel+react 使得{..p}可以展开对象，但是只有在标签中才能使用&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-2-props-限制&#34;&gt;&lt;a href=&#34;#3-2-props-限制&#34; class=&#34;headerlink&#34; title=&#34;3.2 props 限制&#34;&gt;&lt;/a&gt;3.2 props 限制&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;注意：&lt;/p&gt;
+&lt;p&gt;自 React v15.5 起，&lt;code&gt;React.PropTypes&lt;/code&gt; 已移入另一个包中。请使用 &lt;a href=&#34;https://www.npmjs.com/package/prop-types&#34;&gt;&lt;code&gt;prop-types&lt;/code&gt; 库&lt;/a&gt; 代替。&lt;/p&gt;
+&lt;p&gt;我们提供了一个 &lt;a href=&#34;https://zh-hans.reactjs.org/blog/2017/04/07/react-v15.5.0.html#migrating-from-reactproptypes&#34;&gt;codemod 脚本&lt;/a&gt;来做自动转换。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;随着你的应用程序不断增长，你可以通过类型检查捕获大量错误。对于某些应用程序来说，你可以使用 &lt;a href=&#34;https://flow.org/&#34;&gt;Flow&lt;/a&gt; 或 &lt;a href=&#34;https://www.typescriptlang.org/&#34;&gt;TypeScript&lt;/a&gt; 等 JavaScript 扩展来对整个应用程序做类型检查。但即使你不使用这些扩展，React 也内置了一些类型检查的功能。要在组件的 props 上进行类型检查，你只需配置特定的 &lt;code&gt;propTypes&lt;/code&gt; 属性：&lt;/p&gt;
+&lt;p&gt;react 对此提供了相应的解决方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;propTypes:类型检查，还可以限制不能为空&lt;/li&gt;
+&lt;li&gt;defaultProps：默认值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;从 ES2022 开始，你也可以在 React 类组件中将 &lt;code&gt;defaultProps&lt;/code&gt; 声明为静态属性。欲了解更多信息，请参阅 &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields#public_static_fields&#34;&gt;class public static fields&lt;/a&gt;。这种现代语法需要添加额外的编译步骤才能在老版浏览器中工作。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;!-- 准备好一个“容器” --&amp;gt;
+&amp;lt;div id=&amp;quot;test1&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;test2&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;test3&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;script type=&amp;quot;text/babel&amp;quot;&amp;gt;
+    //创建组件
+    class Person extends React.Component&amp;#123;
+        render()&amp;#123;
+            // console.log(this);
+            const &amp;#123;name,age,sex&amp;#125; = this.props
+            //props是只读的
+            //this.props.name = &amp;#39;jack&amp;#39; //此行代码会报错，因为props是只读的
+            return (
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;姓名：&amp;#123;name&amp;#125;&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;性别：&amp;#123;sex&amp;#125;&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;年龄：&amp;#123;age+1&amp;#125;&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            )
+        &amp;#125;
+    &amp;#125;
+    //对标签属性进行类型、必要性的限制
+    Person.propTypes = &amp;#123;
+        name:PropTypes.string.isRequired, //限制name必传，且为字符串
+        sex:PropTypes.string,//限制sex为字符串
+        age:PropTypes.number,//限制age为数值
+        speak:PropTypes.func,//限制speak为函数
+    &amp;#125;
+    //指定默认标签属性值
+    Person.defaultProps = &amp;#123;
+        sex:&amp;#39;男&amp;#39;,//sex默认值为男
+        age:18 //age默认值为18
+    &amp;#125;
+    //渲染组件到页面
+    ReactDOM.render(&amp;lt;Person name=&amp;#123;100&amp;#125; speak=&amp;#123;speak&amp;#125;/&amp;gt;,document.getElementById(&amp;#39;test1&amp;#39;))
+    ReactDOM.render(&amp;lt;Person name=&amp;quot;tom&amp;quot; age=&amp;#123;18&amp;#125; sex=&amp;quot;女&amp;quot;/&amp;gt;,document.getElementById(&amp;#39;test2&amp;#39;))
+
+    const p = &amp;#123;name:&amp;#39;老刘&amp;#39;,age:18,sex:&amp;#39;女&amp;#39;&amp;#125;
+    // console.log(&amp;#39;@&amp;#39;,...p);
+    // ReactDOM.render(&amp;lt;Person name=&amp;#123;p.name&amp;#125; age=&amp;#123;p.age&amp;#125; sex=&amp;#123;p.sex&amp;#125;/&amp;gt;,document.getElementById(&amp;#39;test3&amp;#39;))
+    ReactDOM.render(&amp;lt;Person &amp;#123;...p&amp;#125;/&amp;gt;,document.getElementById(&amp;#39;test3&amp;#39;))
+
+    function speak()&amp;#123;
+        console.log(&amp;#39;我说话了&amp;#39;);
+    &amp;#125;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;当传入的 &lt;code&gt;prop&lt;/code&gt; 值类型不正确时，JavaScript 控制台将会显示警告。出于性能方面的考虑，&lt;code&gt;propTypes&lt;/code&gt; 仅在开发模式下进行检查。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;defaultProps&lt;/code&gt; 用于确保 &lt;code&gt;this.props.sex&lt;/code&gt; 在父组件没有指定其值时，有一个默认值。&lt;code&gt;propTypes&lt;/code&gt; 类型检查发生在 &lt;code&gt;defaultProps&lt;/code&gt; 赋值后，所以类型检查也适用于 &lt;code&gt;defaultProps&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PropTypes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;以下提供了使用不同验证器的例子：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;import PropTypes from &amp;quot;prop-types&amp;quot;;
+
+MyComponent.propTypes = &amp;#123;
+    // 你可以将属性声明为 JS 原生类型，默认情况下
+    // 这些属性都是可选的。
+    optionalArray: PropTypes.array,
+    optionalBool: PropTypes.bool,
+    optionalFunc: PropTypes.func,
+    optionalNumber: PropTypes.number,
+    optionalObject: PropTypes.object,
+    optionalString: PropTypes.string,
+    optionalSymbol: PropTypes.symbol,
+
+    // 任何可被渲染的元素（包括数字、字符串、元素或数组）
+    // (或 Fragment) 也包含这些类型。
+    optionalNode: PropTypes.node,
+
+    // 一个 React 元素。
+    optionalElement: PropTypes.element,
+
+    // 一个 React 元素类型（即，MyComponent）。
+    optionalElementType: PropTypes.elementType,
+
+    // 你也可以声明 prop 为类的实例，这里使用
+    // JS 的 instanceof 操作符。
+    optionalMessage: PropTypes.instanceOf(Message),
+
+    // 你可以让你的 prop 只能是特定的值，指定它为
+    // 枚举类型。
+    optionalEnum: PropTypes.oneOf([&amp;quot;News&amp;quot;, &amp;quot;Photos&amp;quot;]),
+
+    // 一个对象可以是几种类型中的任意一个类型
+    optionalUnion: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.instanceOf(Message)]),
+
+    // 可以指定一个数组由某一类型的元素组成
+    optionalArrayOf: PropTypes.arrayOf(PropTypes.number),
+
+    // 可以指定一个对象由某一类型的值组成
+    optionalObjectOf: PropTypes.objectOf(PropTypes.number),
+
+    // 可以指定一个对象由特定的类型值组成
+    optionalObjectWithShape: PropTypes.shape(&amp;#123;
+        color: PropTypes.string,
+        fontSize: PropTypes.number,
+    &amp;#125;),
+
+    // 具有额外属性警告的对象
+    optionalObjectWithStrictShape: PropTypes.exact(&amp;#123;
+        name: PropTypes.string,
+        quantity: PropTypes.number,
+    &amp;#125;),
+
+    // 你可以在任何 PropTypes 属性后面加上 `isRequired` ，确保
+    // 这个 prop 没有被提供时，会打印警告信息。
+    requiredFunc: PropTypes.func.isRequired,
+
+    // 任意类型的必需数据
+    requiredAny: PropTypes.any.isRequired,
+
+    // 你可以指定一个自定义验证器。它在验证失败时应返回一个 Error 对象。
+    // 请不要使用 `console.warn` 或抛出异常，因为这在 `oneOfType` 中不会起作用。
+    customProp: function (props, propName, componentName) &amp;#123;
+        if (!/matchme/.test(props[propName])) &amp;#123;
+            return new Error(&amp;quot;Invalid prop `&amp;quot; + propName + &amp;quot;` supplied to&amp;quot; + &amp;quot; `&amp;quot; + componentName + &amp;quot;`. Validation failed.&amp;quot;);
+        &amp;#125;
+    &amp;#125;,
+
+    // 你也可以提供一个自定义的 `arrayOf` 或 `objectOf` 验证器。
+    // 它应该在验证失败时返回一个 Error 对象。
+    // 验证器将验证数组或对象中的每个值。验证器的前两个参数
+    // 第一个是数组或对象本身
+    // 第二个是他们当前的键。
+    customArrayProp: PropTypes.arrayOf(function (propValue, key, componentName, location, propFullName) &amp;#123;
+        if (!/matchme/.test(propValue[key])) &amp;#123;
+            return new Error(&amp;quot;Invalid prop `&amp;quot; + propFullName + &amp;quot;` supplied to&amp;quot; + &amp;quot; `&amp;quot; + componentName + &amp;quot;`. Validation failed.&amp;quot;);
+        &amp;#125;
+    &amp;#125;),
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;限制单个元素&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;你可以通过 &lt;code&gt;PropTypes.element&lt;/code&gt; 来确保传递给组件的 children 中只包含一个元素。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;import PropTypes from &amp;quot;prop-types&amp;quot;;
+
+class MyComponent extends React.Component &amp;#123;
+    render() &amp;#123;
+        // 这必须只有一个元素，否则控制台会打印警告。
+        const children = this.props.children;
+        return &amp;lt;div&amp;gt;&amp;#123;children&amp;#125;&amp;lt;/div&amp;gt;;
+    &amp;#125;
+&amp;#125;
+
+MyComponent.propTypes = &amp;#123;
+    children: PropTypes.element.isRequired,
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;3-3-简写方式&#34;&gt;&lt;a href=&#34;#3-3-简写方式&#34; class=&#34;headerlink&#34; title=&#34;3.3 简写方式&#34;&gt;&lt;/a&gt;3.3 简写方式&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;!-- 准备好一个“容器” --&amp;gt;
+&amp;lt;div id=&amp;quot;test1&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;test2&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;test3&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+
+&amp;lt;script type=&amp;quot;text/babel&amp;quot;&amp;gt;
+    //创建组件
+    class Person extends React.Component&amp;#123;
+
+        constructor(props)&amp;#123;
+            //构造器是否接收props，是否传递给super，取决于：是否希望在构造器中通过this访问props
+            // console.log(props);
+            super(props)
+            console.log(&amp;#39;constructor&amp;#39;,this.props);
+        &amp;#125;
+
+        //对标签属性进行类型、必要性的限制
+        static propTypes = &amp;#123;
+            name:PropTypes.string.isRequired, //限制name必传，且为字符串
+            sex:PropTypes.string,//限制sex为字符串
+            age:PropTypes.number,//限制age为数值
+        &amp;#125;
+
+        //指定默认标签属性值
+        static defaultProps = &amp;#123;
+            sex:&amp;#39;男&amp;#39;,//sex默认值为男
+            age:18 //age默认值为18
+        &amp;#125;
+
+        render()&amp;#123;
+            // console.log(this);
+            const &amp;#123;name,age,sex&amp;#125; = this.props
+            //props是只读的
+            //this.props.name = &amp;#39;jack&amp;#39; //此行代码会报错，因为props是只读的
+            return (
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;姓名：&amp;#123;name&amp;#125;&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;性别：&amp;#123;sex&amp;#125;&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;年龄：&amp;#123;age+1&amp;#125;&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            )
+        &amp;#125;
+    &amp;#125;
+
+    //渲染组件到页面
+    ReactDOM.render(&amp;lt;Person name=&amp;quot;jerry&amp;quot;/&amp;gt;,document.getElementById(&amp;#39;test1&amp;#39;))
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在使用的时候可以通过 &lt;code&gt;this.props&lt;/code&gt;来获取值 类式组件的 &lt;code&gt;props&lt;/code&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;通过在组件标签上传递值，在组件中就可以获取到所传递的值&lt;/li&gt;
+&lt;li&gt;在构造器里的&lt;code&gt;props&lt;/code&gt;参数里可以获取到 &lt;code&gt;props&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;可以分别设置 &lt;code&gt;propTypes&lt;/code&gt; 和 &lt;code&gt;defaultProps&lt;/code&gt; 两个属性来分别操作 &lt;code&gt;props&lt;/code&gt;的规范和默认值，两者都是直接添加在类式组件的&lt;strong&gt;原型对象&lt;/strong&gt;上的（所以需要添加 &lt;code&gt;static&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;同时可以通过&lt;code&gt;...&lt;/code&gt;运算符来简化&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3-4-函数式组件的使用&#34;&gt;&lt;a href=&#34;#3-4-函数式组件的使用&#34; class=&#34;headerlink&#34; title=&#34;3.4 函数式组件的使用&#34;&gt;&lt;/a&gt;3.4 函数式组件的使用&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;函数在使用 props 的时候，是作为参数进行使用的(props)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt;
+    &amp;lt;title&amp;gt;对props进行限制&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;!-- 准备好一个“容器” --&amp;gt;
+    &amp;lt;div id=&amp;quot;test1&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+    &amp;lt;script type=&amp;quot;text/babel&amp;quot;&amp;gt;
+      //创建组件
+      function Person(props) &amp;#123;
+        const &amp;#123; name, age, sex &amp;#125; = props
+        return (
+          &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;姓名：&amp;#123;name&amp;#125;&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;性别：&amp;#123;sex&amp;#125;&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;年龄：&amp;#123;age&amp;#125;&amp;lt;/li&amp;gt;
+          &amp;lt;/ul&amp;gt;
+        )
+      &amp;#125;
+      Person.propTypes = &amp;#123;
+        name: PropTypes.string.isRequired, //限制name必传，且为字符串
+        sex: PropTypes.string, //限制sex为字符串
+        age: PropTypes.number, //限制age为数值
+      &amp;#125;
+
+      //指定默认标签属性值
+      Person.defaultProps = &amp;#123;
+        sex: &amp;#39;男&amp;#39;, //sex默认值为男
+        age: 18, //age默认值为18
+      &amp;#125;
+      //渲染组件到页面
+      ReactDOM.render(&amp;lt;Person name=&amp;quot;jerry&amp;quot; /&amp;gt;, document.getElementById(&amp;#39;test1&amp;#39;))
+    &amp;lt;/script&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;函数组件的 &lt;code&gt;props&lt;/code&gt;定义:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在组件标签中传递 &lt;code&gt;props&lt;/code&gt;的值&lt;/li&gt;
+&lt;li&gt;组件函数的参数为 &lt;code&gt;props&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;对 &lt;code&gt;props&lt;/code&gt;的限制和默认值同样设置在原型对象上&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3-5-props-的只读性&#34;&gt;&lt;a href=&#34;#3-5-props-的只读性&#34; class=&#34;headerlink&#34; title=&#34;3.5 props 的只读性&#34;&gt;&lt;/a&gt;3.5 props 的只读性&lt;/h3&gt;&lt;p&gt;组件无论是使用&lt;a href=&#34;https://zh-hans.reactjs.org/docs/components-and-props.html#function-and-class-components&#34;&gt;函数声明还是通过 class 声明&lt;/a&gt;，都绝不能修改自身的 props。来看下这个 &lt;code&gt;sum&lt;/code&gt; 函数：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function sum(a, b) &amp;#123;
+    return a + b;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这样的函数被称为&lt;a href=&#34;https://en.wikipedia.org/wiki/Pure_function&#34;&gt;“纯函数”&lt;/a&gt;，因为该函数不会尝试更改入参，且多次调用下相同的入参始终返回相同的结果。&lt;/p&gt;
+&lt;p&gt;相反，下面这个函数则不是纯函数，因为它更改了自己的入参：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function withdraw(account, amount) &amp;#123;
+    account.total -= amount;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;React 非常灵活，但它也有一个严格的规则：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;所有 React 组件都必须像纯函数一样保护它们的 props 不被更改。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当然，应用程序的 UI 是动态的，并会伴随着时间的推移而变化。&lt;code&gt;state&lt;/code&gt;在不违反上述规则的情况下，state 允许 React 组件随用户操作、网络响应或者其他变化而动态更改输出内容。&lt;/p&gt;
+&lt;h2 id=&#34;4-refs&#34;&gt;&lt;a href=&#34;#4-refs&#34; class=&#34;headerlink&#34; title=&#34;4.refs&#34;&gt;&lt;/a&gt;4.refs&lt;/h2&gt;&lt;p&gt;Refs 提供了一种方式，允许我们访问 DOM 节点或在 &lt;code&gt;render&lt;/code&gt; 方法中创建的 React 元素。&lt;/p&gt;
+&lt;p&gt;在典型的 React 数据流中，&lt;a href=&#34;https://zh-hans.reactjs.org/docs/components-and-props.html&#34;&gt;props&lt;/a&gt; 是父组件与子组件交互的唯一方式。要修改一个子组件，你需要使用新的 props 来重新渲染它。但是，在某些情况下，你需要在典型数据流之外强制修改子组件。被修改的子组件可能是一个 React 组件的实例，也可能是一个 DOM 元素。对于这两种情况，React 都提供了解决办法。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在我们正常的操作节点时，需要采用 DOM API 来查找元素，但是这样违背了 React 的理念，因此有了&lt;code&gt;refs&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;何时使用 Refs&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;下面是几个适合使用 refs 的情况：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;管理焦点，文本选择或媒体播放。&lt;/li&gt;
+&lt;li&gt;触发强制动画。&lt;/li&gt;
+&lt;li&gt;集成第三方 DOM 库。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;避免使用 refs 来做任何可以通过声明式实现来完成的事情。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;有三种操作&lt;code&gt;refs&lt;/code&gt;的方法，分别为：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;字符串形式&lt;/li&gt;
+&lt;li&gt;回调形式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;createRef&lt;/code&gt;形式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;勿过度使用 Refs&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;你可能首先会想到使用 refs 在你的 app 中“让事情发生”。如果是这种情况，请花一点时间，认真再考虑一下 state 属性应该被安排在哪个组件层中。通常你会想明白，让更高的组件层级拥有这个 state，是更恰当的。查看 &lt;a href=&#34;https://zh-hans.reactjs.org/docs/lifting-state-up.html&#34;&gt;状态提升&lt;/a&gt; 以获取更多有关示例。&lt;/p&gt;
+&lt;h3 id=&#34;4-1-字符串形式&#34;&gt;&lt;a href=&#34;#4-1-字符串形式&#34; class=&#34;headerlink&#34; title=&#34;4.1 字符串形式&#34;&gt;&lt;/a&gt;4.1 字符串形式&lt;/h3&gt;&lt;p&gt;在想要获取到一个 DOM 节点，可以直接在这个节点上添加 ref 属性。利用该属性进行获取该节点的值。&lt;/p&gt;
+&lt;p&gt;案例：给需要的节点添加 ref 属性，此时该实例对象的 refs 上就会有这个值。就可以利用实例对象的 refs 获取已经添加节点的值&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;input ref=&amp;quot;dian&amp;quot; type=&amp;quot;text&amp;quot; placeholder=&amp;quot;点击弹出&amp;quot; /&amp;gt;;
+
+inputBlur = () =&amp;gt; &amp;#123;
+    alert(this.refs.shiqu.value);
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不建议使用它，因为 string 类型的 refs 存在 &lt;a href=&#34;https://github.com/facebook/react/pull/8333#issuecomment-271648615&#34;&gt;一些问题&lt;/a&gt;。它已过时并可能会在未来的版本被移除。&lt;/p&gt;
+&lt;p&gt;如果你目前还在使用 &lt;code&gt;this.refs.textInput&lt;/code&gt; 这种方式访问 refs ，我们建议用&lt;a href=&#34;https://zh-hans.reactjs.org/docs/refs-and-the-dom.html#callback-refs&#34;&gt;回调函数&lt;/a&gt;或 &lt;a href=&#34;https://zh-hans.reactjs.org/docs/refs-and-the-dom.html#creating-refs&#34;&gt;&lt;code&gt;createRef&lt;/code&gt; API&lt;/a&gt; 的方式代替。&lt;/p&gt;
+&lt;h3 id=&#34;4-2-回调形式&#34;&gt;&lt;a href=&#34;#4-2-回调形式&#34; class=&#34;headerlink&#34; title=&#34;4.2 回调形式&#34;&gt;&lt;/a&gt;4.2 回调形式&lt;/h3&gt;&lt;p&gt;React 也支持另一种设置 refs 的方式，称为“回调 refs”。它能助你更精细地控制何时 refs 被设置和解除。&lt;/p&gt;
+&lt;p&gt;这种方式会将该 DOM 作为参数传递过去。&lt;/p&gt;
+&lt;p&gt;组件实例的&lt;code&gt;ref&lt;/code&gt;属性传递一个回调函数&lt;code&gt;c =&amp;gt; this.input1 = c &lt;/code&gt;（箭头函数简写），这样会在实例的属性中存储对 DOM 节点的引用，使用时可通过&lt;code&gt;this.input1&lt;/code&gt;来使用&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;&amp;lt;input ref=&amp;#123;(e) =&amp;gt; (this.input1 = e)&amp;#125; type=&amp;quot;text&amp;quot; placeholder=&amp;quot;点击按钮提示数据&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;e&lt;/code&gt;会接收到当前节点作为参数，然后将当前节点赋值给实例的&lt;code&gt;input1&lt;/code&gt;属性上面&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关于回调 refs 的说明&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果 &lt;code&gt;ref&lt;/code&gt; 回调函数是以内联函数的方式定义的，在更新过程中它会被执行两次，第一次传入参数 &lt;code&gt;null&lt;/code&gt;，然后第二次会传入参数 DOM 元素。这是因为在每次渲染时会创建一个新的函数实例，所以 React 清空旧的 ref 并且设置新的。通过将 ref 的回调函数定义成 class 的绑定函数的方式可以避免上述问题，但是大多数情况下它是无关紧要的。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class Demo extends React.Component &amp;#123;
+    state = &amp;#123; isHot: false &amp;#125;;
+
+    changeWeather = () =&amp;gt; &amp;#123;
+        //获取原来的状态
+        const &amp;#123; isHot &amp;#125; = this.state;
+        //更新状态
+        this.setState(&amp;#123; isHot: !isHot &amp;#125;);
+    &amp;#125;;
+
+    render() &amp;#123;
+        const &amp;#123; isHot &amp;#125; = this.state;
+        return (
+            &amp;lt;div&amp;gt;
+                &amp;lt;h2&amp;gt;今天天气很&amp;#123;isHot ? &amp;quot;炎热&amp;quot; : &amp;quot;凉爽&amp;quot;&amp;#125;&amp;lt;/h2&amp;gt;
+                &amp;lt;input
+                    ref=&amp;#123;(c) =&amp;gt; &amp;#123;
+                        this.input1 = c;
+                        console.log(&amp;quot;@&amp;quot;, c);
+                    &amp;#125;&amp;#125;
+                    type=&amp;quot;text&amp;quot;
+                /&amp;gt;
+                &amp;lt;br /&amp;gt;
+                &amp;lt;br /&amp;gt;
+                &amp;lt;button onClick=&amp;#123;this.changeWeather&amp;#125;&amp;gt;点我切换天气&amp;lt;/button&amp;gt;
+            &amp;lt;/div&amp;gt;
+        );
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;刚渲染完会调用一次&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.hdslb.com/bfs/album/40ec77c4a5ab8d3ca9bcb67eb2f1a2e80bc8d2ed.png&#34; alt=&#34;image-20221023153439400&#34;&gt;&lt;/p&gt;
+&lt;p&gt;触发模板更新会调用两次&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.hdslb.com/bfs/album/6caaacc85071b8b9ed0040e1969be621b4795a61.png&#34; alt=&#34;image-20221023153510564&#34;&gt;&lt;/p&gt;
+&lt;p&gt;第一次传递一个 null 值把之前的属性清空，再重新赋值。&lt;/p&gt;
+&lt;p&gt;如果不想总是这样重新创建新的函数，可以使用下面的方案&lt;/p&gt;
+&lt;p&gt;下面的例子描述了一个通用的范例：使用 &lt;code&gt;ref&lt;/code&gt; 回调函数，在实例的属性中存储对 DOM 节点的引用。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;//创建组件
+class Demo extends React.Component &amp;#123;
+    state = &amp;#123; isHot: false &amp;#125;;
+    // 在实例上面创建一个函数
+    setTextInputRef = (e) =&amp;gt; &amp;#123;
+        this.input1 = e;
+    &amp;#125;;
+
+    changeWeather = () =&amp;gt; &amp;#123;
+        console.log(this.input1);
+        //获取原来的状态
+        const &amp;#123; isHot &amp;#125; = this.state;
+        //更新状态
+        this.setState(&amp;#123; isHot: !isHot &amp;#125;);
+    &amp;#125;;
+
+    render() &amp;#123;
+        const &amp;#123; isHot &amp;#125; = this.state;
+        return (
+            &amp;lt;div&amp;gt;
+                &amp;lt;h2&amp;gt;今天天气很&amp;#123;isHot ? &amp;quot;炎热&amp;quot; : &amp;quot;凉爽&amp;quot;&amp;#125;&amp;lt;/h2&amp;gt;
+                &amp;lt;input ref=&amp;#123;this.setTextInputRef&amp;#125; type=&amp;quot;text&amp;quot; /&amp;gt;
+                &amp;lt;br /&amp;gt;
+                &amp;lt;button onClick=&amp;#123;this.changeWeather&amp;#125;&amp;gt;点我切换天气&amp;lt;/button&amp;gt;
+            &amp;lt;/div&amp;gt;
+        );
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;React 将在组件挂载时，会调用 &lt;code&gt;ref&lt;/code&gt; 回调函数并传入 DOM 元素，当卸载时调用它并传入 &lt;code&gt;null&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;你可以在组件间传递回调形式的 refs，就像你可以传递通过 &lt;code&gt;React.createRef()&lt;/code&gt; 创建的对象 refs 一样。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function CustomTextInput(props) &amp;#123;
+    return (
+        &amp;lt;div&amp;gt;
+            &amp;lt;input ref=&amp;#123;props.inputRef&amp;#125; /&amp;gt;
+        &amp;lt;/div&amp;gt;
+    );
+&amp;#125;
+
+class Parent extends React.Component &amp;#123;
+    render() &amp;#123;
+        return &amp;lt;CustomTextInput inputRef=&amp;#123;(el) =&amp;gt; (this.inputElement = el)&amp;#125; /&amp;gt;;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在上面的例子中，&lt;code&gt;Parent&lt;/code&gt; 把它的 refs 回调函数当作 &lt;code&gt;inputRef&lt;/code&gt; props 传递给了 &lt;code&gt;CustomTextInput&lt;/code&gt;，而且 &lt;code&gt;CustomTextInput&lt;/code&gt; 把相同的函数作为特殊的 &lt;code&gt;ref&lt;/code&gt; 属性传递给了 &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;。结果是，在 &lt;code&gt;Parent&lt;/code&gt; 中的 &lt;code&gt;this.inputElement&lt;/code&gt; 会被设置为与 &lt;code&gt;CustomTextInput&lt;/code&gt; 中的 &lt;code&gt;input&lt;/code&gt; 元素相对应的 DOM 节点。&lt;/p&gt;
+&lt;h3 id=&#34;4-3-createRef-形式（推荐写法）&#34;&gt;&lt;a href=&#34;#4-3-createRef-形式（推荐写法）&#34; class=&#34;headerlink&#34; title=&#34;4.3 createRef 形式（推荐写法）&#34;&gt;&lt;/a&gt;4.3 createRef 形式（推荐写法）&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;创建 Refs&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Refs 是使用 &lt;code&gt;React.createRef()&lt;/code&gt; 创建的，并通过 &lt;code&gt;ref&lt;/code&gt; 属性附加到 React 元素。在构造组件时，通常将 Refs 分配给实例属性，以便可以在整个组件中引用它们。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class MyComponent extends React.Component &amp;#123;
+    constructor(props) &amp;#123;
+        super(props);
+        this.myRef = React.createRef();
+    &amp;#125;
+    render() &amp;#123;
+        return &amp;lt;div ref=&amp;#123;this.myRef&amp;#125; /&amp;gt;;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;访问 Refs&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当 ref 被传递给 &lt;code&gt;render&lt;/code&gt; 中的元素时，对该节点的引用可以在 ref 的 &lt;code&gt;current&lt;/code&gt; 属性中被访问。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;const node = this.myRef.current;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;ref 的值根据节点的类型而有所不同：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当 &lt;code&gt;ref&lt;/code&gt; 属性用于 HTML 元素时，构造函数中使用 &lt;code&gt;React.createRef()&lt;/code&gt; 创建的 &lt;code&gt;ref&lt;/code&gt; 接收底层 DOM 元素作为其 &lt;code&gt;current&lt;/code&gt; 属性。&lt;/li&gt;
+&lt;li&gt;当 &lt;code&gt;ref&lt;/code&gt; 属性用于自定义 class 组件时，&lt;code&gt;ref&lt;/code&gt; 对象接收组件的挂载实例作为其 &lt;code&gt;current&lt;/code&gt; 属性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;你不能在函数组件上使用 &lt;code&gt;ref&lt;/code&gt; 属性&lt;/strong&gt;，因为他们没有实例。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-4-为-DOM-元素添加-ref&#34;&gt;&lt;a href=&#34;#4-4-为-DOM-元素添加-ref&#34; class=&#34;headerlink&#34; title=&#34;4.4 为 DOM 元素添加 ref&#34;&gt;&lt;/a&gt;4.4 为 DOM 元素添加 ref&lt;/h3&gt;&lt;p&gt;以下代码使用 &lt;code&gt;ref&lt;/code&gt; 去存储 DOM 节点的引用：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class CustomTextInput extends React.Component &amp;#123;
+    constructor(props) &amp;#123;
+        super(props);
+        // 创建一个 ref 来存储 textInput 的 DOM 元素
+        this.textInput = React.createRef();
+        this.focusTextInput = this.focusTextInput.bind(this);
+    &amp;#125;
+
+    focusTextInput() &amp;#123;
+        // 直接使用原生 API 使 text 输入框获得焦点
+        // 注意：我们通过 &amp;quot;current&amp;quot; 来访问 DOM 节点
+        this.textInput.current.focus();
+    &amp;#125;
+
+    render() &amp;#123;
+        // 告诉 React 我们想把 &amp;lt;input&amp;gt; ref 关联到
+        // 构造器里创建的 `textInput` 上
+        return (
+            &amp;lt;div&amp;gt;
+                &amp;lt;input type=&amp;quot;text&amp;quot; ref=&amp;#123;this.textInput&amp;#125; /&amp;gt;
+                &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;Focus the text input&amp;quot; onClick=&amp;#123;this.focusTextInput&amp;#125; /&amp;gt;
+            &amp;lt;/div&amp;gt;
+        );
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;React 会在组件挂载时给 &lt;code&gt;current&lt;/code&gt; 属性传入 DOM 元素，并在组件卸载时传入 &lt;code&gt;null&lt;/code&gt; 值。&lt;code&gt;ref&lt;/code&gt; 会在 &lt;code&gt;componentDidMount&lt;/code&gt; 或 &lt;code&gt;componentDidUpdate&lt;/code&gt; 生命周期钩子触发前更新。&lt;/p&gt;
+&lt;p&gt;注意：我们不要过度的使用 ref，如果发生时间的元素刚好是需要操作的元素，就可以使用事件对象去替代。&lt;/p&gt;
+&lt;h3 id=&#34;4-5-为-class-组件添加-Ref&#34;&gt;&lt;a href=&#34;#4-5-为-class-组件添加-Ref&#34; class=&#34;headerlink&#34; title=&#34;4.5 为 class 组件添加 Ref&#34;&gt;&lt;/a&gt;4.5 为 class 组件添加 Ref&lt;/h3&gt;&lt;p&gt;如果我们想包装上面的 &lt;code&gt;CustomTextInput&lt;/code&gt;，来模拟它挂载之后立即被点击的操作，我们可以使用 ref 来获取这个自定义的 input 组件并手动调用它的 &lt;code&gt;focusTextInput&lt;/code&gt; 方法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class AutoFocusTextInput extends React.Component &amp;#123;
+    constructor(props) &amp;#123;
+        super(props);
+        this.textInput = React.createRef();
+    &amp;#125;
+
+    componentDidMount() &amp;#123;
+        this.textInput.current.focusTextInput();
+    &amp;#125;
+
+    render() &amp;#123;
+        return &amp;lt;CustomTextInput ref=&amp;#123;this.textInput&amp;#125; /&amp;gt;;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;请注意，这仅在 &lt;code&gt;CustomTextInput&lt;/code&gt; 声明为 class 时才有效：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;class CustomTextInput extends React.Component &amp;#123;
+    // ...
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;4-6-Refs-与函数组件&#34;&gt;&lt;a href=&#34;#4-6-Refs-与函数组件&#34; class=&#34;headerlink&#34; title=&#34;4.6 Refs 与函数组件&#34;&gt;&lt;/a&gt;4.6 Refs 与函数组件&lt;/h3&gt;&lt;p&gt;默认情况下，&lt;strong&gt;你不能在函数组件上使用 &lt;code&gt;ref&lt;/code&gt; 属性&lt;/strong&gt;，因为它们没有实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function MyFunctionComponent() &amp;#123;
+    return &amp;lt;input /&amp;gt;;
+&amp;#125;
+
+class Parent extends React.Component &amp;#123;
+    constructor(props) &amp;#123;
+        super(props);
+        this.textInput = React.createRef();
+    &amp;#125;
+    render() &amp;#123;
+        // This will *not* work!
+        return &amp;lt;MyFunctionComponent ref=&amp;#123;this.textInput&amp;#125; /&amp;gt;;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果要在函数组件中使用 &lt;code&gt;ref&lt;/code&gt;，你可以使用 &lt;a href=&#34;https://zh-hans.reactjs.org/docs/forwarding-refs.html&#34;&gt;&lt;code&gt;forwardRef&lt;/code&gt;&lt;/a&gt;（可与 &lt;a href=&#34;https://zh-hans.reactjs.org/docs/hooks-reference.html#useimperativehandle&#34;&gt;&lt;code&gt;useImperativeHandle&lt;/code&gt;&lt;/a&gt; 结合使用），或者可以将该组件转化为 class 组件。&lt;/p&gt;
+&lt;p&gt;不管怎样，你可以&lt;strong&gt;在函数组件内部使用 &lt;code&gt;ref&lt;/code&gt; 属性&lt;/strong&gt;，只要它指向一个 DOM 元素或 class 组件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;js&#34;&gt;function CustomTextInput(props) &amp;#123;
+    // 这里必须声明 textInput，这样 ref 才可以引用它
+    const textInput = useRef(null);
+
+    function handleClick() &amp;#123;
+        textInput.current.focus();
+    &amp;#125;
+
+    return (
+        &amp;lt;div&amp;gt;
+            &amp;lt;input type=&amp;quot;text&amp;quot; ref=&amp;#123;textInput&amp;#125; /&amp;gt;
+            &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;Focus the text input&amp;quot; onClick=&amp;#123;handleClick&amp;#125; /&amp;gt;
+        &amp;lt;/div&amp;gt;
+    );
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="React" />
         <updated>2023-09-24T10:57:52.000Z</updated>

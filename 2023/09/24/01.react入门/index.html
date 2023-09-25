@@ -1,0 +1,802 @@
+
+    <!DOCTYPE html>
+    <html lang="en"
+            
+          
+    >
+    <head>
+    <meta charset="utf-8">
+    
+
+    
+
+    
+    <title>
+        React-入门 |
+        
+        背着梦的幸存者</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CUbuntu%20Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+    
+<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/v4-font-face.min.css">
+
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+    <meta name="description" content="01 【React 入门】1.React 简介react 是什么？ React 是一个用于构建用户界面的 JavaScript 库。  是一个将数据渲染为 HTML 视图的开源 JS 库 它遵循基于组件的方法，有助于构建可重用的 UI 组件 它用于开发复杂的交互式的 web 和移动 UI   React 有什么特点？   使用虚拟 DOM 而不是真正的 DOM 它可以用服务器渲染 它遵循单向数据流">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React-入门">
+<meta property="og:url" content="http://example.com/2023/09/24/01.react%E5%85%A5%E9%97%A8/index.html">
+<meta property="og:site_name" content="背着梦的幸存者">
+<meta property="og:description" content="01 【React 入门】1.React 简介react 是什么？ React 是一个用于构建用户界面的 JavaScript 库。  是一个将数据渲染为 HTML 视图的开源 JS 库 它遵循基于组件的方法，有助于构建可重用的 UI 组件 它用于开发复杂的交互式的 web 和移动 UI   React 有什么特点？   使用虚拟 DOM 而不是真正的 DOM 它可以用服务器渲染 它遵循单向数据流">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i0.hdslb.com/bfs/album/514c5df0f5f8e7242ca17e1c939b4822b716315f.png">
+<meta property="og:image" content="https://i0.hdslb.com/bfs/album/7c5713f248cc28bcb531d2eda325e56789df4286.png">
+<meta property="og:image" content="https://i0.hdslb.com/bfs/album/9d4bafde75cb82f79b17a91491c46eb8576b784a.png">
+<meta property="og:image" content="https://i0.hdslb.com/bfs/album/09241923178d7fdca14d087e6f1a9627dc3b7081.png">
+<meta property="og:image" content="https://i0.hdslb.com/bfs/album/3c9c35333c0883a1057bd4c82be8bfbf9b69f04b.png">
+<meta property="article:published_time" content="2023-09-24T10:57:52.000Z">
+<meta property="article:modified_time" content="2023-09-25T11:55:50.804Z">
+<meta property="article:author" content="lineo">
+<meta property="article:tag" content="React">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i0.hdslb.com/bfs/album/514c5df0f5f8e7242ca17e1c939b4822b716315f.png">
+    
+        
+    
+    
+        <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/typeface-source-code-pro@1.1.13/index.css">
+
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+    
+    
+    
+    
+    
+<script src="https://unpkg.com/pace-js@1.2.4/pace.min.js"></script>
+
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/wowjs@1.1.3/css/libs/animate.css">
+
+        
+<script src="https://unpkg.com/wowjs@1.1.3/dist/wow.min.js"></script>
+
+        <script>
+          new WOW({
+            offset: 0,
+            mobile: true,
+            live: false
+          }).init();
+        </script>
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+    <body>
+    
+<div id='loader'>
+  <div class="loading-left-bg"></div>
+  <div class="loading-right-bg"></div>
+  <div class="spinner-box">
+    <div class="loading-taichi">
+      <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+      <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="#ff6e6b" />
+      <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z" fill="#fd0d00" />
+      <path d="M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95" fill="#fd0d00" />
+    </svg>
+    </div>
+    <div class="loading-word">少女祈祷中...</div>
+  </div>
+</div>
+</div>
+
+<script>
+  const endLoading = function() {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loader').classList.add("loading");
+  }
+  window.addEventListener('load', endLoading);
+  document.getElementById('loader').addEventListener('click', endLoading);
+</script>
+
+
+    <div id="container">
+        <div id="wrap">
+            <header id="header">
+    
+        <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-入门" class="lazyload">
+    
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <div id="logo-wrap">
+                
+                    
+                    
+                        <a href="/" id="logo"><h1>React-入门</h1></a>
+                    
+                
+            </div>
+            
+                
+                
+            
+        </div>
+        <div id="header-inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/">Home</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/archives">Archives</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/about">About</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/friend">Friend</a>
+                    </span>
+                
+            </nav>
+            <nav id="sub-nav">
+                
+                    <a id="nav-rss-link" class="nav-icon" href="/atom.xml"
+                       title="RSS Feed"></a>
+                
+                
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <div id="content" class="outer">
+                <section id="main"><article id="post-01.react入门" class="h-entry article article-type-post"
+         itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <div class="article-inner">
+        <div class="article-meta">
+            <div class="article-date wow slideInLeft">
+    <a href="/2023/09/24/01.react%E5%85%A5%E9%97%A8/" class="article-date-link">
+        <time datetime="2023-09-24T10:57:52.000Z"
+              itemprop="datePublished">2023-09-24</time>
+    </a>
+</div>
+
+            
+
+        </div>
+        <div class="hr-line"></div>
+        
+
+        <div class="e-content article-entry" itemprop="articleBody">
+            
+                <h1 id="01-【React-入门】"><a href="#01-【React-入门】" class="headerlink" title="01 【React 入门】"></a>01 【React 入门】</h1><h2 id="1-React-简介"><a href="#1-React-简介" class="headerlink" title="1.React 简介"></a>1.React 简介</h2><p><strong>react 是什么？</strong></p>
+<p><strong>React</strong> 是一个用于构建用户界面的 JavaScript 库。</p>
+<ul>
+<li>是一个将数据渲染为 HTML 视图的开源 JS 库</li>
+<li>它遵循基于组件的方法，有助于构建可重用的 UI 组件</li>
+<li>它用于开发复杂的交互式的 web 和移动 UI</li>
+</ul>
+<blockquote>
+<p>React 有什么特点？</p>
+</blockquote>
+<ol>
+<li>使用虚拟 DOM 而不是真正的 DOM</li>
+<li>它可以用服务器渲染</li>
+<li>它遵循单向数据流或数据绑定</li>
+<li>高效</li>
+<li>声明式编码，组件化编码</li>
+</ol>
+<blockquote>
+<p>React 的一些主要优点？</p>
+</blockquote>
+<ol>
+<li>它提高了应用的性能</li>
+<li>可以方便在客户端和服务器端使用</li>
+<li>由于使用 JSX，代码的可读性更好</li>
+<li>使用 React，编写 UI 测试用例变得非常容易</li>
+</ol>
+<p><strong>为什么学？</strong></p>
+<p>1.原生 JS 操作 DOM 繁琐，效率低</p>
+<p>2.使用 JS 直接操作 DOM,浏览器会进行大量的重绘重排</p>
+<p>3.原生 JS 没有组件化编码方案，代码复用低</p>
+<blockquote>
+<p>在学习之前最好看一下关于 npm 的知识：下面是我在网上看见的一个写的还不错的 npm 的文章</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_25502269/article/details/79346545">npm</a></p>
+</blockquote>
+<h2 id="2-React-基础案例"><a href="#2-React-基础案例" class="headerlink" title="2.React 基础案例"></a>2.React 基础案例</h2><p>首先需要引入几个 react 包</p>
+<ul>
+<li>React 核心库、操作 DOM 的 react 扩展库、将 jsx 转为 js 的 babel 库</li>
+</ul>
+<p>【先引入 react.development.js，后引入 react-dom.development.js】</p>
+<blockquote>
+<p><code>react.development.js</code></p>
+<ul>
+<li>react 是 react 核心库，只要使用 react 就必须要引入</li>
+<li>下载地址：<a target="_blank" rel="noopener" href="https://unpkg.com/react@18.0.0/umd/react.development.js">https://unpkg.com/react@18.0.0/umd/react.development.js</a></li>
+</ul>
+<p><code>react-dom.development.js</code></p>
+<ul>
+<li>react-dom 是 react 的 dom 包，使用 react 开发 web 应用时必须引入</li>
+<li>下载地址：<a target="_blank" rel="noopener" href="https://unpkg.com/react-dom@18.0.0/umd/react-dom.development.js">https://unpkg.com/react-dom@18.0.0/umd/react-dom.development.js</a></li>
+</ul>
+<p><code>babel.min.js </code></p>
+<ul>
+<li><p>由于 JSX 最终需要转换为 JS 代码执行，所以浏览器并不能正常识别 JSX，所以当我们在浏览器中直接使用 JSX 时，还必须引入 babel 来完成对代码的编译。</p>
+</li>
+<li><p>babel 下载地址：<a target="_blank" rel="noopener" href="https://unpkg.com/babel-standalone@6/babel.min.js">https://unpkg.com/babel-standalone@6/babel.min.js</a></p>
+</li>
+</ul>
+</blockquote>
+<p><img src="https://i0.hdslb.com/bfs/album/514c5df0f5f8e7242ca17e1c939b4822b716315f.png" alt="image-20221022171647360"></p>
+<pre><code>react.development.js
+react-dom.development.js
+babel.min.js
+</code></pre>
+<p>2.创建一个容器</p>
+<p>3.创建虚拟 DOM，渲染到容器中</p>
+<pre><code class="js">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;hello_react&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- 准备好一个“容器” --&gt;
+    &lt;div id=&quot;test&quot;&gt;&lt;/div&gt;
+
+    &lt;!-- 引入react核心库 --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;../js/react.development.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- 引入react-dom，用于支持react操作DOM --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;../js/react-dom.development.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- 引入babel，用于将jsx转为js --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;../js/babel.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script type=&quot;text/babel&quot;&gt;
+      /* 此处一定要写babel */
+      //1.创建虚拟DOM
+      const VDOM = &lt;h1&gt;Hello&lt;/h1&gt; /* 此处一定不要写引号，因为不是字符串 */
+      //2.渲染虚拟DOM到页面
+    const root = ReactDOM.createRoot(document.querySelector(&#39;#test&#39;));
+      root.render(VDOM);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<blockquote>
+<p>后面很多地方没有用<code>createRoot</code>这种方式是因为一开始学的课程是 2020 年的，这是现在新的创建方式。</p>
+<p>这里我就只把第一个案例改成新方式了</p>
+</blockquote>
+<p>这样，就会在页面中的这个 div 容器上添加这个 h1.</p>
+<p><img src="https://i0.hdslb.com/bfs/album/7c5713f248cc28bcb531d2eda325e56789df4286.png" alt="image-20221022171539523"></p>
+<blockquote>
+<ul>
+<li>React.createElement()<ul>
+<li><code>React.createElement(type, [props], [...children])</code></li>
+<li>用来创建 React 元素</li>
+<li>React 元素无法修改</li>
+</ul>
+</li>
+<li>ReactDOM.createRoot()<ul>
+<li><code>createRoot(container[, options])</code></li>
+<li>用来创建 React 的根容器，容器用来放置 React 元素</li>
+</ul>
+</li>
+<li>ReactDOM.render()<ul>
+<li><code>root.render(element)</code></li>
+<li>用来将 React 元素渲染到根元素中</li>
+<li>根元素中所有的内容都会被删除，被 React 元素所替换</li>
+<li>当重复调用 render()时，React 会将两次的渲染结果进行比较，</li>
+<li>它会确保只修改那些发生变化的元素，对 DOM 做最少的修改</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="3-jsx-语法"><a href="#3-jsx-语法" class="headerlink" title="3.jsx 语法"></a>3.jsx 语法</h2><p>JSX 是 JavaScript 的语法扩展，JSX 使得我们可以以类似于 HTML 的形式去使用 JS。JSX 便是 React 中声明式编程的体现方式。声明式编程，简单理解就是以结果为导向的编程。使用 JSX 将我们所期望的网页结构编写出来，然后 React 再根据 JSX 自动生成 JS 代码。所以我们所编写的 JSX 代码，最终都会转换为以调用<code>React.createElement()</code>创建元素的代码。</p>
+<ol>
+<li>定义虚拟 DOM，JSX 不是字符串，不要加引号</li>
+<li>标签中混入 JS 表达式的时候使用<code>&#123;&#125;</code></li>
+</ol>
+<pre><code class="js">id = &#123;myId.toUpperCase()&#125;
+</code></pre>
+<ol start="3">
+<li><p>样式的类名指定不能使用 class，使用<code>className</code></p>
+</li>
+<li><p>内敛样式要使用<code>&#123;&#123;&#125;&#125;</code>包裹</p>
+</li>
+</ol>
+<pre><code class="js">style=&#123;&#123;color:'skyblue',fontSize:'24px'&#125;&#125;
+</code></pre>
+<ol start="5">
+<li><p>不能有多个根标签，只能有一个根标签</p>
+</li>
+<li><p>JSX 的标签必须正确结束（自结束标签必须写&#x2F;）</p>
+</li>
+<li><p>JSX 中 html 标签应该小写，React 组件应该大写开头。如果小写字母开头，就将标签转化为 html 同名元素，如果 html 中无该标签对应的元素，就报错；如果是大写字母开头，react 就去渲染对应的组件，如果没有就报错</p>
+</li>
+<li><p>如果表达式是空值、布尔值、undefined，将不会显示</p>
+</li>
+</ol>
+<blockquote>
+<p>关于 JS 表达式和 JS 语句：</p>
+<ul>
+<li><p>JS 表达式：返回一个值，可以放在任何一个需要值的地方 a a+b demo(a) arr.map() function text(){}</p>
+</li>
+<li><p>JS 语句：if(){} for(){} while(){} swith(){} 不会返回一个值</p>
+</li>
+</ul>
+</blockquote>
+<p><strong>其它</strong></p>
+<ol>
+<li>注释</li>
+</ol>
+<p>写在花括号里</p>
+<pre><code class="js">ReactDOM.render(
+    &lt;div&gt;
+        &lt;h1&gt;小丞&lt;/h1&gt;
+        &#123;/*注释...*/&#125;
+    &lt;/div&gt;,
+    document.getElementById(&quot;example&quot;)
+);
+</code></pre>
+<ol start="2">
+<li><code>class</code>需要使用<code>className</code>代替</li>
+<li><code>style</code>中必须使用对象设置<code> style=&#123;&#123;background:'red'&#125;&#125;</code></li>
+</ol>
+<pre><code class="js">&lt;style&gt;
+    .title&#123;
+        background-color: orange;
+        width: 200px;
+    &#125;
+&lt;/style&gt;
+
+&lt;!-- 准备好一个“容器” --&gt;
+&lt;div id=&quot;test&quot;&gt;&lt;/div&gt;
+
+&lt;script type=&quot;text/babel&quot; &gt;
+    const myId = &#39;aTgUiGu&#39;
+    const myData = &#39;HeLlo,rEaCt&#39;
+
+    //1.创建虚拟DOM
+    const VDOM = (
+        &lt;div&gt;
+            &lt;h2 className=&quot;title&quot; id=&#123;myId.toLowerCase()&#125;&gt;
+                &lt;span style=&#123;&#123;color:'white',fontSize:'29px'&#125;&#125;&gt;&#123;myData.toLowerCase()&#125;&lt;/span&gt;
+            &lt;/h2&gt;
+            &lt;h2 className=&quot;title&quot; id=&#123;myId.toLowerCase()&#125;&gt;
+                &lt;span style=&#123;&#123;color:'white',fontSize:'29px'&#125;&#125;&gt;&#123;myData.toUpperCase()&#125;&lt;/span&gt;
+            &lt;/h2&gt;
+            &lt;input type=&quot;text&quot;/&gt;
+        &lt;/div&gt;
+    )
+    //2.渲染虚拟DOM到页面
+    ReactDOM.render(VDOM,document.getElementById(&#39;test&#39;))
+&lt;/script&gt;
+</code></pre>
+<p><img src="https://i0.hdslb.com/bfs/album/9d4bafde75cb82f79b17a91491c46eb8576b784a.png" alt="image-20221022204158589"></p>
+<ol start="4">
+<li>数组</li>
+</ol>
+<p>JSX 允许在模板中插入数组，数组自动展开全部成员</p>
+<blockquote>
+<p>{} 只能用来放 js 表达式，而不能放语句（if for）<br>在语句中是可以去操作 JSX</p>
+</blockquote>
+<pre><code class="js">var arr = [&lt;h1&gt;小丞&lt;/h1&gt;, &lt;h2&gt;同学&lt;/h2&gt;];
+ReactDOM.render(&lt;div&gt;&#123;arr&#125;&lt;/div&gt;, document.getElementById(&quot;example&quot;));
+</code></pre>
+<p><strong>tip: JSX 小练习</strong></p>
+<p>根据动态数据生成 <code>li</code></p>
+<pre><code class="js">const data = [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;];
+const VDOM = (
+    &lt;div&gt;
+        &lt;ul&gt;
+            &#123;data.map((item, index) =&gt; &#123;
+                return &lt;li key=&#123;index&#125;&gt;&#123;item&#125;&lt;/li&gt;;
+            &#125;)&#125;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+);
+ReactDOM.render(VDOM, document.querySelector(&quot;.test&quot;));
+</code></pre>
+<img src="https://i0.hdslb.com/bfs/album/09241923178d7fdca14d087e6f1a9627dc3b7081.png" alt="image-20221022204645014">
+
+<h2 id="4-两种创建虚拟-DOM-的方式"><a href="#4-两种创建虚拟-DOM-的方式" class="headerlink" title="4.两种创建虚拟 DOM 的方式"></a>4.两种创建虚拟 DOM 的方式</h2><p><strong>使用 JSX 创建虚拟 DOM</strong></p>
+<pre><code class="js">//1.创建虚拟DOM
+const VDOM = (
+    /* 此处一定不要写引号，因为不是字符串 */
+    &lt;h1 id=&quot;title&quot;&gt;
+        &lt;span&gt;Hello,React&lt;/span&gt;
+    &lt;/h1&gt;
+);
+//2.渲染虚拟DOM到页面
+ReactDOM.render(VDOM, document.querySelector(&quot;.test&quot;));
+</code></pre>
+<p>这个在上面的案例中已经演示过了 ，下面看看另外一种创建虚拟 DOM 的方式</p>
+<p><strong>2.使用 JS 创建虚拟 DOM</strong></p>
+<pre><code class="js">/*
+ * React.createElement()
+ *   - 用来创建一个React元素
+ *   - 参数：
+ *        1.元素的名称（html标签必须小写）
+ *        2.标签中的属性
+ *           - class属性需要使用className来设置
+ *           - 在设置事件时，属性名需要修改为驼峰命名法
+ *       3.元素的内容（子元素）
+ *   - 注意点：
+ *       React元素最终会通过虚拟DOM转换为真实的DOM元素
+ *       React元素一旦创建就无法修改，只能通过新创建的元素进行替换
+ * */
+</code></pre>
+<pre><code class="js">//1.创建虚拟DOM,创建嵌套格式的dom
+const VDOM = React.createElement(&quot;h1&quot;, &#123; id: &quot;title&quot; &#125;, React.createElement(&quot;span&quot;, &#123;&#125;, &quot;hello,React&quot;));
+//2.渲染虚拟DOM到页面
+ReactDOM.render(VDOM, document.querySelector(&quot;.test&quot;));
+</code></pre>
+<p>使用 JS 和 JSX 都可以创建虚拟 DOM，但是可以看出 JS 创建虚拟 DOM 比较繁琐，尤其是标签如果很多的情况下，所以还是比较推荐使用 JSX 来创建。</p>
+<h2 id="5-两种-DOM-的区别"><a href="#5-两种-DOM-的区别" class="headerlink" title="5.两种 DOM 的区别"></a>5.两种 DOM 的区别</h2><pre><code class="js">    &lt;!-- 准备好一个“容器” --&gt;
+    &lt;div id=&quot;test&quot;&gt;&lt;/div&gt;
+
+    &lt;script type=&quot;text/babel&quot;&gt;
+      /* 此处一定要写babel */
+      //1.创建虚拟DOM
+      const VDOM = &lt;h1&gt;Hello,React&lt;/h1&gt; /* 此处一定不要写引号，因为不是字符串 */
+      //2.渲染虚拟DOM到页面
+      ReactDOM.render(VDOM, document.getElementById(&#39;test&#39;))
+      const TDOM = document.querySelector(&#39;#test&#39;)
+      console.log(&#39;虚拟DOM&#39;, VDOM)
+      console.dir(&#39;真实DOM&#39;)
+      console.dir(TDOM)
+      //   debugger
+      console.log(typeof VDOM)
+      console.log(VDOM instanceof Object)
+</code></pre>
+<p><img src="https://i0.hdslb.com/bfs/album/3c9c35333c0883a1057bd4c82be8bfbf9b69f04b.png" alt="image-20221022194600803"></p>
+<p><strong>关于虚拟 DOM：</strong></p>
+<p>​ 1. 本质是 Object 类型的对象（一般对象）</p>
+<p>​ 2. 虚拟 DOM 比较“轻”，真实 DOM 比较“重”，因为虚拟 DOM 是 React 内部在用，无需真实 DOM 上那么多的属性。</p>
+<p>​ 3. 虚拟 DOM 最终会被 React 转化为真实 DOM，呈现在页面上。</p>
+
+            
+        </div>
+        <footer class="article-footer">
+            <a data-url="http://example.com/2023/09/24/01.react%E5%85%A5%E9%97%A8/" data-id="clmyv1k0m00000gg07llsast3" data-title="React-入门"
+               class="article-share-link">Share</a>
+            
+            
+            
+            
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/" rel="tag">React</a></li></ul>
+
+
+        </footer>
+    </div>
+    
+        
+    <nav id="article-nav" class="wow fadeInUp">
+        
+        
+            <div class="article-nav-link-wrap article-nav-link-right">
+                
+                    
+                    
+                        <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-生命周期"
+                             class="lazyload">
+                    
+                
+                <a href="/2023/09/24/04.react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"></a>
+                <div class="article-nav-caption">Older</div>
+                <h3 class="article-nav-title">
+                    
+                        React-生命周期
+                    
+                </h3>
+            </div>
+        
+    </nav>
+
+
+    
+</article>
+
+
+
+
+
+
+
+
+
+
+
+</section>
+                
+                    <aside id="sidebar">
+    <div class="sidebar-wrap wow fadeInRight">
+        <div class="sidebar-author">
+            <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="lineo" class="lazyload">
+            <div class="sidebar-author-name">lineo</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-state">
+            <div class="sidebar-state-article">
+                <div>Posts</div>
+                <div class="sidebar-state-number">4</div>
+            </div>
+            <div class="sidebar-state-category">
+                <div>Categories</div>
+                <div class="sidebar-state-number">0</div>
+            </div>
+            <div class="sidebar-state-tag">
+                <div>Tags</div>
+                <div class="sidebar-state-number">1</div>
+            </div>
+        </div>
+        <div class="sidebar-social">
+            
+                <div class=icon-github>
+                    <a href=https://github.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+                <div class=icon-google>
+                    <a href=https://plus.google.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+                <div class=icon-twitter>
+                    <a href=https://twitter.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+                <div class=icon-facebook>
+                    <a href=https://www.facebook.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+        </div>
+        <div class="sidebar-menu">
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">Home</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/archives"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">Archives</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/about"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">About</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/friend"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">Friend</div>
+                </div>
+            
+        </div>
+    </div>
+    
+        
+
+    
+        
+    <div class="widget-wrap wow fadeInRight">
+        <h3 class="widget-title">Tag Cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/React/" style="font-size: 10px;">React</a>
+        </div>
+    </div>
+
+
+    
+        
+    <div class="widget-wrap wow fadeInRight">
+        <h3 class="widget-title">Archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
+        </div>
+    </div>
+
+
+    
+</aside>
+
+                
+            </div>
+            <footer id="footer" class="wow fadeInUp">
+    <div style="width: 100%; overflow: hidden"><div class="footer-line"></div></div>
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            
+            <div>
+                <span class="icon-copyright"></span>
+                2020-2023
+                <span class="footer-info-sep"></span>
+                lineo
+            </div>
+            
+                <div>
+                    Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;
+                    Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" target="_blank">Reimu</a>
+                </div>
+            
+            
+                <div>
+                    <span class="icon-brush"></span>
+                    18.5k
+                    &nbsp;|&nbsp;
+                    <span class="icon-coffee"></span>
+                    01:15
+                </div>
+            
+            
+                <div>
+                    <span class="icon-eye"></span>
+                    <span id="busuanzi_container_site_pv">Number of visits&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                    &nbsp;|&nbsp;
+                    <span class="icon-user"></span>
+                    <span id="busuanzi_container_site_uv">Number of visitors&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+                </div>
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <nav id="mobile-nav">
+    <div class="sidebar-wrap">
+        <div class="sidebar-author">
+            <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="lineo" class="lazyload">
+            <div class="sidebar-author-name">lineo</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-state">
+            <div class="sidebar-state-article">
+                <div>Posts</div>
+                <div class="sidebar-state-number">4</div>
+            </div>
+            <div class="sidebar-state-category">
+                <div>Categories</div>
+                <div class="sidebar-state-number">0</div>
+            </div>
+            <div class="sidebar-state-tag">
+                <div>Tags</div>
+                <div class="sidebar-state-number">1</div>
+            </div>
+        </div>
+        <div class="sidebar-social">
+            
+                <div class=icon-github>
+                    <a href=https://github.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+                <div class=icon-google>
+                    <a href=https://plus.google.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+                <div class=icon-twitter>
+                    <a href=https://twitter.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+                <div class=icon-facebook>
+                    <a href=https://www.facebook.com/yourname itemprop="url" target="_blank"></a>
+                </div>
+            
+        </div>
+        <div class="sidebar-menu">
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">Home</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/archives"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">Archives</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/about"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">About</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/friend"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">Friend</div>
+                </div>
+            
+        </div>
+    </div>
+</nav>
+
+        
+<script src="https://unpkg.com/jquery@3.7.0/dist/jquery.min.js"></script>
+
+
+<script src="https://unpkg.com/lazysizes@5.3.2/lazysizes.min.js"></script>
+
+
+<script src="https://unpkg.com/clipboard@2.0.11/dist/clipboard.min.js"></script>
+
+
+
+    
+<script src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+    
+<script src="https://unpkg.com/busuanzi@2.3.0/bsz.pure.mini.js"></script>
+
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="site-search">
+        <div class="algolia-popup popup">
+            <div class="algolia-search">
+                <span class="algolia-search-input-icon"></span>
+                <div class="algolia-search-input" id="algolia-search-input"></div>
+            </div>
+
+            <div class="algolia-results">
+                <div id="algolia-stats"></div>
+                <div id="algolia-hits"></div>
+                <div id="algolia-pagination" class="algolia-pagination"></div>
+            </div>
+
+            <span class="popup-btn-close"></span>
+        </div>
+    </div>
+    <!-- hexo injector body_end start -->
+<script src="/js/insertHighlight.js"></script>
+<!-- hexo injector body_end end --></body>
+    </html>
+
