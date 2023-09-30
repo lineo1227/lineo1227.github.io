@@ -165,17 +165,68 @@
         
     <div class="post-wrap-left wow fadeInUp">
         
-            <a class="post-link" href="/2023/09/24/01.react%E5%85%A5%E9%97%A8/"></a>
+            <a class="post-link" href="/2023/09/24/02.react%E9%9D%A2%E5%90%91%E7%BB%84%E4%BB%B6%E7%BC%96%E7%A8%8B/"></a>
         
         
         <div class="post-cover-left">
             
                 
                 
-                    <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-入门" class="lazyload">
+                    <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-面向组件编程" class="lazyload">
                 
             
 
+        </div>
+        <div class="post-info">
+            <div class="post-meta">
+                <a><span class="icon-calendar"></span>2023-09-24</a>
+                
+                    <a><span class="icon-pencil"></span>9.7k words</a>
+                
+                
+                    <a><span class="icon-clock"></span>41 mins</a>
+                
+            </div>
+            <h2 class="post-title">React-面向组件编程</h2>
+            <article class="post-article">
+                
+                    02 【面向组件编程】1.组件的使用当应用是以多组件的方式实现，这个应用就是一个组件化的应用
+只有两种方式的组件
+
+函数组件
+类式组件
+
+
+注意：
+
+组件名必须是首字母大写（React 会将以小写字母开头的组件视为原生 DOM 标签。例如，&amp;lt; div &amp;#x2F;&amp;gt;代表 HTML 的 div 标签，而&amp;lt; Weclome &amp;#x2F;&amp;gt; 则代表一个组件，并且需在作用域内使用 Welcome）
+虚拟 DOM 元素只能有一个根元素
+虚拟 DOM 元素必须有结束标签 &amp;lt; /&amp;gt;
+
+
+渲染类组件标签的基本流程
+
+React 内部会创建组件实例对象
+调用render()得
+                
+            </article>
+        </div>
+    </div>
+
+
+    
+        
+    <div class="post-wrap-right wow fadeInUp">
+        
+            <a class="post-link" href="/2023/09/24/01.react%E5%85%A5%E9%97%A8/"></a>
+        
+        <div class="post-cover-right">
+            
+                
+                
+                    <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-入门" class="lazyload">
+                
+            
         </div>
         <div class="post-info">
             <div class="post-meta">
@@ -223,17 +274,19 @@ React 的一些主要优点？
 
     
         
-    <div class="post-wrap-right wow fadeInUp">
+    <div class="post-wrap-left wow fadeInUp">
         
             <a class="post-link" href="/2023/09/24/04.react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"></a>
         
-        <div class="post-cover-right">
+        
+        <div class="post-cover-left">
             
                 
                 
                     <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-生命周期" class="lazyload">
                 
             
+
         </div>
         <div class="post-info">
             <div class="post-meta">
@@ -253,9 +306,7 @@ React 组件中包含一系列钩子函数{生命周期回调函数}，会在特
 我们在定义组件的时候，会在特定的声明周期回调函数中，做特定的工作
 在 React 中为我们提供了一些生命周期钩子函数，让我们能在 React 执行的重要阶段，在钩子函数中做一些事情。那么在 React 的生命周期中，有哪些钩子函数呢，我们来总结一下
 react 生命周期(旧)
-1. 初始化阶段: 由ReactDOM.render()触发---初次渲染
-                    1.	constructor()
-              
+12345678910111213141. 初始化阶段: 由ReactDOM.render()触发---初次渲染                    1.	constructo
                 
             </article>
         </div>
@@ -264,19 +315,17 @@ react 生命周期(旧)
 
     
         
-    <div class="post-wrap-left wow fadeInUp">
+    <div class="post-wrap-right wow fadeInUp">
         
             <a class="post-link" href="/2023/09/24/03.react%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/"></a>
         
-        
-        <div class="post-cover-left">
+        <div class="post-cover-right">
             
                 
                 
                     <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-事件处理" class="lazyload">
                 
             
-
         </div>
         <div class="post-info">
             <div class="post-meta">
@@ -304,57 +353,6 @@ React 事件的命名采用小驼峰式（camelCase），而不是纯小写。
 使用 JSX 语法时你需要传入一个函数作为事件处理函数，而不是一个字符串。
 
 例如，传统的 HTM
-                
-            </article>
-        </div>
-    </div>
-
-
-    
-        
-    <div class="post-wrap-right wow fadeInUp">
-        
-            <a class="post-link" href="/2023/09/24/02.react%E9%9D%A2%E5%90%91%E7%BB%84%E4%BB%B6%E7%BC%96%E7%A8%8B/"></a>
-        
-        <div class="post-cover-right">
-            
-                
-                
-                    <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-面向组件编程" class="lazyload">
-                
-            
-        </div>
-        <div class="post-info">
-            <div class="post-meta">
-                <a><span class="icon-calendar"></span>2023-09-24</a>
-                
-                    <a><span class="icon-pencil"></span>9.7k words</a>
-                
-                
-                    <a><span class="icon-clock"></span>41 mins</a>
-                
-            </div>
-            <h2 class="post-title">React-面向组件编程</h2>
-            <article class="post-article">
-                
-                    02 【面向组件编程】1.组件的使用当应用是以多组件的方式实现，这个应用就是一个组件化的应用
-只有两种方式的组件
-
-函数组件
-类式组件
-
-
-注意：
-
-组件名必须是首字母大写（React 会将以小写字母开头的组件视为原生 DOM 标签。例如，&amp;lt; div &amp;#x2F;&amp;gt;代表 HTML 的 div 标签，而&amp;lt; Weclome &amp;#x2F;&amp;gt; 则代表一个组件，并且需在作用域内使用 Welcome）
-虚拟 DOM 元素只能有一个根元素
-虚拟 DOM 元素必须有结束标签 &amp;lt; /&amp;gt;
-
-
-渲染类组件标签的基本流程
-
-React 内部会创建组件实例对象
-调用render()得
                 
             </article>
         </div>
@@ -483,7 +481,7 @@ React 内部会创建组件实例对象
             
                 <div>
                     <span class="icon-brush"></span>
-                    18.5k
+                    18.6k
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
                     01:15

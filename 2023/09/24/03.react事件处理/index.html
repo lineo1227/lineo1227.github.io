@@ -198,157 +198,59 @@
 <li>使用 JSX 语法时你需要传入一个函数作为事件处理函数，而不是一个字符串。</li>
 </ul>
 <p>例如，传统的 HTML：</p>
-<pre><code class="html">&lt;button onclick=&quot;activateLasers()&quot;&gt;Activate Lasers&lt;/button&gt;
-</code></pre>
-<p>在 React 中略微不同：</p>
-<pre><code class="html">&lt;button onClick=&quot;&#123;activateLasers&#125;&quot;&gt;Activate Lasers&lt;/button&gt;
-</code></pre>
-<p>在 React 中另一个不同点是你不能通过返回 <code>false</code> 的方式阻止默认行为。你必须显式地使用 <code>preventDefault</code>。例如，传统的 HTML 中阻止表单的默认提交行为，你可以这样写：</p>
-<pre><code class="js">&lt;form onsubmit=&quot;console.log(&#39;You clicked submit.&#39;); return false&quot;&gt;
-    &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
-&lt;/form&gt;
-</code></pre>
-<p>在 React 中，可能是这样的：</p>
-<pre><code class="js">function Form() &#123;
-    function handleSubmit(e) &#123;
-        e.preventDefault();
-        console.log(&quot;You clicked submit.&quot;);
-    &#125;
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">&quot;activateLasers()&quot;</span>&gt;</span>Activate Lasers<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-    return (
-        &lt;form onSubmit=&#123;handleSubmit&#125;&gt;
-            &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
-        &lt;/form&gt;
-    );
-&#125;
-</code></pre>
+<p>在 React 中略微不同：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&quot;&#123;activateLasers&#125;&quot;</span>&gt;</span>Activate Lasers<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在 React 中另一个不同点是你不能通过返回 <code>false</code> 的方式阻止默认行为。你必须显式地使用 <code>preventDefault</code>。例如，传统的 HTML 中阻止表单的默认提交行为，你可以这样写：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;form onsubmit=<span class="string">&quot;console.log(&#x27;You clicked submit.&#x27;); return false&quot;</span>&gt;</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span>Submit<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在 React 中，可能是这样的：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Form</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">handleSubmit</span>(<span class="params">e</span>) &#123;</span><br><span class="line">        e.<span class="title function_">preventDefault</span>();</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;You clicked submit.&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">        <span class="language-xml"><span class="tag">&lt;<span class="name">form</span> <span class="attr">onSubmit</span>=<span class="string">&#123;handleSubmit&#125;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span>Submit<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>在这里，<code>e</code> 是一个合成事件。React 根据 <a target="_blank" rel="noopener" href="https://www.w3.org/TR/DOM-Level-3-Events/">W3C 规范</a>来定义这些合成事件，所以你不需要担心跨浏览器的兼容性问题。React 事件与原生事件不完全相同。如果想了解更多，请查看 <a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/events.html"><code>SyntheticEvent</code></a> 参考指南。</p>
 <p>使用 React 时，你一般不需要使用 <code>addEventListener</code> 为已创建的 DOM 元素添加监听器。事实上，你只需要在该元素初始渲染的时候添加监听器即可。</p>
 <h2 id="2-类式组件绑定事件"><a href="#2-类式组件绑定事件" class="headerlink" title="2.类式组件绑定事件"></a>2.类式组件绑定事件</h2><p>当你使用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes">ES6 class</a> 语法定义一个组件的时候，通常的做法是将事件处理函数声明为 class 中的方法。例如，下面的 <code>Toggle</code> 组件会渲染一个让用户切换开关状态的按钮：</p>
-<pre><code class="js">class Toggle extends React.Component &#123;
-  constructor(props) &#123;
-    super(props);
-    this.state = &#123;isToggleOn: true&#125;;
-    // 为了在回调中使用 `this`，这个绑定是必不可少的    	this.handleClick = this.handleClick.bind(this);  &#125;
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Toggle</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">state</span> = &#123;<span class="attr">isToggleOn</span>: <span class="literal">true</span>&#125;;</span><br><span class="line">    <span class="comment">// 为了在回调中使用 `this`，这个绑定是必不可少的    	this.handleClick = this.handleClick.bind(this);  &#125;</span></span><br><span class="line"></span><br><span class="line">  <span class="title function_">handleClick</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setState</span>(<span class="function"><span class="params">prevState</span> =&gt;</span> (&#123;</span><br><span class="line">      <span class="attr">isToggleOn</span>: !prevState.<span class="property">isToggleOn</span></span><br><span class="line">    &#125;));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.handleClick&#125;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        &#123;this.state.isToggleOn ? &#x27;ON&#x27; : &#x27;OFF&#x27;&#125;</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-  handleClick() &#123;
-    this.setState(prevState =&gt; (&#123;
-      isToggleOn: !prevState.isToggleOn
-    &#125;));
-  &#125;
-
-  render() &#123;
-    return (
-      &lt;button onClick=&#123;this.handleClick&#125;&gt;
-        &#123;this.state.isToggleOn ? &#39;ON&#39; : &#39;OFF&#39;&#125;
-      &lt;/button&gt;
-    );
-  &#125;
-&#125;
-</code></pre>
 <p><a target="_blank" rel="noopener" href="https://codepen.io/gaearon/pen/xEmzGg?editors=0010"><strong>在 CodePen 上尝试</strong></a></p>
 <p>你必须谨慎对待 JSX 回调函数中的 <code>this</code>，在 JavaScript 中，class 的方法默认不会<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind">绑定</a> <code>this</code>。如果你忘记绑定 <code>this.handleClick</code> 并把它传入了 <code>onClick</code>，当你调用这个函数的时候 <code>this</code> 的值为 <code>undefined</code>。</p>
 <p>这并不是 React 特有的行为；这其实与 <a target="_blank" rel="noopener" href="https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/">JavaScript 函数工作原理</a>有关。通常情况下，如果你没有在方法后面添加 <code>()</code>，例如 <code>onClick=&#123;this.handleClick&#125;</code>，你应该为这个方法绑定 <code>this</code>。</p>
 <p>如果觉得使用 <code>bind</code> 很麻烦，这里有两种方式可以解决。你可以使用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields#public_instance_fields">public class fields 语法</a> to correctly bind callbacks:</p>
-<pre><code class="js">class LoggingButton extends React.Component &#123;
-    // This syntax ensures `this` is bound within handleClick.
-    handleClick = () =&gt; &#123;
-        console.log(&quot;this is:&quot;, this);
-    &#125;;
-    render() &#123;
-        return &lt;button onClick=&#123;this.handleClick&#125;&gt;Click me&lt;/button&gt;;
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">LoggingButton</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">    <span class="comment">// This syntax ensures `this` is bound within handleClick.</span></span><br><span class="line">    handleClick = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;this is:&quot;</span>, <span class="variable language_">this</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.handleClick&#125;</span>&gt;</span>Click me<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><a target="_blank" rel="noopener" href="https://github.com/facebookincubator/create-react-app">Create React App</a> 默认启用此语法。</p>
 <p>如果你没有使用 class fields 语法，你可以在回调中使用<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions">箭头函数</a>：</p>
-<pre><code class="js">class LoggingButton extends React.Component &#123;
-    handleClick() &#123;
-        console.log(&quot;this is:&quot;, this);
-    &#125;
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">LoggingButton</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">    <span class="title function_">handleClick</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;this is:&quot;</span>, <span class="variable language_">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="comment">// 此语法确保 `handleClick` 内的 `this` 已被绑定。</span></span><br><span class="line">        <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> this.handleClick()&#125;&gt;Click me<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    render() &#123;
-        // 此语法确保 `handleClick` 内的 `this` 已被绑定。
-        return &lt;button onClick=&#123;() =&gt; this.handleClick()&#125;&gt;Click me&lt;/button&gt;;
-    &#125;
-&#125;
-</code></pre>
 <p>此语法问题在于每次渲染 <code>LoggingButton</code> 时都会创建不同的回调函数。在大多数情况下，这没什么问题，但如果该回调函数作为 prop 传入子组件时，这些组件可能会进行额外的重新渲染。我们通常建议在构造器中绑定或使用 class fields 语法来避免这类性能问题。</p>
 <h2 id="3-向事件处理程序传递参数"><a href="#3-向事件处理程序传递参数" class="headerlink" title="3.向事件处理程序传递参数"></a>3.向事件处理程序传递参数</h2><p>在循环中，通常我们会为事件处理函数传递额外的参数。例如，若 <code>id</code> 是你要删除那一行的 ID，以下两种方式都可以向事件处理函数传递参数：</p>
-<pre><code class="js">&lt;button onClick=&#123;(e) =&gt; this.deleteRow(id, e)&#125;&gt;Delete Row&lt;/button&gt;
-&lt;button onClick=&#123;this.deleteRow.bind(this, id)&#125;&gt;Delete Row&lt;/button&gt;
-</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onClick=&#123;<span class="function">(<span class="params">e</span>) =&gt;</span> <span class="variable language_">this</span>.<span class="title function_">deleteRow</span>(id, e)&#125;&gt;<span class="title class_">Delete</span> <span class="title class_">Row</span>&lt;/button&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.deleteRow.bind(this,</span> <span class="attr">id</span>)&#125;&gt;</span>Delete Row<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
 <p>上述两种方式是等价的，分别通过<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">箭头函数</a>和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind"><code>Function.prototype.bind</code></a> 来实现。</p>
 <p>在这两种情况下，React 的事件对象 <code>e</code> 会被作为第二个参数传递。如果通过箭头函数的方式，事件对象必须显式的进行传递，而通过 <code>bind</code> 的方式，事件对象以及更多的参数将会被隐式的进行传递。</p>
 <h2 id="4-收集表单数据"><a href="#4-收集表单数据" class="headerlink" title="4.收集表单数据"></a>4.收集表单数据</h2><p>首先我们先来创建一个简单的表单组件：</p>
-<pre><code class="jsx">import React from &quot;react&quot;;
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">MyForm</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">        <span class="language-xml"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                用户名 <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                密码 <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                电子邮件 <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;email&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">button</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title class_">MyForm</span>;</span><br></pre></td></tr></table></figure>
 
-const MyForm = () =&gt; &#123;
-    return (
-        &lt;form&gt;
-            &lt;div&gt;
-                用户名 &lt;input type=&quot;text&quot; /&gt;
-            &lt;/div&gt;
-            &lt;div&gt;
-                密码 &lt;input type=&quot;password&quot; /&gt;
-            &lt;/div&gt;
-            &lt;div&gt;
-                电子邮件 &lt;input type=&quot;email&quot; /&gt;
-            &lt;/div&gt;
-
-            &lt;div&gt;
-                &lt;button&gt;提交&lt;/button&gt;
-            &lt;/div&gt;
-        &lt;/form&gt;
-    );
-&#125;;
-
-export default MyForm;
-</code></pre>
 <p>首先使用 React 定义表单和之前传统网页中的表单有一些区别，传统网页中 form 需要指定 action 和 method 两个属性，而表单项也必须要指定 name 属性，这些属性都是提交表单所必须的。但是在 React 中定义表单时，这些属性通通都可以不指定，因为 React 中的表单所有的功能都需要通过代码来控制，包括获取表单值和提交表单，所以这些东西都可以在函数中指定并通过 AJAX 发送请求，无需直接在表单中设置。</p>
 <p>首先我们来研究一下如何获取表单中的用户所填写的内容，要获取用户所填写的内容我们必须要监听表单 onChange 事件，在表单项发生变化时获取其中的内容，在响应函数中通过事件对象的 target.value 来获取用户填写的内容。事件响应函数大概是这个样子：</p>
-<pre><code class="jsx">const nameChangeHandler = (e) =&gt; &#123;
-    //e.target.value 表示当前用户输入的值
-&#125;;
-</code></pre>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">nameChangeHandler</span> = (<span class="params">e</span>) =&gt; &#123;</span><br><span class="line">    <span class="comment">//e.target.value 表示当前用户输入的值</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>然后我们再将该函数设置为 input 元素的 onChange 事件的响应函数：</p>
-<pre><code class="jsx">&lt;div&gt;
-    用户名 &lt;input type=&quot;text&quot; onChange=&#123;nameChangeHandler&#125; /&gt;
-&lt;/div&gt;
-</code></pre>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    用户名 &lt;input type=<span class="string">&quot;text&quot;</span> onChange=&#123;nameChangeHandler&#125; /&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
 <p>这样一来当用户输入内容时，nameChangeHandler 就会被触发，从而通过 e.target.value 来获取用户输入的值。通常我们还会为表单项创建一个 state 用来存储值：</p>
-<pre><code class="jsx">const [inputName, setInputName] = useState(&quot;&quot;);
-const nameChangeHandler = (e) =&gt; &#123;
-    //e.target.value 表示当前用户输入的值
-    setInputName(e.target.value);
-&#125;;
-</code></pre>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [inputName, setInputName] = <span class="title function_">useState</span>(<span class="string">&quot;&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> <span class="title function_">nameChangeHandler</span> = (<span class="params">e</span>) =&gt; &#123;</span><br><span class="line">    <span class="comment">//e.target.value 表示当前用户输入的值</span></span><br><span class="line">    <span class="title function_">setInputName</span>(e.<span class="property">target</span>.<span class="property">value</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>上例中用户名存储到了变量 inputName 中，inputName 也会设置为对应表单项的 value 属性值，这样一来当 inputName 发生变化时，表单项中的内容也会随之改变：</p>
-<pre><code class="jsx">&lt;div&gt;
-    用户名 &lt;input type=&quot;text&quot; onChange=&#123;nameChangeHandler&#125; value=&#123;inputName&#125; /&gt;
-&lt;/div&gt;
-</code></pre>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    用户名 &lt;input type=<span class="string">&quot;text&quot;</span> onChange=&#123;nameChangeHandler&#125; value=&#123;inputName&#125; /&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
 <p>如此设置后，当用户输入内容后会触发 onChange 事件从而调用 nameChangeHandler 函数，在函数内部调用了 setInputName 设置了用户输入的用户名。换句话说用户在表单中输入内容会影响到 state 的值，同时当我们修改 state 的值时，由于表单项的 value 属性值指向了 state，表单也会随 state 值一起改变。这种绑定方式我们称为双向绑定，即表单会改变 state，state 也可以改变表单，在开发中使用双向绑定的表单项是最佳实践。</p>
 <h2 id="5-受控和非受控组件"><a href="#5-受控和非受控组件" class="headerlink" title="5.受控和非受控组件"></a>5.受控和非受控组件</h2><p>先来说说受控组件：</p>
 <p>使 React 的 state 成为“唯一数据源”。渲染表单的 React 组件还控制着用户输入过程中表单发生的操作。被 React 以这种方式控制取值的表单输入元素就叫做“受控组件”。</p>
-<pre><code class="js">saveName = (event) =&gt;&#123;
-    this.setState(&#123;name:event.target.value&#125;);
-&#125;
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">saveName = <span class="function">(<span class="params">event</span>) =&gt;</span>&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;<span class="attr">name</span>:event.<span class="property">target</span>.<span class="property">value</span>&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">savePwd = <span class="function">(<span class="params">event</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;<span class="attr">pwd</span>:event.<span class="property">target</span>.<span class="property">value</span>&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">        <span class="language-xml"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;http://www.baidu.com&quot;</span> <span class="attr">onSubmit</span>=<span class="string">&#123;this.login&#125;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            用户名：<span class="tag">&lt;<span class="name">input</span> <span class="attr">value</span>=<span class="string">&#123;this.state.name&#125;</span> <span class="attr">onChange</span>=<span class="string">&#123;this.saveName&#125;</span> <span class="attr">type</span> = <span class="string">&quot;text&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">            密码<span class="tag">&lt;<span class="name">input</span> <span class="attr">value</span>=<span class="string">&#123;this.state.pwd&#125;</span> <span class="attr">onChange</span>=<span class="string">&#123;this.savePwd&#125;</span> <span class="attr">type</span> = <span class="string">&quot;password&quot;</span>/&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">button</span>&gt;</span>登录<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span></span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-savePwd = (event) =&gt; &#123;
-    this.setState(&#123;pwd:event.target.value&#125;);
-&#125;
-
-render() &#123;
-    return (
-        &lt;form action=&quot;http://www.baidu.com&quot; onSubmit=&#123;this.login&#125;&gt;
-            用户名：&lt;input value=&#123;this.state.name&#125; onChange=&#123;this.saveName&#125; type = &quot;text&quot; /&gt;
-            密码&lt;input value=&#123;this.state.pwd&#125; onChange=&#123;this.savePwd&#125; type = &quot;password&quot;/&gt;
-            &lt;button&gt;登录&lt;/button&gt;
-        &lt;/form&gt;
-    )
-&#125;
-</code></pre>
 <p>由于在表单元素上设置了 <code>value</code> 属性，因此显示的值将始终为 <code>this.state.value</code>，这使得 React 的 state 成为唯一数据源。由于 <code>onchange</code> 在每次按键时都会执行并更新 React 的 state，因此显示的值将随着用户输入而更新。</p>
 <p>对于受控组件来说，输入的值始终由 React 的 state 驱动。</p>
 <p><strong>非受控组件：</strong></p>
@@ -357,24 +259,8 @@ render() &#123;
 <blockquote>
 <p>表单提交同样需要通过事件来处理，提交表单的事件通过 form 标签的 onSubmit 事件来绑定，处理表单的方式因情况而已，但是一定要注意，必须要取消默认行为，否则会触发表单的默认提交行为：</p>
 </blockquote>
-<pre><code class="js">class Login extends React.Component &#123;
-    login = (event) =&gt; &#123;
-        event.preventDefault(); //阻止表单默认事件
-        console.log(this.name.value);
-        console.log(this.pwd.value);
-    &#125;;
-    render() &#123;
-        return (
-            &lt;form action=&quot;http://www.baidu.com&quot; onSubmit=&#123;this.login&#125;&gt;
-                用户名：
-                &lt;input ref=&#123;(e) =&gt; (this.name = e)&#125; type=&quot;text&quot; name=&quot;username&quot; /&gt;
-                密码： &lt;input ref=&#123;(e) =&gt; (this.pwd = e)&#125; type=&quot;password&quot; name=&quot;password&quot; /&gt;
-                &lt;button&gt;登录&lt;/button&gt;
-            &lt;/form&gt;
-        );
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Login</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">    login = <span class="function">(<span class="params">event</span>) =&gt;</span> &#123;</span><br><span class="line">        event.<span class="title function_">preventDefault</span>(); <span class="comment">//阻止表单默认事件</span></span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">name</span>.<span class="property">value</span>);</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">pwd</span>.<span class="property">value</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            <span class="language-xml"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;http://www.baidu.com&quot;</span> <span class="attr">onSubmit</span>=<span class="string">&#123;this.login&#125;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                用户名：</span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">ref</span>=<span class="string">&#123;(e)</span> =&gt;</span> (this.name = e)&#125; type=&quot;text&quot; name=&quot;username&quot; /&gt;</span></span><br><span class="line"><span class="language-xml">                密码： <span class="tag">&lt;<span class="name">input</span> <span class="attr">ref</span>=<span class="string">&#123;(e)</span> =&gt;</span> (this.pwd = e)&#125; type=&quot;password&quot; name=&quot;password&quot; /&gt;</span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">button</span>&gt;</span>登录<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span></span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h2 id="5-函数的柯里化"><a href="#5-函数的柯里化" class="headerlink" title="5.函数的柯里化"></a>5.函数的柯里化</h2><p><strong>高级函数</strong></p>
 <ol>
 <li><p>如果函数的参数是函数</p>
@@ -384,56 +270,15 @@ render() &#123;
 </ol>
 <p>通过函数调用继续返回函数的方式，实现多次接收参数最后统一处理的函数编码形式</p>
 <p>如下，我们将上面的案例简化，创建高级函数：</p>
-<pre><code class="js">class Login extends React.Component &#123;
-    state = &#123; name: &quot;&quot;, pwd: &quot;&quot; &#125;;
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Login</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">    state = &#123; <span class="attr">name</span>: <span class="string">&quot;&quot;</span>, <span class="attr">pwd</span>: <span class="string">&quot;&quot;</span> &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//返回一个函数</span></span><br><span class="line">    saveType = <span class="function">(<span class="params">type</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="function">(<span class="params">event</span>) =&gt;</span> &#123;</span><br><span class="line">            <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123; [type]: event.<span class="property">target</span>.<span class="property">value</span> &#125;);</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//因为事件中必须是一个函数，所以返回的也是一个函数，这样就符合规范了</span></span><br><span class="line">    <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            <span class="language-xml"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">onChange</span>=<span class="string">&#123;this.saveType(</span>&quot;<span class="attr">name</span>&quot;)&#125; <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">button</span>&gt;</span>登录<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span></span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="language-xml"><span class="tag">&lt;<span class="name">Login</span> /&gt;</span></span>, <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;div&quot;</span>));</span><br></pre></td></tr></table></figure>
 
-    //返回一个函数
-    saveType = (type) =&gt; &#123;
-        return (event) =&gt; &#123;
-            this.setState(&#123; [type]: event.target.value &#125;);
-        &#125;;
-    &#125;;
-
-    //因为事件中必须是一个函数，所以返回的也是一个函数，这样就符合规范了
-    render() &#123;
-        return (
-            &lt;form&gt;
-                &lt;input onChange=&#123;this.saveType(&quot;name&quot;)&#125; type=&quot;text&quot; /&gt;
-                &lt;button&gt;登录&lt;/button&gt;
-            &lt;/form&gt;
-        );
-    &#125;
-&#125;
-
-ReactDOM.render(&lt;Login /&gt;, document.getElementById(&quot;div&quot;));
-</code></pre>
 <p>不使用函数柯里化</p>
-<pre><code class="js">class Login extends React.Component &#123;
-    state = &#123; name: &quot;&quot;, pwd: &quot;&quot; &#125;;
-
-    //返回一个函数
-    saveType = (type, event) =&gt; &#123;
-        this.setState(&#123; [type]: event.target.value &#125;);
-    &#125;;
-
-    //因为事件中必须是一个函数，所以返回的也是一个函数，这样就符合规范了
-    render() &#123;
-        return (
-            &lt;form&gt;
-                &lt;input onChange=&#123;(event) =&gt; this.saveType(&quot;name&quot;, event)&#125; type=&quot;text&quot; /&gt;
-                &lt;button&gt;登录&lt;/button&gt;
-            &lt;/form&gt;
-        );
-    &#125;
-&#125;
-
-ReactDOM.render(&lt;Login /&gt;, document.getElementById(&quot;div&quot;));
-</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Login</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">    state = &#123; <span class="attr">name</span>: <span class="string">&quot;&quot;</span>, <span class="attr">pwd</span>: <span class="string">&quot;&quot;</span> &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//返回一个函数</span></span><br><span class="line">    saveType = <span class="function">(<span class="params">type, event</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123; [type]: event.<span class="property">target</span>.<span class="property">value</span> &#125;);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//因为事件中必须是一个函数，所以返回的也是一个函数，这样就符合规范了</span></span><br><span class="line">    <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            <span class="language-xml"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">onChange</span>=<span class="string">&#123;(event)</span> =&gt;</span> this.saveType(&quot;name&quot;, event)&#125; type=&quot;text&quot; /&gt;</span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">button</span>&gt;</span>登录<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span></span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="language-xml"><span class="tag">&lt;<span class="name">Login</span> /&gt;</span></span>, <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;div&quot;</span>));</span><br></pre></td></tr></table></figure>
 
             
         </div>
         <footer class="article-footer">
-            <a data-url="http://example.com/2023/09/24/03.react%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/" data-id="clmyv1k0y00060gg0akof16sr" data-title="React-事件处理"
+            <a data-url="http://example.com/2023/09/24/03.react%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/" data-id="cln5zuniw0004nsg01gkk1hl5" data-title="React-事件处理"
                class="article-share-link">Share</a>
             
             
@@ -465,23 +310,6 @@ ReactDOM.render(&lt;Login /&gt;, document.getElementById(&quot;div&quot;));
                 </h3>
             </div>
         
-        
-            <div class="article-nav-link-wrap article-nav-link-right">
-                
-                    
-                    
-                        <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-面向组件编程"
-                             class="lazyload">
-                    
-                
-                <a href="/2023/09/24/02.react%E9%9D%A2%E5%90%91%E7%BB%84%E4%BB%B6%E7%BC%96%E7%A8%8B/"></a>
-                <div class="article-nav-caption">Older</div>
-                <h3 class="article-nav-title">
-                    
-                        React-面向组件编程
-                    
-                </h3>
-            </div>
         
     </nav>
 
@@ -617,7 +445,7 @@ ReactDOM.render(&lt;Login /&gt;, document.getElementById(&quot;div&quot;));
             
                 <div>
                     <span class="icon-brush"></span>
-                    18.5k
+                    18.6k
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
                     01:15

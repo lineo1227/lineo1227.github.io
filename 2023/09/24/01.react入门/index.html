@@ -250,40 +250,12 @@
 </ul>
 </blockquote>
 <p><img src="https://i0.hdslb.com/bfs/album/514c5df0f5f8e7242ca17e1c939b4822b716315f.png" alt="image-20221022171647360"></p>
-<pre><code>react.development.js
-react-dom.development.js
-babel.min.js
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">react.development.js</span><br><span class="line">react-dom.development.js</span><br><span class="line">babel.min.js</span><br></pre></td></tr></table></figure>
+
 <p>2.创建一个容器</p>
 <p>3.创建虚拟 DOM，渲染到容器中</p>
-<pre><code class="js">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;title&gt;hello_react&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;!-- 准备好一个“容器” --&gt;
-    &lt;div id=&quot;test&quot;&gt;&lt;/div&gt;
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;!<span class="variable constant_">DOCTYPE</span> html&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>hello_react<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="comment">&lt;!-- 准备好一个“容器” --&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;test&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">    <span class="comment">&lt;!-- 引入react核心库 --&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;../js/react.development.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="comment">&lt;!-- 引入react-dom，用于支持react操作DOM --&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;../js/react-dom.development.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="comment">&lt;!-- 引入babel，用于将jsx转为js --&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;../js/babel.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/babel&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="comment">/* 此处一定要写babel */</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="comment">//1.创建虚拟DOM</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="keyword">const</span> <span class="variable constant_">VDOM</span> = <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span> <span class="comment">/* 此处一定不要写引号，因为不是字符串 */</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="comment">//2.渲染虚拟DOM到页面</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">const</span> root = <span class="title class_">ReactDOM</span>.<span class="title function_">createRoot</span>(<span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;#test&#x27;</span>));</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      root.<span class="title function_">render</span>(<span class="variable constant_">VDOM</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 
-    &lt;!-- 引入react核心库 --&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;../js/react.development.js&quot;&gt;&lt;/script&gt;
-    &lt;!-- 引入react-dom，用于支持react操作DOM --&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;../js/react-dom.development.js&quot;&gt;&lt;/script&gt;
-    &lt;!-- 引入babel，用于将jsx转为js --&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;../js/babel.min.js&quot;&gt;&lt;/script&gt;
-
-    &lt;script type=&quot;text/babel&quot;&gt;
-      /* 此处一定要写babel */
-      //1.创建虚拟DOM
-      const VDOM = &lt;h1&gt;Hello&lt;/h1&gt; /* 此处一定不要写引号，因为不是字符串 */
-      //2.渲染虚拟DOM到页面
-    const root = ReactDOM.createRoot(document.querySelector(&#39;#test&#39;));
-      root.render(VDOM);
-    &lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
 <blockquote>
 <p>后面很多地方没有用<code>createRoot</code>这种方式是因为一开始学的课程是 2020 年的，这是现在新的创建方式。</p>
 <p>这里我就只把第一个案例改成新方式了</p>
@@ -318,16 +290,16 @@ babel.min.js
 <li>定义虚拟 DOM，JSX 不是字符串，不要加引号</li>
 <li>标签中混入 JS 表达式的时候使用<code>&#123;&#125;</code></li>
 </ol>
-<pre><code class="js">id = &#123;myId.toUpperCase()&#125;
-</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id = &#123;myId.<span class="title function_">toUpperCase</span>()&#125;</span><br></pre></td></tr></table></figure>
+
 <ol start="3">
 <li><p>样式的类名指定不能使用 class，使用<code>className</code></p>
 </li>
 <li><p>内敛样式要使用<code>&#123;&#123;&#125;&#125;</code>包裹</p>
 </li>
 </ol>
-<pre><code class="js">style=&#123;&#123;color:'skyblue',fontSize:'24px'&#125;&#125;
-</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">style=&#123;&#123;<span class="attr">color</span>:<span class="string">&#x27;skyblue&#x27;</span>,<span class="attr">fontSize</span>:<span class="string">&#x27;24px&#x27;</span>&#125;&#125;</span><br></pre></td></tr></table></figure>
+
 <ol start="5">
 <li><p>不能有多个根标签，只能有一个根标签</p>
 </li>
@@ -352,48 +324,14 @@ babel.min.js
 <li>注释</li>
 </ol>
 <p>写在花括号里</p>
-<pre><code class="js">ReactDOM.render(
-    &lt;div&gt;
-        &lt;h1&gt;小丞&lt;/h1&gt;
-        &#123;/*注释...*/&#125;
-    &lt;/div&gt;,
-    document.getElementById(&quot;example&quot;)
-);
-</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>小丞<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        &#123;/*注释...*/&#125;</span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>,</span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;example&quot;</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
 <ol start="2">
 <li><code>class</code>需要使用<code>className</code>代替</li>
 <li><code>style</code>中必须使用对象设置<code> style=&#123;&#123;background:'red'&#125;&#125;</code></li>
 </ol>
-<pre><code class="js">&lt;style&gt;
-    .title&#123;
-        background-color: orange;
-        width: 200px;
-    &#125;
-&lt;/style&gt;
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">	.<span class="property">title</span>&#123;</span><br><span class="line">		background-<span class="attr">color</span>: orange;</span><br><span class="line">		<span class="attr">width</span>: 200px;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 准备好一个“容器” --&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;test&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/babel&quot;</span> &gt;</span><span class="language-handlebars"><span class="language-xml"></span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">	const myId = &#x27;aTgUiGu&#x27;</span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">	const myData = &#x27;HeLlo,rEaCt&#x27;</span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml"></span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">	//1.创建虚拟DOM</span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">	const VDOM = (</span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">		<span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">			<span class="tag">&lt;<span class="name">h2</span> <span class="attr">className</span>=<span class="string">&quot;title&quot;</span> <span class="attr">id</span>=<span class="string">&#123;myId.toLowerCase()&#125;</span>&gt;</span></span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">				<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=</span></span><span class="template-variable">&#123;&#123;<span class="name">color:</span><span class="string">&#x27;white&#x27;</span>,fontSize:<span class="string">&#x27;29px&#x27;</span>&#125;&#125;</span><span class="language-xml"><span class="tag">&gt;</span>&#123;myData.toLowerCase()&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">			<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">			<span class="tag">&lt;<span class="name">h2</span> <span class="attr">className</span>=<span class="string">&quot;title&quot;</span> <span class="attr">id</span>=<span class="string">&#123;myId.toLowerCase()&#125;</span>&gt;</span></span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">				<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=</span></span><span class="template-variable">&#123;&#123;<span class="name">color:</span><span class="string">&#x27;white&#x27;</span>,fontSize:<span class="string">&#x27;29px&#x27;</span>&#125;&#125;</span><span class="language-xml"><span class="tag">&gt;</span>&#123;myData.toUpperCase()&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">			<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span>/&gt;</span></span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">	)</span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">	//2.渲染虚拟DOM到页面</span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml">	ReactDOM.render(VDOM,document.getElementById(&#x27;test&#x27;))</span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"><span class="language-xml"></span></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 
-&lt;!-- 准备好一个“容器” --&gt;
-&lt;div id=&quot;test&quot;&gt;&lt;/div&gt;
-
-&lt;script type=&quot;text/babel&quot; &gt;
-    const myId = &#39;aTgUiGu&#39;
-    const myData = &#39;HeLlo,rEaCt&#39;
-
-    //1.创建虚拟DOM
-    const VDOM = (
-        &lt;div&gt;
-            &lt;h2 className=&quot;title&quot; id=&#123;myId.toLowerCase()&#125;&gt;
-                &lt;span style=&#123;&#123;color:'white',fontSize:'29px'&#125;&#125;&gt;&#123;myData.toLowerCase()&#125;&lt;/span&gt;
-            &lt;/h2&gt;
-            &lt;h2 className=&quot;title&quot; id=&#123;myId.toLowerCase()&#125;&gt;
-                &lt;span style=&#123;&#123;color:'white',fontSize:'29px'&#125;&#125;&gt;&#123;myData.toUpperCase()&#125;&lt;/span&gt;
-            &lt;/h2&gt;
-            &lt;input type=&quot;text&quot;/&gt;
-        &lt;/div&gt;
-    )
-    //2.渲染虚拟DOM到页面
-    ReactDOM.render(VDOM,document.getElementById(&#39;test&#39;))
-&lt;/script&gt;
-</code></pre>
 <p><img src="https://i0.hdslb.com/bfs/album/9d4bafde75cb82f79b17a91491c46eb8576b784a.png" alt="image-20221022204158589"></p>
 <ol start="4">
 <li>数组</li>
@@ -402,75 +340,26 @@ babel.min.js
 <blockquote>
 <p>{} 只能用来放 js 表达式，而不能放语句（if for）<br>在语句中是可以去操作 JSX</p>
 </blockquote>
-<pre><code class="js">var arr = [&lt;h1&gt;小丞&lt;/h1&gt;, &lt;h2&gt;同学&lt;/h2&gt;];
-ReactDOM.render(&lt;div&gt;&#123;arr&#125;&lt;/div&gt;, document.getElementById(&quot;example&quot;));
-</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>小丞<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>, <span class="language-xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>同学<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span>];</span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;arr&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>, <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;example&quot;</span>));</span><br></pre></td></tr></table></figure>
+
 <p><strong>tip: JSX 小练习</strong></p>
 <p>根据动态数据生成 <code>li</code></p>
-<pre><code class="js">const data = [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;];
-const VDOM = (
-    &lt;div&gt;
-        &lt;ul&gt;
-            &#123;data.map((item, index) =&gt; &#123;
-                return &lt;li key=&#123;index&#125;&gt;&#123;item&#125;&lt;/li&gt;;
-            &#125;)&#125;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-);
-ReactDOM.render(VDOM, document.querySelector(&quot;.test&quot;));
-</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> data = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">VDOM</span> = (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            &#123;data.map((item, index) =&gt; &#123;</span></span><br><span class="line"><span class="language-xml">                return <span class="tag">&lt;<span class="name">li</span> <span class="attr">key</span>=<span class="string">&#123;index&#125;</span>&gt;</span>&#123;item&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span>;</span></span><br><span class="line"><span class="language-xml">            &#125;)&#125;</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">);</span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="variable constant_">VDOM</span>, <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.test&quot;</span>));</span><br></pre></td></tr></table></figure>
+
 <img src="https://i0.hdslb.com/bfs/album/09241923178d7fdca14d087e6f1a9627dc3b7081.png" alt="image-20221022204645014">
 
 <h2 id="4-两种创建虚拟-DOM-的方式"><a href="#4-两种创建虚拟-DOM-的方式" class="headerlink" title="4.两种创建虚拟 DOM 的方式"></a>4.两种创建虚拟 DOM 的方式</h2><p><strong>使用 JSX 创建虚拟 DOM</strong></p>
-<pre><code class="js">//1.创建虚拟DOM
-const VDOM = (
-    /* 此处一定不要写引号，因为不是字符串 */
-    &lt;h1 id=&quot;title&quot;&gt;
-        &lt;span&gt;Hello,React&lt;/span&gt;
-    &lt;/h1&gt;
-);
-//2.渲染虚拟DOM到页面
-ReactDOM.render(VDOM, document.querySelector(&quot;.test&quot;));
-</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.创建虚拟DOM</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">VDOM</span> = (</span><br><span class="line">    <span class="comment">/* 此处一定不要写引号，因为不是字符串 */</span></span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">id</span>=<span class="string">&quot;title&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>Hello,React<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line">);</span><br><span class="line"><span class="comment">//2.渲染虚拟DOM到页面</span></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="variable constant_">VDOM</span>, <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.test&quot;</span>));</span><br></pre></td></tr></table></figure>
+
 <p>这个在上面的案例中已经演示过了 ，下面看看另外一种创建虚拟 DOM 的方式</p>
 <p><strong>2.使用 JS 创建虚拟 DOM</strong></p>
-<pre><code class="js">/*
- * React.createElement()
- *   - 用来创建一个React元素
- *   - 参数：
- *        1.元素的名称（html标签必须小写）
- *        2.标签中的属性
- *           - class属性需要使用className来设置
- *           - 在设置事件时，属性名需要修改为驼峰命名法
- *       3.元素的内容（子元素）
- *   - 注意点：
- *       React元素最终会通过虚拟DOM转换为真实的DOM元素
- *       React元素一旦创建就无法修改，只能通过新创建的元素进行替换
- * */
-</code></pre>
-<pre><code class="js">//1.创建虚拟DOM,创建嵌套格式的dom
-const VDOM = React.createElement(&quot;h1&quot;, &#123; id: &quot;title&quot; &#125;, React.createElement(&quot;span&quot;, &#123;&#125;, &quot;hello,React&quot;));
-//2.渲染虚拟DOM到页面
-ReactDOM.render(VDOM, document.querySelector(&quot;.test&quot;));
-</code></pre>
-<p>使用 JS 和 JSX 都可以创建虚拟 DOM，但是可以看出 JS 创建虚拟 DOM 比较繁琐，尤其是标签如果很多的情况下，所以还是比较推荐使用 JSX 来创建。</p>
-<h2 id="5-两种-DOM-的区别"><a href="#5-两种-DOM-的区别" class="headerlink" title="5.两种 DOM 的区别"></a>5.两种 DOM 的区别</h2><pre><code class="js">    &lt;!-- 准备好一个“容器” --&gt;
-    &lt;div id=&quot;test&quot;&gt;&lt;/div&gt;
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * React.createElement()</span></span><br><span class="line"><span class="comment"> *   - 用来创建一个React元素</span></span><br><span class="line"><span class="comment"> *   - 参数：</span></span><br><span class="line"><span class="comment"> *        1.元素的名称（html标签必须小写）</span></span><br><span class="line"><span class="comment"> *        2.标签中的属性</span></span><br><span class="line"><span class="comment"> *           - class属性需要使用className来设置</span></span><br><span class="line"><span class="comment"> *           - 在设置事件时，属性名需要修改为驼峰命名法</span></span><br><span class="line"><span class="comment"> *       3.元素的内容（子元素）</span></span><br><span class="line"><span class="comment"> *   - 注意点：</span></span><br><span class="line"><span class="comment"> *       React元素最终会通过虚拟DOM转换为真实的DOM元素</span></span><br><span class="line"><span class="comment"> *       React元素一旦创建就无法修改，只能通过新创建的元素进行替换</span></span><br><span class="line"><span class="comment"> * */</span></span><br></pre></td></tr></table></figure>
 
-    &lt;script type=&quot;text/babel&quot;&gt;
-      /* 此处一定要写babel */
-      //1.创建虚拟DOM
-      const VDOM = &lt;h1&gt;Hello,React&lt;/h1&gt; /* 此处一定不要写引号，因为不是字符串 */
-      //2.渲染虚拟DOM到页面
-      ReactDOM.render(VDOM, document.getElementById(&#39;test&#39;))
-      const TDOM = document.querySelector(&#39;#test&#39;)
-      console.log(&#39;虚拟DOM&#39;, VDOM)
-      console.dir(&#39;真实DOM&#39;)
-      console.dir(TDOM)
-      //   debugger
-      console.log(typeof VDOM)
-      console.log(VDOM instanceof Object)
-</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.创建虚拟DOM,创建嵌套格式的dom</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">VDOM</span> = <span class="title class_">React</span>.<span class="title function_">createElement</span>(<span class="string">&quot;h1&quot;</span>, &#123; <span class="attr">id</span>: <span class="string">&quot;title&quot;</span> &#125;, <span class="title class_">React</span>.<span class="title function_">createElement</span>(<span class="string">&quot;span&quot;</span>, &#123;&#125;, <span class="string">&quot;hello,React&quot;</span>));</span><br><span class="line"><span class="comment">//2.渲染虚拟DOM到页面</span></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="variable constant_">VDOM</span>, <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.test&quot;</span>));</span><br></pre></td></tr></table></figure>
+
+<p>使用 JS 和 JSX 都可以创建虚拟 DOM，但是可以看出 JS 创建虚拟 DOM 比较繁琐，尤其是标签如果很多的情况下，所以还是比较推荐使用 JSX 来创建。</p>
+<h2 id="5-两种-DOM-的区别"><a href="#5-两种-DOM-的区别" class="headerlink" title="5.两种 DOM 的区别"></a>5.两种 DOM 的区别</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 准备好一个“容器” --&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;test&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/babel&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="comment">/* 此处一定要写babel */</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="comment">//1.创建虚拟DOM</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="keyword">const</span> <span class="variable constant_">VDOM</span> = <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello,React<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span> <span class="comment">/* 此处一定不要写引号，因为不是字符串 */</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="comment">//2.渲染虚拟DOM到页面</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="variable constant_">VDOM</span>, <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;test&#x27;</span>))</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="keyword">const</span> <span class="variable constant_">TDOM</span> = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;#test&#x27;</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;虚拟DOM&#x27;</span>, <span class="variable constant_">VDOM</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="variable language_">console</span>.<span class="title function_">dir</span>(<span class="string">&#x27;真实DOM&#x27;</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="variable language_">console</span>.<span class="title function_">dir</span>(<span class="variable constant_">TDOM</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="comment">//   debugger</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="variable constant_">VDOM</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable constant_">VDOM</span> <span class="keyword">instanceof</span> <span class="title class_">Object</span>)</span></span></span><br></pre></td></tr></table></figure>
+
 <p><img src="https://i0.hdslb.com/bfs/album/3c9c35333c0883a1057bd4c82be8bfbf9b69f04b.png" alt="image-20221022194600803"></p>
 <p><strong>关于虚拟 DOM：</strong></p>
 <p>​ 1. 本质是 Object 类型的对象（一般对象）</p>
@@ -480,7 +369,7 @@ ReactDOM.render(VDOM, document.querySelector(&quot;.test&quot;));
             
         </div>
         <footer class="article-footer">
-            <a data-url="http://example.com/2023/09/24/01.react%E5%85%A5%E9%97%A8/" data-id="clmyv1k0m00000gg07llsast3" data-title="React-入门"
+            <a data-url="http://example.com/2023/09/24/01.react%E5%85%A5%E9%97%A8/" data-id="cln5zunir0001nsg0dmly7anp" data-title="React-入门"
                class="article-share-link">Share</a>
             
             
@@ -494,6 +383,23 @@ ReactDOM.render(VDOM, document.querySelector(&quot;.test&quot;));
     
         
     <nav id="article-nav" class="wow fadeInUp">
+        
+            <div class="article-nav-link-wrap article-nav-link-left">
+                
+                    
+                    
+                        <img data-src="/images/banner.jpg" data-sizes="auto" alt="React-面向组件编程"
+                             class="lazyload">
+                    
+                
+                <a href="/2023/09/24/02.react%E9%9D%A2%E5%90%91%E7%BB%84%E4%BB%B6%E7%BC%96%E7%A8%8B/"></a>
+                <div class="article-nav-caption">Newer</div>
+                <h3 class="article-nav-title">
+                    
+                        React-面向组件编程
+                    
+                </h3>
+            </div>
         
         
             <div class="article-nav-link-wrap article-nav-link-right">
@@ -647,7 +553,7 @@ ReactDOM.render(VDOM, document.querySelector(&quot;.test&quot;));
             
                 <div>
                     <span class="icon-brush"></span>
-                    18.5k
+                    18.6k
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
                     01:15
